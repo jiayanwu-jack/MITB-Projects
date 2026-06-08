@@ -1,0 +1,39 @@
+project:
+  type: website
+
+website:
+  title: "Data Science Projects"
+  description: "Projects Completed for Master of Information Technology Program"
+  page-footer:
+    left: "Wu Jiayan · Data Science and Analytics"
+    right: "Singapore Management University · 2025"
+    background: primary
+  navbar:
+    left:
+      - text: "Courses"
+        menu: 
+          - text: "Applied Machine Learning"
+            href: "Applied Machine Learning/CS610_Team7_GroupProject_Presentation_Slides.html"
+          - text: "Visual Analytics and Applications"
+            href: "https://isss-608-vaa-iota.vercel.app/"
+          
+      - text: "Internship"
+        menu: 
+          - text: "Lee Kuan Yew Global Business Plan Competition"
+            href: "Internship/SMU_Competition_2027.pptx"
+
+    right: 
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme:
+      light: morph
+      dark:  darkly
+    highlight-style:
+      light: arrow-light
+      dark:  arrow-dark
+editor: visual
+

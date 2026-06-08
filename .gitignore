@@ -1,0 +1,26 @@
+.Rproj.user
+.Rhistory
+.RData
+.httr-oauth
+.DS_Store
+.quarto
+/.quarto/
+**/*.quarto_ipynb
+-J-5060ti.Rhistory
+# R temporary files
+.RData
+.RDataTmp*
+.Rhistory
+.Rapp.history
+
+# Large data files
+*.csv
+data/
+
+# R workspace cache files — never commit these
+.RData
+.RDataTmp
+.RDataTmp*
+.Rhistory
+.Rapp.history.RDataTmp*
+.RDataTmp*
