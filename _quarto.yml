@@ -13,7 +13,7 @@ website:
       - text: "Courses"
         menu: 
           - text: "Applied Machine Learning"
-            href: "Applied Machine Learning/CS610_Team7_GroupProject_Presentation_Slides.html"
+            href: "Applied Machine Learning/CS610_Team7_GroupProject_Presentation_Slides.pdf"
           - text: "Visual Analytics and Applications"
             href: "https://isss-608-vaa-iota.vercel.app/"
           
@@ -25,7 +25,6 @@ website:
     right: 
       - href: index.qmd
         text: Home
-      - about.qmd
 
 format:
   html:
