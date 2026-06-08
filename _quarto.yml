@@ -20,7 +20,7 @@ website:
       - text: "Internship"
         menu: 
           - text: "Lee Kuan Yew Global Business Plan Competition"
-            href: "Internship/SMU_Competition_2027.pptx"
+            href: "Internship/SMU_Competition_2027_ExecutiveSummary.html"
 
     right: 
       - href: index.qmd
