@@ -5,17 +5,16 @@ author: "Singapore Management University"
 date: "2027"
 format:
   revealjs:
-    theme: [default, custom.scss]
+    smaller: true
     transition: slide
     slide-number: true
     progress: true
     controls: true
     logo: ""
-    footer: "SMU Student Startup Competition 2027 · Confidential"
     chalkboard: false
     width: 1280
     height: 720
-    margin: 0.08
+    margin: 0.1
     highlight-style: github
     code-fold: false
     self-contained: true
@@ -23,31 +22,33 @@ execute:
   echo: false
 ---
 
-## {.title-slide background-color="#1B2A4A"}
+##  {.title-slide background-color="#1B2A4A"}
 
-::: {.title-block}
+::: title-block
 **SMU Student Startup**\
 **Business Plan Competition**\
 [2027]{style="font-size:3.5em; color:#2563A8; font-weight:900;"}
 :::
 
-::: {.date-chips}
-::: {.chip}
+:::::: date-chips
+::: chip
 📅 **Open:** 1 Jan 2027
 :::
-::: {.chip}
+
+::: chip
 🗓 **Close:** 31 Mar 2027
 :::
-::: {.chip}
+
+::: chip
 🏆 **Results:** 30 Jun 2027
 :::
-:::
+::::::
 
-::: {.footer-note}
+::: footer-note
 Organized by Singapore Management University · Modelled after LKYGBPC
 :::
 
-::: {.notes}
+::: notes
 Welcome to the Executive Summary for the SMU Student Startup Business Plan Competition 2027.
 
 This presentation covers five core operational tasks the organizing team must execute, and for each task we explain both the conventional human approach and a proposed agentic AI approach.
@@ -57,61 +58,60 @@ The competition is modelled closely on the Lee Kuan Yew Global Business Plan Com
 Key headline numbers: we are targeting 100 finalists, evaluated by 10 judges, with 10 winners announced on 30 June 2027. Applications run for three months from 1 January to 31 March 2027.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Competition at a Glance {background-color="#F8FAFC"}
 
-::: {.columns}
-::: {.column width="60%"}
-
-::: {.stat-grid}
+:::::::::::: columns
+::::::::: {.column width="60%"}
+::::::: stat-grid
 ::: {.stat-card .blue}
 **100**\
 Global Finalists
 :::
+
 ::: {.stat-card .teal}
 **10**\
 Expert Judges
 :::
+
 ::: {.stat-card .amber}
 **10**\
 Winners Selected
 :::
+
 ::: {.stat-card .purple}
 **3 months**\
 Application Window
 :::
-:::
+:::::::
 
-::: {.eligibility-box}
+::: eligibility-box
 **Eligibility** — open worldwide to:
 
 - University students (UG, PG, doctoral) currently enrolled
 - Alumni who graduated within the last **5 years** (2022–2027)
 - Teams of up to 5 members; at least 1 must be the lead founder
 :::
+:::::::::
 
-:::
-::: {.column width="40%"}
-
-::: {.timeline-box}
+:::: {.column width="40%"}
+::: timeline-box
 **Competition Timeline**
 
-| Period | Milestone |
-|--------|-----------|
+| Period       | Milestone                    |
+|--------------|------------------------------|
 | Oct–Dec 2026 | Outreach & judge recruitment |
-| 1 Jan 2027 | Applications open |
-| 31 Mar 2027 | Applications close |
-| Apr–May 2027 | Pitch deck evaluation |
-| Jun 2027 | Deliberation & results |
-| 30 Jun 2027 | Public announcement |
-
+| 1 Jan 2027   | Applications open            |
+| 31 Mar 2027  | Applications close           |
+| Apr–May 2027 | Pitch deck evaluation        |
+| Jun 2027     | Deliberation & results       |
+| 30 Jun 2027  | Public announcement          |
 :::
+::::
+::::::::::::
 
-:::
-:::
-
-::: {.notes}
+::: notes
 This slide gives the essential competition parameters to orient the audience before we dive into the five tasks.
 
 On eligibility: the student/alumni rule is strictly enforced. Applications are submitted as teams; the lead founder must be a current student or recent graduate. All team members must meet the eligibility criteria — you cannot have one eligible founder and four ineligible co-founders.
@@ -121,13 +121,13 @@ On timeline: note that judge recruitment and participant outreach both begin wel
 The competition will accept applications from students and teams worldwide, not just Singapore. This global scope is one of the competition's key differentiators.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Five Core Tasks & The Dual Approach {background-color="#F8FAFC"}
 
-::: {.task-list}
-| # | Task | Human approach | Agentic AI approach |
-|---|------|---------------|---------------------|
+::: task-list
+| \# | Task | Human approach | Agentic AI approach |
+|----|----|----|----|
 | 1 | **Sourcing participants** | University outreach, social media, ambassador programme | AI prospect finder, personalised email drafter, pace monitor |
 | 2 | **Sourcing judges** | 3-wave invitation process, formal letters, follow-up cadence | Candidate researcher, letter drafter, follow-up scheduler |
 | 3 | **Matching judges to participants** | Manual sector tagging, conflict check, chief judge approval | Sector tagger, COI detector, constraint-optimiser |
@@ -135,11 +135,11 @@ The competition will accept applications from students and teams worldwide, not 
 | 5 | **Choosing top 10 winners** | Score ranking, deliberation panel, secret ballot | Ranking engine, deliberation briefs, comms bundle |
 :::
 
-::: {.principle-banner}
+::: principle-banner
 🔑 **Core principle:** AI handles research, drafting, tracking, and computation. All consequential decisions remain with humans.
 :::
 
-::: {.notes}
+::: notes
 This is the structural overview slide. Each of the five tasks has two approaches — Part A is what the organizing team does manually and with conventional tools; Part B is how agentic AI can automate or augment each step.
 
 A key framing point for the audience: this is not an either-or choice. The agentic AI approach is additive — it removes the tedious, time-intensive groundwork (prospect research, follow-up scheduling, matching optimization) so the human team can focus on judgment calls and relationship management.
@@ -149,17 +149,17 @@ The core principle is non-negotiable: the AI never makes a decision that determi
 In the following slides, we will go through each task in detail.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 1 · Sourcing Participants {.task-header background-color="#1B2A4A"}
 
-::: {.task-title-block}
+::: task-title-block
 [**Attracting 300–500 global applicants to select 100 finalists**]{style="color:#A0B4CC; font-size:0.9em;"}
 
 Outreach begins October 2026 — three months before applications open
 :::
 
-::: {.notes}
+::: notes
 This is the Task 1 divider slide. The headline target is 300 to 500 applications, which gives a healthy funnel to select 100 high-quality finalists.
 
 A common mistake is waiting until the application portal opens before starting outreach. By then you have already lost months of runway. The organizing team should begin university outreach and ambassador recruitment in October 2026 at the latest.
@@ -167,36 +167,33 @@ A common mistake is waiting until the application portal opens before starting o
 The next two slides cover the human and AI approaches in detail.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 1 · Part A: Human Approach {background-color="#F8FAFC"}
 
-::: {.columns}
+::::: columns
 ::: {.column width="50%"}
-
 **Channel 1 — University networks**\
 Email innovation office directors at 200 target universities globally. Provide a ready-to-use promo kit: one-pager, email template, social copy, poster. Assign each university a unique referral code.
 
 **Channel 2 — Startup ecosystems**\
 Engage BLOCK71, Antler, SGInnovate, Y Combinator Startup School, Techstars, and regional hubs in Jakarta, Bangalore, Lagos, and São Paulo.
-
 :::
-::: {.column width="50%"}
 
+::: {.column width="50%"}
 **Channel 3 — Digital & social**\
-Post on LinkedIn, Reddit (r/startups), F6S, and Telegram startup channels. Optional paid ads: S$3–8K targeting student founders.
+Post on LinkedIn, Reddit (r/startups), F6S, and Telegram startup channels. Optional paid ads: S\$3–8K targeting student founders.
 
 **Channel 4 — Student ambassadors**\
 Recruit 10–15 ambassadors. Each hosts a campus info session and recruits peers via a personal referral link. Recognition: SMU IIE Director letter + named on competition website.
-
 :::
-:::
+:::::
 
-::: {.guardrail-box}
+::: guardrail-box
 ⚑ **Guardrail:** Track application sources from day one. If a channel underperforms by February 2027, redirect effort immediately — do not wait until the application close.
 :::
 
-::: {.notes}
+::: notes
 The four channels work in parallel — not sequentially. Do not wait for Channel 1 to complete before starting Channel 2.
 
 The university promo kit is critical: make it zero-effort for the university contact to share. Include a pre-written email, social media captions for LinkedIn and Instagram, and an A3 printable poster. The easier you make it, the higher the pass-through rate.
@@ -208,48 +205,45 @@ On referral codes: assign a unique UTM code or referral ID to every channel and 
 Roadshows: run 4–6 live webinars across time zones in November and December 2026. Record them and post on the competition website — this gives ongoing passive discovery value.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 1 · Part B: Agentic AI Approach {background-color="#F8FAFC"}
 
-::: {.agent-flow}
+::: agent-flow
 [Research Agent]{.flow-step-blue} → [Outreach Agent]{.flow-step-blue} → [Human Approval]{.flow-step-teal} → [Pipeline Monitor]{.flow-step-blue}
 :::
 
-::: {.columns}
-::: {.column width="50%"}
-
-::: {.agent-card}
+::::::::: columns
+::::: {.column width="50%"}
+::: agent-card
 [AI Agent]{.tag-ai} **University prospect finder**\
-Crawls 200 university portals, extracts contact names and emails, ranks by QS ranking and known startup activity. Output: structured spreadsheet ready for outreach. ~2 hrs vs. 2 weeks manually.
+Crawls 200 university portals, extracts contact names and emails, ranks by QS ranking and known startup activity. Output: structured spreadsheet ready for outreach. \~2 hrs vs. 2 weeks manually.
 :::
 
-::: {.agent-card}
+::: agent-card
 [AI Agent]{.tag-ai} **Personalised email drafter**\
 Generates tailored invitations per contact, referencing the university's known startup focus. Flags uncertain cases for human review before any send.
 :::
+:::::
 
-:::
-::: {.column width="50%"}
-
-::: {.agent-card}
+::::: {.column width="50%"}
+::: agent-card
 [AI Agent]{.tag-ai} **Social listening agent**\
 Monitors LinkedIn and X for student founders who have not yet applied. Drafts DM templates for human review — never sends autonomously.
 :::
 
-::: {.agent-card}
+::: agent-card
 [Automated]{.tag-auto} **Eligibility pre-screener**\
 Auto-checks student status, documents, and team size on each submission. Auto-rejects clear fails with a polite email; flags edge cases for human review within 48 hrs.
 :::
+:::::
+:::::::::
 
-:::
-:::
-
-::: {.guardrail-box}
-⚑ **Guardrail:** No outreach email is sent without explicit human approval. Estimated time saved: ~120 staff-hours over the 3-month application window.
+::: guardrail-box
+⚑ **Guardrail:** No outreach email is sent without explicit human approval. Estimated time saved: \~120 staff-hours over the 3-month application window.
 :::
 
-::: {.notes}
+::: notes
 The agentic AI approach does not replace the four channels — it accelerates the most time-consuming parts of executing those channels.
 
 The University Prospect Finder is the biggest time-saver. Manually researching 200 universities, finding the right contact (not just a generic admissions email), and building a clean spreadsheet would take a staff member 10–15 working days. The AI does this in about 2 hours with equivalent or better quality.
@@ -261,53 +255,54 @@ The eligibility pre-screener reduces the burden on the operations team significa
 One critical point: the social listening agent surfaces warm leads, but a human must review the DM draft before it goes out. Cold outreach on LinkedIn from an SMU account needs to feel genuine, not automated.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 2 · Sourcing Judges {.task-header background-color="#1B2A4A"}
 
-::: {.task-title-block}
+::: task-title-block
 [**Confirm 10 judges by inviting 25–30 candidates**]{style="color:#A0B4CC; font-size:0.9em;"}
 
 Start recruitment September 2026 — expect 35–40% acceptance from senior figures
 :::
 
-::: {.notes}
+::: notes
 Task 2 covers judge recruitment. The acceptance rate from senior VCs and C-suite executives is typically 35 to 40 percent, which means you need to invite 25 to 30 candidates to reliably land 10 confirmed judges.
 
 Starting in September 2026 is non-negotiable. Q4 is peak conference and board season for senior industry figures. If you wait until November or December, their calendars are already full and you will struggle to get commitments.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 2 · Part A: Human Approach {background-color="#F8FAFC"}
 
-::: {.columns}
-::: {.column width="55%"}
-
+:::::::::: columns
+:::::::: {.column width="55%"}
 **Four judge profiles to target**
 
-::: {.profile-grid}
+::::::: profile-grid
 ::: {.profile-card .blue}
 **VCs & Investors** (4–5 slots)\
 Partners at Sequoia SEA, Monk's Hill, Wavemaker, East Ventures, Antler
 :::
+
 ::: {.profile-card .teal}
 **Corporate Leaders** (3–4 slots)\
 CTOs & Chief Innovation Officers at MNCs with Singapore presence — source from SMU IIE corporate partner list first
 :::
+
 ::: {.profile-card .purple}
 **Successful Founders** (2–3 slots)\
 Series A+ or exited founders — SMU alumni founders are highest-priority contacts
 :::
+
 ::: {.profile-card .amber}
 **Academics & Policy** (1–2 slots)\
 SMU/NUS professors + optional EDB, A\*STAR, or SGInnovate representative
 :::
-:::
+:::::::
+::::::::
 
-:::
 ::: {.column width="45%"}
-
 **Invitation cadence**
 
 - **Wave 1 (Sep 2026):** 15 candidates on SMU letterhead, signed by the Dean
@@ -315,17 +310,16 @@ SMU/NUS professors + optional EDB, A\*STAR, or SGInnovate representative
 - **Wave 3 (Nov 2026):** Fill remaining slots from reserve list
 
 **Each letter must state clearly:**\
-Async deck review (~3–4 hrs total) + one 3-hour deliberation panel in June 2027
+Async deck review (\~3–4 hrs total) + one 3-hour deliberation panel in June 2027
 
 **Diversity target:**\
 ≥40% women judges · ≥5 countries represented
 
 **Always maintain 5 confirmed backup judges**
-
 :::
-:::
+::::::::::
 
-::: {.notes}
+::: notes
 The four profile types give you a well-rounded panel. VCs bring commercial lens and market sizing rigour. Corporate innovators bring implementation and enterprise context. Successful founders bring empathy for the founder experience and team assessment skills. Academics and policy experts add credibility and can assess technical feasibility, particularly for deep-tech entries.
 
 The invitation letter is one of the most important documents in the whole competition. It must be on official SMU letterhead and signed by a senior leader — not a generic email from a staff member. The letter should be personalised: one or two sentences explaining specifically why this person's expertise matters for this competition's focus.
@@ -335,49 +329,46 @@ Being transparent about time commitment is essential. Senior people will not com
 The reserve list of 5 confirmed backups is non-negotiable. Even judges who accepted 6 months ago will sometimes cancel in the week before the panel due to travel, health, or work crises. A reserve judge who is already briefed and on standby is far better than a last-minute scramble.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 2 · Part B: Agentic AI Approach {background-color="#F8FAFC"}
 
-::: {.columns}
-::: {.column width="50%"}
-
-::: {.agent-card}
+:::::::::: columns
+:::::: {.column width="50%"}
+::: agent-card
 [AI Agent]{.tag-ai} **Judge candidate researcher**\
 Searches LinkedIn, Crunchbase, and conference speaker databases for candidates matching the 4 profiles. Scores each 1–10 for relevance. Generates 30 ranked candidates in under 2 hours.
 :::
 
-::: {.agent-card}
+::: agent-card
 [AI Agent]{.tag-ai} **Invitation letter drafter**\
 Composes personalised letters referencing the candidate's specific expertise and stating the time commitment precisely. Every draft requires human approval before sending.
 :::
 
-::: {.agent-card}
+::: agent-card
 [Automated]{.tag-auto} **Follow-up scheduler**\
 Day 10: auto follow-up email. Day 20: flags for personal LinkedIn message. After 2 no-responses: marks as lapsed, advances next candidate.
 :::
+::::::
 
-:::
-::: {.column width="50%"}
-
-::: {.agent-card}
+::::: {.column width="50%"}
+::: agent-card
 [AI Agent]{.tag-ai} **Diversity gap analyser**\
 Tracks gender, nationality, and domain coverage in real time. Flags imbalances and suggests specific reserve candidates to improve panel balance.
 :::
 
-::: {.agent-card}
+::: agent-card
 [Automated]{.tag-auto} **Onboarding packet dispatcher**\
 On acceptance: auto-sends NDA (DocuSign), calendar invite for June panel, portal login, and briefing PDF. Zero manual coordination required for paperwork.
 :::
+:::::
+::::::::::
 
-:::
-:::
-
-::: {.guardrail-box}
+::: guardrail-box
 ⚑ **Guardrail:** No invitation letter is sent without explicit human approval. Outreach that misrepresents the competition to a senior executive can permanently damage SMU's reputation.
 :::
 
-::: {.notes}
+::: notes
 The biggest time saving in Task 2 is the Judge Candidate Researcher. Building a list of 30 qualified candidates across the 4 profiles, with their current role, investment thesis, and contact information, would take a partnerships manager 3 to 5 working days. The AI produces this in about 2 hours.
 
 The Invitation Letter Drafter is valuable but requires careful oversight. Every letter must be reviewed by the partnerships manager before sending. The key thing the AI does is handle the research and first draft — the human's job is to check the personalisation is accurate and that the tone is right for the specific individual.
@@ -387,49 +378,53 @@ The Follow-up Scheduler removes the cognitive overhead of tracking a pipeline of
 The Diversity Gap Analyser is proactive insurance. Rather than realising at the end that your panel is 9 men from Singapore, it flags this in real time and says "here are two women from your reserve list who would rebalance the panel."
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 3 · Matching Judges to Participants {.task-header background-color="#1B2A4A"}
 
-::: {.task-title-block}
+::: task-title-block
 [**Domain-aligned, conflict-free assignment with balanced workloads**]{style="color:#A0B4CC; font-size:0.9em;"}
 
 Executed in April 2027 after the 100 finalists are confirmed
 :::
 
-::: {.notes}
+::: notes
 Task 3 is the matching problem: how do you assign 10 judges to 100 startups in a way that maximises domain expertise alignment, eliminates conflicts of interest, and keeps workloads fair?
 
 Doing this manually in a spreadsheet takes 2 to 3 days and still produces a suboptimal result. This is the task where agentic AI delivers the clearest operational advantage.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 3 · Part A: Human Approach {background-color="#F8FAFC"}
 
-::: {.steps-container}
-::: {.step}
+:::::::: steps-container
+::: step
 [1]{.step-num-blue} **Tag all 100 startups** — Assign up to 3 sector tags from a fixed taxonomy: HealthTech · CleanEnergy · AgriTech · EdTech · FinTech · MobilityTech · DeepTech · B2B SaaS · Social Impact · Other
 :::
-::: {.step}
+
+::: step
 [2]{.step-num-blue} **Tag all judges** — Map each judge to 2–3 domain expertise areas using the same taxonomy. Note preferred deck load (10 or 20).
 :::
-::: {.step}
+
+::: step
 [3]{.step-num-blue} **Group into 10 panels of 10** — Cluster startups by shared sector tag. Assign one primary (domain-matched) + one secondary (generalist) judge per panel.
 :::
-::: {.step}
+
+::: step
 [4]{.step-num-blue} **Run conflict-of-interest check** — Send judges the finalist list. Ask them to flag any investment, advisory role, or personal connection. Reassign flagged startups to an alternate judge.
 :::
-::: {.step}
+
+::: step
 [5]{.step-num-blue} **Chief judge approval & portal activation** — Chief judge reviews the matrix. On approval, portals unlock with only each judge's assigned decks visible.
 :::
-:::
+::::::::
 
-::: {.guardrail-box}
+::: guardrail-box
 ⚑ **Guardrail:** Overflow management — if 30+ startups share one sector but only 1 judge has that expertise, distribute to generalist judges with a one-page sector guide.
 :::
 
-::: {.notes}
+::: notes
 The key design principle is that every startup gets scored by exactly 2 independent judges. This dual-scoring design is essential for two reasons: it reduces individual bias (one judge who happens to dislike a certain business model can't single-handedly eliminate a team), and it flags anomalies when the two judges' scores diverge significantly.
 
 The conflict of interest check must happen before the matching matrix is finalised. Judges may not volunteer conflicts unless specifically asked. The process is to send them the full list of 100 finalist names and universities (no decks yet), and ask them to flag any team they have invested in, advised, or know personally.
@@ -439,44 +434,41 @@ The sector taxonomy must be fixed in advance and consistently applied. If you le
 The chief judge's role at the end of this process is to review the proposed matrix, check for anything that looks odd, and give explicit sign-off. This is a governance checkpoint, not a rubber stamp.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 3 · Part B: Agentic AI Approach {background-color="#F8FAFC"}
 
-::: {.columns}
-::: {.column width="50%"}
-
-::: {.agent-card}
+::::::::: columns
+::::: {.column width="50%"}
+::: agent-card
 [AI Agent]{.tag-ai} **Pitch deck sector tagger**\
-Reads all 100 decks. Extracts problem statement, solution, and market section. Assigns sector tags with confidence scores. Flags <70% confidence for human review before matching runs.
+Reads all 100 decks. Extracts problem statement, solution, and market section. Assigns sector tags with confidence scores. Flags \<70% confidence for human review before matching runs.
 :::
 
-::: {.agent-card}
+::: agent-card
 [AI Agent]{.tag-ai} **Conflict-of-interest detector**\
 Fetches each judge's investment portfolio (Crunchbase) and advisory roles (LinkedIn). Produces a 10×100 conflict matrix: "clear", "potential", or "flagged" per cell.
 :::
+:::::
 
-:::
-::: {.column width="50%"}
-
-::: {.agent-card}
+::::: {.column width="50%"}
+::: agent-card
 [AI Agent]{.tag-ai} **Matching optimiser**\
 Constraint-satisfaction algorithm: maximise domain match score, ensure 2 judges per startup, eliminate all conflicts, balance load (8–22 decks per judge). Runs in under 2 hours.
 :::
 
-::: {.agent-card}
+::: agent-card
 [Automated]{.tag-auto} **Portal access provisioner**\
 On chief judge approval: automatically unlocks each judge's portal with exactly their assigned decks. Sends personalised email with assignment list and 4-week deadline.
 :::
+:::::
+:::::::::
 
-:::
-:::
-
-::: {.savings-box}
+::: savings-box
 ⏱ **Time saving:** What takes a human 2–3 days of spreadsheet work (tagging 100 decks, checking 1,000 conflict pairs, balancing 10 judges) takes the agentic system under 2 hours — with a cleaner audit trail.
 :::
 
-::: {.notes}
+::: notes
 The Matching Optimiser is the centrepiece of the AI approach for this task. It runs a constraint-satisfaction or linear assignment algorithm that simultaneously satisfies four constraints: domain match maximised, dual coverage for every startup, no conflicts, and load balance. A human trying to satisfy all four constraints manually in a spreadsheet will inevitably make trade-offs and miss edge cases.
 
 The Conflict-of-Interest Detector is important because judges may not be aware of all their conflicts — for example, a junior portfolio company they invested in two years ago that they have mentally stopped tracking. Checking Crunchbase and LinkedIn portfolios systematically catches cases that a self-declaration form would miss.
@@ -486,59 +478,56 @@ The Portal Access Provisioner eliminates a manual coordination step that seems s
 The human approval gate before the portal activates is non-negotiable. The chief judge must review the conflict report, the domain match scores, and the diversity balance report before clicking approve.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 4 · Evaluating Pitch Decks {.task-header background-color="#1B2A4A"}
 
-::: {.task-title-block}
+::: task-title-block
 [**4-week async scoring window · 100-point rubric · dual independent judges**]{style="color:#A0B4CC; font-size:0.9em;"}
 
 April – May 2027 — all evaluation is asynchronous to respect judges' time
 :::
 
-::: {.notes}
+::: notes
 Task 4 is the core evaluation process. All scoring is asynchronous — judges review decks at their own pace within a 4-week window. This eliminates the need to coordinate 10 senior people across time zones for synchronous review sessions.
 
 The two design principles are: every startup gets 2 independent scores, and every score comes from a human judge — never from AI.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 4 · Part A: Human Approach {background-color="#F8FAFC"}
 
-::: {.columns}
+::::: columns
 ::: {.column width="55%"}
-
 **Scoring rubric — 100-point scale**
 
-| Criterion | Weight | Score |
-|-----------|--------|-------|
-| Solution & innovation | 25% | 1–5 |
-| Problem & market | 20% | 1–5 |
-| Business model | 20% | 1–5 |
-| Traction & validation | 15% | 1–5 |
-| Team | 15% | 1–5 |
-| Pitch quality | 5% | 1–5 |
+| Criterion             | Weight | Score |
+|-----------------------|--------|-------|
+| Solution & innovation | 25%    | 1–5   |
+| Problem & market      | 20%    | 1–5   |
+| Business model        | 20%    | 1–5   |
+| Traction & validation | 15%    | 1–5   |
+| Team                  | 15%    | 1–5   |
+| Pitch quality         | 5%     | 1–5   |
 
 Each criterion: mandatory comment (≥1–2 sentences referencing specific deck content)
-
 :::
-::: {.column width="45%"}
 
+::: {.column width="45%"}
 **Process steps**
 
-1. **Calibration session** — 60-min Zoom briefing for all judges. Walk through rubric + 3 anonymised sample decks at different quality tiers. Recorded for those who cannot attend.
+1.  **Calibration session** — 60-min Zoom briefing for all judges. Walk through rubric + 3 anonymised sample decks at different quality tiers. Recorded for those who cannot attend.
 
-2. **4-week scoring window** — Each judge reviews 10–20 decks at ~12–15 min each. Judges cannot see each other's scores.
+2.  **4-week scoring window** — Each judge reviews 10–20 decks at \~12–15 min each. Judges cannot see each other's scores.
 
-3. **Weekly tracking** — Reminders at week 2 if below 50%; personal escalation at week 3 if below 70%.
+3.  **Weekly tracking** — Reminders at week 2 if below 50%; personal escalation at week 3 if below 70%.
 
-4. **Anomaly review** — If two judges' weighted scores differ by >15 points, chief judge reviews both scoresheets.
-
+4.  **Anomaly review** — If two judges' weighted scores differ by \>15 points, chief judge reviews both scoresheets.
 :::
-:::
+:::::
 
-::: {.notes}
+::: notes
 The calibration session is one of the most important investments in the evaluation process. Without calibration, you get systematic differences in how judges interpret the rubric — one judge's "4 on traction" might equal another judge's "2 on traction." Even a 60-minute session with sample decks dramatically reduces this variance.
 
 On the rubric design: Solution & Innovation is weighted highest at 25% because this competition wants to reward genuine novelty, not just well-packaged existing ideas. Pitch quality is weighted lowest at 5% deliberately — a brilliant idea in a rough deck should not be penalised excessively. Student founders are not professional pitch coaches.
@@ -548,52 +537,48 @@ The mandatory comment field is both a quality control mechanism and a deliverabl
 The anomaly threshold of 15 points (on a 100-point scale) is the trigger for chief judge review. This is not necessarily a problem — two domain experts can legitimately disagree significantly on a startup's prospects. The chief judge review is to understand the disagreement, not to override one judge.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 4 · Part B: Agentic AI Approach {background-color="#F8FAFC"}
 
-::: {.columns}
-::: {.column width="33%"}
-
-::: {.agent-card}
+::::::::::: columns
+::::: {.column width="33%"}
+::: agent-card
 [AI Agent]{.tag-ai} **Deck summariser**\
-Generates a 1-page structured summary per deck: problem, solution, market, business model, traction, team. Labelled "AI-generated — orientation only." Cuts judge prep from ~5 min to ~1 min per deck.
+Generates a 1-page structured summary per deck: problem, solution, market, business model, traction, team. Labelled "AI-generated — orientation only." Cuts judge prep from \~5 min to \~1 min per deck.
 :::
 
-::: {.agent-card}
+::: agent-card
 [AI Agent]{.tag-ai} **Score normalisation engine**\
 If systematic bias detected (e.g. judge whose scores range only 50–70), optionally applies per-judge z-score normalisation. Chief judge approves or rejects before rankings run.
 :::
+:::::
 
-:::
-::: {.column width="33%"}
-
-::: {.agent-card}
+:::: {.column width="33%"}
+::: agent-card
 [AI Agent]{.tag-ai} **Scoring anomaly detector**\
-After all scores submitted: (1) inter-rater gap >15 pts flagged; (2) score compression (range <20 pts) flagged; (3) statistical outliers in top/bottom 5% identified. All sent to chief judge.
+After all scores submitted: (1) inter-rater gap \>15 pts flagged; (2) score compression (range \<20 pts) flagged; (3) statistical outliers in top/bottom 5% identified. All sent to chief judge.
 :::
+::::
 
-:::
-::: {.column width="33%"}
-
-::: {.agent-card}
+::::: {.column width="33%"}
+::: agent-card
 [Automated]{.tag-auto} **Judge progress tracker**\
 Weekly completion reports. Auto-reminder at week 2 if below 50%. Personal escalation at week 3 if below 70%. Routes unfinished decks to reserve judge at window close.
 :::
 
-::: {.agent-card}
+::: agent-card
 [AI Agent]{.tag-ai} **Feedback quality reviewer**\
 Checks each comment: ≥10 words, must reference deck content specifically. Prompts judge to elaborate before submission is accepted.
 :::
+:::::
+:::::::::::
 
-:::
-:::
-
-::: {.guardrail-box}
+::: guardrail-box
 ⚑ **Critical guardrail:** The AI **never** scores a pitch deck. Scores 1–5 per criterion are entered exclusively by human judges. Enforced at the portal level — no override possible.
 :::
 
-::: {.notes}
+::: notes
 The most important thing to communicate on this slide is the guardrail at the bottom: AI never scores. This is a non-negotiable design constraint.
 
 If we allowed AI to produce reference scores — even "just as a starting point" for judges — we would be introducing anchor bias. Judges who see an AI score of 72 before scoring will tend to score near 72, even if their independent judgment would have landed somewhere else. The competition's integrity depends on truly independent human scoring.
@@ -605,29 +590,28 @@ The Feedback Quality Reviewer protects the participant experience. If a judge wr
 The Progress Tracker is operational insurance. It is surprisingly common for even senior, well-intentioned judges to fall behind on async tasks because their day-to-day work takes over. Automated nudges remove the awkward situation of a staff member having to chase a prominent judge manually.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 5 · Choosing the Top 10 Winners {.task-header background-color="#1B2A4A"}
 
-::: {.task-title-block}
+::: task-title-block
 [**Quantitative ranking → deliberation panel → secret ballot → 30 Jun 2027 announcement**]{style="color:#A0B4CC; font-size:0.9em;"}
 
 A two-stage process that combines objective scores with human judgment
 :::
 
-::: {.notes}
+::: notes
 Task 5 is the culmination of all the previous work. The winner selection process is designed to combine the objectivity and consistency of quantitative scoring with the qualitative insight that only experienced human judges can provide.
 
 The two-stage design — score ranking to shortlist, then deliberation to final selection — is intentional. Pure quantitative ranking has known limitations: it cannot capture a founder's tenacity, the strategic value of a business in a particular geography, or the panel's collective sense that a team can execute despite a weaker deck. The deliberation session allows these judgments.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 5 · Part A: Human Approach {background-color="#F8FAFC"}
 
-::: {.columns}
+::::: columns
 ::: {.column width="48%"}
-
 **Stage A — Score-ranked longlist (early June)**
 
 - Compute weighted average from dual-judge scores for all 100 startups
@@ -637,30 +621,28 @@ The two-stage design — score ranking to shortlist, then deliberation to final 
 
 **Prize structure**
 
-| Tier | Award |
-|------|-------|
-| Champion (1st) | Cash + SMU accelerator + mentorship |
-| Excellence (2nd & 3rd) | Cash + co-working credits + investor intros |
-| Top 10 | Certificate + website feature + network |
-| Category awards | Best Social Impact, Best DeepTech, People's Choice |
-
+| Tier                   | Award                                              |
+|------------------------|----------------------------------------------------|
+| Champion (1st)         | Cash + SMU accelerator + mentorship                |
+| Excellence (2nd & 3rd) | Cash + co-working credits + investor intros        |
+| Top 10                 | Certificate + website feature + network            |
+| Category awards        | Best Social Impact, Best DeepTech, People's Choice |
 :::
-::: {.column width="52%"}
 
+::: {.column width="52%"}
 **Stage B — Deliberation panel (mid June)**
 
-1. Distribute one-page summaries for top 20 to all judges **3 days before** the panel
-2. 3-hour session chaired by chief judge
-3. **Champion/challenge format:** judge who scored highest gets 2 min to advocate; any judge who scored low gets 1 min to challenge
-4. **Secret simultaneous ballot** — teams with 6+ votes confirmed
-5. Remaining spots filled by composite score + vote count
-6. Chief judge holds **casting vote** for unresolvable ties
-7. Winners notified privately **5 days before** 30 Jun announcement
-
+1.  Distribute one-page summaries for top 20 to all judges **3 days before** the panel
+2.  3-hour session chaired by chief judge
+3.  **Champion/challenge format:** judge who scored highest gets 2 min to advocate; any judge who scored low gets 1 min to challenge
+4.  **Secret simultaneous ballot** — teams with 6+ votes confirmed
+5.  Remaining spots filled by composite score + vote count
+6.  Chief judge holds **casting vote** for unresolvable ties
+7.  Winners notified privately **5 days before** 30 Jun announcement
 :::
-:::
+:::::
 
-::: {.notes}
+::: notes
 The diversity scan in Stage A deserves emphasis. It does not change scores — the scoring integrity must be maintained. What it does is ensure the panel enters the deliberation aware of any distributional issues. If 16 of the top 20 are from Singapore, the panel can choose to consider that in deliberation. But the scan informs the choice; it does not make it.
 
 The champion/challenge format in Stage B is borrowed from investment committee practice. It is a disciplined way to surface the strongest arguments for and against borderline teams without the discussion devolving into unfocused debate. The 2-minute / 1-minute time limits are important — enforce them.
@@ -670,49 +652,46 @@ The secret simultaneous ballot is important for the same reason as any secret ba
 Announcing all 100 finalists publicly is one of the most important recommendations in this playbook. Every finalist gets a prestigious credential regardless of where they rank in the final 10. This dramatically improves the competition's reputation and word-of-mouth for future editions.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Task 5 · Part B: Agentic AI Approach {background-color="#F8FAFC"}
 
-::: {.columns}
-::: {.column width="50%"}
-
-::: {.agent-card}
+:::::::::: columns
+:::::: {.column width="50%"}
+::: agent-card
 [AI Agent]{.tag-ai} **Ranking & shortlist engine**\
 Computes weighted averages, applies approved normalisation, produces ranked leaderboard and top-20 shortlist with per-criterion score breakdown PDFs for each team.
 :::
 
-::: {.agent-card}
+::: agent-card
 [AI Agent]{.tag-ai} **Deliberation brief writer**\
 1-page brief per top-20 team: strongest/weakest criteria, key judge comment quotes, how the team compares to similar startups in the pool. Distributed 3 days before the panel.
 :::
 
-::: {.agent-card}
+::: agent-card
 [AI Agent]{.tag-ai} **Diversity & balance analyser**\
 Analyses top 20 across sector, geography, university tier, and gender. Reports imbalances to chief judge before deliberation — informed choice, not a blind one.
 :::
+::::::
 
-:::
-::: {.column width="50%"}
-
-::: {.agent-card}
+::::: {.column width="50%"}
+::: agent-card
 [Automated]{.tag-auto} **Winner communications bundle**\
 Auto-generates: winner notification emails, press release draft, website update copy, LinkedIn/X posts in 3 tones. All require Director sign-off before any are sent.
 :::
 
-::: {.agent-card}
+::: agent-card
 [Automated]{.tag-auto} **Feedback report generator**\
 For all 100 finalists: personalised report with per-criterion scores, anonymised judge comments, and relative pool ranking. Distributed on announcement day — impractical to do manually at this scale.
 :::
+:::::
+::::::::::
 
-:::
-:::
-
-::: {.guardrail-box}
+::: guardrail-box
 ⚑ **Critical guardrail:** The final top-10 decision is made exclusively by judges via secret ballot. AI ranks and briefs — it **never** recommends who should win.
 :::
 
-::: {.notes}
+::: notes
 The Deliberation Brief Writer is particularly valuable. In a 3-hour panel covering 20 startups, judges are under time pressure. A well-structured 1-page brief that surfaces the key facts — strongest criterion, weakest criterion, how this team compares to similar startups in the pool — enables a higher quality discussion than judges working purely from memory of decks they reviewed weeks ago.
 
 The Feedback Report Generator is the most visible participant-facing AI output in the whole competition. Every finalist gets a personalised report: their scores per criterion, the judges' comments (anonymised so no judge can be identified), and their ranking context ("top 15% on innovation, top 40% overall"). Producing this manually for 100 finalists would require several days of staff work. The AI produces all 100 in minutes.
@@ -722,14 +701,13 @@ The Winner Communications Bundle is operational efficiency: the press release, w
 Repeat the critical guardrail clearly: the AI produced no recommendation about who should win. The ranking is input to the human deliberation — not the output.
 :::
 
----
+------------------------------------------------------------------------
 
 ## AI Guardrail Summary {background-color="#F8FAFC"}
 
-::: {.columns}
-::: {.column width="48%"}
-
-::: {.never-box}
+::::::: columns
+:::: {.column width="48%"}
+::: never-box
 ### ✗ AI must NEVER
 
 - Send outreach emails or invitations autonomously
@@ -738,11 +716,10 @@ Repeat the critical guardrail clearly: the AI produced no recommendation about w
 - Recommend who the top 10 winners should be
 - Send winner notifications or press releases without Director sign-off
 :::
+::::
 
-:::
-::: {.column width="52%"}
-
-::: {.can-box}
+:::: {.column width="52%"}
+::: can-box
 ### ✓ AI may operate autonomously
 
 - Auto-screen clearly eligible or ineligible applications
@@ -751,15 +728,14 @@ Repeat the critical guardrail clearly: the AI produced no recommendation about w
 - Produce weekly application pace reports and dashboards
 - Draft outreach copy, letters, and comms bundles *(all pending human approval)*
 :::
+::::
+:::::::
 
-:::
-:::
-
-::: {.principle-banner}
+::: principle-banner
 🔑 **Core principle:** AI handles research, drafting, tracking, and computation. Every decision that determines who participates, who judges, or who wins is made by humans.
 :::
 
-::: {.notes}
+::: notes
 This slide is the governance summary. Print it. Put it on the wall in the operations room.
 
 The two columns represent a clean separation of concerns: the left column is where AI autonomy would undermine the integrity of the competition; the right column is where AI autonomy saves the team significant time without any integrity risk.
@@ -769,30 +745,28 @@ The line between the two columns is not arbitrary. The test is: "does this actio
 This governance framework should be documented in the competition's internal operating procedures and shared with any external partners or sponsors who ask about the role of AI in the process.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Operations & Recommended Tools {background-color="#F8FAFC"}
 
-::: {.columns}
+:::::: columns
 ::: {.column width="45%"}
-
 **Core team structure**
 
-| Role | Count |
-|------|-------|
-| Competition Director | 1 |
-| Marketing & outreach lead | 1–2 |
-| Judge & partnerships manager | 1 |
-| Applications & platform manager | 1 |
-| Ambassador & community coordinator | 1 |
-| Chief judge (external, senior) | 1 |
-
+| Role                               | Count |
+|------------------------------------|-------|
+| Competition Director               | 1     |
+| Marketing & outreach lead          | 1–2   |
+| Judge & partnerships manager       | 1     |
+| Applications & platform manager    | 1     |
+| Ambassador & community coordinator | 1     |
+| Chief judge (external, senior)     | 1     |
 :::
-::: {.column width="55%"}
 
+:::: {.column width="55%"}
 **Recommended platform stack**
 
-::: {.tools-grid}
+::: tools-grid
 [F6S / Submittable]{.tool-chip} Applications portal\
 [Airtable]{.tool-chip} Scoring matrix & matching\
 [Notion]{.tool-chip} Operations documentation\
@@ -808,11 +782,10 @@ This governance framework should be documented in the competition's internal ope
 - Participant data consent collected in application form
 - All judges sign NDA before receiving any decks
 - Singapore PDPA compliance — SMU Legal to review competition T&Cs before 1 Jan 2027 launch
+::::
+::::::
 
-:::
-:::
-
-::: {.notes}
+::: notes
 The team structure is lean for what is a fairly complex operation. The key is that each role has a clear owner with no ambiguity. The Competition Director has overall accountability; the Judge & Partnerships Manager owns all judge-related communications; the Applications & Platform Manager owns the technical side of the portal.
 
 The Chief Judge is an external appointment — a senior industry figure, ideally someone with prior judging experience at competitions like LKYGBPC or Hult Prize. Their role is governance and quality control across the evaluation and selection process.
@@ -822,12 +795,12 @@ On the platform stack: the recommendation is to use purpose-built competition ma
 The PDPA compliance point is important for a competition collecting personal data from students worldwide. SMU Legal should review the terms and conditions, privacy policy, and data retention policy before the portal goes live on 1 January 2027. This is not optional — it is a legal requirement.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Summary & Key Decisions Required {background-color="#1B2A4A"}
 
-::: {.summary-grid}
-::: {.summary-card}
+::::: summary-grid
+::: summary-card
 **✓ Confirmed by this playbook**
 
 - Competition structure and eligibility criteria
@@ -838,7 +811,7 @@ The PDPA compliance point is important for a competition collecting personal dat
 - Scoring rubric and evaluation design
 :::
 
-::: {.summary-card}
+::: summary-card
 **→ Decisions required from leadership**
 
 - Confirm prize structure and funding allocation
@@ -848,14 +821,14 @@ The PDPA compliance point is important for a competition collecting personal dat
 - Confirm SMU letterhead authority for judge invitation letters
 - Approve launch communications strategy
 :::
-:::
+:::::
 
-::: {.closing-strip}
+::: closing-strip
 **Applications open 1 January 2027 · Results announced 30 June 2027**\
 *Singapore Management University — Organized by SMU Institute of Innovation & Entrepreneurship*
 :::
 
-::: {.notes}
+::: notes
 This closing slide sets up the conversation about what the organizing team needs from leadership before the competition can launch.
 
 The left column represents what has been decided and documented. The right column represents genuine open items that require leadership input — these are not things the organizing team can decide unilaterally.
@@ -867,7 +840,7 @@ The agentic AI tool stack approval is also worth flagging as time-sensitive. If 
 Thank you — happy to take questions on any of the five tasks or the AI approach in more detail.
 :::
 
----
+------------------------------------------------------------------------
 
 ```{=html}
 <style>
@@ -1306,6 +1279,6 @@ Thank you — happy to take questions on any of the five tasks or the AI approac
 </style>
 ```
 
-::: {.notes}
+::: notes
 End of presentation. This slide marks the end of the Executive Summary. Speaker notes are embedded in every slide and are accessible in Presenter Mode by pressing S in Reveal.js. The HTML file is self-contained and can be opened in any modern browser without a server.
 :::
