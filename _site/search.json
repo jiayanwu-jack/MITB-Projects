@@ -1,10 +1,150 @@
 [
   {
-    "objectID": "Internship/SMU_Competition_2027_ExecutiveSummary.html",
-    "href": "Internship/SMU_Competition_2027_ExecutiveSummary.html",
-    "title": "SMU Student Startup Business Plan Competition 2027",
+    "objectID": "Statistical Thinking for Data Science/index.html#section",
+    "href": "Statistical Thinking for Data Science/index.html#section",
+    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
     "section": "",
-    "text": "SMU Student Startup\nBusiness Plan Competition\n2027\n\n\n\n📅 Open: 1 Jan 2027\n\n\n🗓 Close: 31 Mar 2027\n\n\n🏆 Results: 30 Jun 2027\n\n\n\nOrganized by Singapore Management University · Modelled after LKYGBPC\n\n\nWelcome to the Executive Summary for the SMU Student Startup Business Plan Competition 2027.\nThis presentation covers five core operational tasks the organizing team must execute, and for each task we explain both the conventional human approach and a proposed agentic AI approach.\nThe competition is modelled closely on the Lee Kuan Yew Global Business Plan Competition run by SMU, and all venue and funding is provided by the University.\nKey headline numbers: we are targeting 100 finalists, evaluated by 10 judges, with 10 winners announced on 30 June 2027. Applications run for three months from 1 January to 31 March 2027."
+    "text": "Is Singapore’s Healthcare Adequate for its Ageing Population?\nIS630 Statistical Thinking in Data Science\n\nCheng Ho Wang Hong Huajie Teo Cher In Wu Jiayan Ye Zhili Yee Weicong Mark\n\nG1 Team 3"
+  },
+  {
+    "objectID": "Statistical Thinking for Data Science/index.html#agenda",
+    "href": "Statistical Thinking for Data Science/index.html#agenda",
+    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
+    "section": "Agenda",
+    "text": "Agenda\n\n\n01 Introduction Global ageing phenomenon & context\n\n\n02 Study Objective Key research questions\n\n\n03 Data Sources & cleaning methodology\n\n\n04 Summary Statistics Population & hospital beds overview\n\n\n05 Inferential Statistics Correlation, hypothesis, forecasting\n\n\n06 Results & Conclusion Findings & recommendations"
+  },
+  {
+    "objectID": "Statistical Thinking for Data Science/index.html#introduction",
+    "href": "Statistical Thinking for Data Science/index.html#introduction",
+    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
+    "section": "Introduction",
+    "text": "Introduction\n\n\nPopulation ageing is a global phenomenon.\nBy 2080, the elderly (aged 65+) is expected to outnumber children (under 18) worldwide.\nSingapore is at the forefront of this demographic shift, creating urgent pressure on healthcare infrastructure.\n\n\n\nEconomic Impact Workforce contraction, rising pension costs, productivity challenges\n\n\nHealthcare Impact Surge in chronic disease burden, demand for long-term care\n\n\nSocietal Impact Policy reforms needed for demographic transition"
+  },
+  {
+    "objectID": "Statistical Thinking for Data Science/index.html#study-objective",
+    "href": "Statistical Thinking for Data Science/index.html#study-objective",
+    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
+    "section": "Study Objective",
+    "text": "Study Objective\n\nThrough data analysis, we aim to gain insights into the state of Singapore’s healthcare infrastructure and its ability to support the future needs of its population.\n\n\n\nQuestion 1\nWhat is the impact of age on healthcare demand?\nExamining admission rates and chronic illness burden by age group\n\n\nQuestion 2\nWill there be enough hospital beds by 2030?\nForecasting bed supply vs. projected elderly admissions"
+  },
+  {
+    "objectID": "Statistical Thinking for Data Science/index.html#data",
+    "href": "Statistical Thinking for Data Science/index.html#data",
+    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
+    "section": "Data",
+    "text": "Data\n\nSources\n\n🏛️ Singapore Government Official health statistics, MOH data, population census\n\n\n📊 Statista Supplementary demographic & healthcare metrics\n\nCleaning Pipeline\n\n\n1 Combined all data sources into a single unified file\n\n\n2 Addressed null values and data inconsistencies\n\n\n3 Aggregated data for analysis — elderly sub-groups, bed categories"
+  },
+  {
+    "objectID": "Statistical Thinking for Data Science/index.html#summary-statistics-ageing-population",
+    "href": "Statistical Thinking for Data Science/index.html#summary-statistics-ageing-population",
+    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
+    "section": "Summary Statistics · Ageing Population",
+    "text": "Summary Statistics · Ageing Population\n\n\n7.2% Elderly share (2000)\n\n\n18% Elderly share (2024)\n\n\n83.5 yrs Life expectancy (2024)\n\n\n↓ Fertility & birth rate\n\n\n\n\nPopulation Age Profile\nNegative population age graph reflecting low fertility. Middle-aged cohort forms the largest resident share. Rapidly increasing proportion of residents aged 65+.\n\n\nOutlook\nWith steady life expectancy growth reaching 83.5 years in 2024, a continuous rise in the elderly population proportion is expected through 2030 and beyond."
+  },
+  {
+    "objectID": "Statistical Thinking for Data Science/index.html#summary-statistics-hospital-beds",
+    "href": "Statistical Thinking for Data Science/index.html#summary-statistics-hospital-beds",
+    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
+    "section": "Summary Statistics · Hospital Beds",
+    "text": "Summary Statistics · Hospital Beds\n\nOverall Bed Supply\n\n+74.22% total increase since baseline\n\n\n+9.46% maximum single-year growth (2015)\n\nNursing home beds now exceed 50% share — the largest single bed category.\nCommunity hospital beds show the fastest growth at +198.7%.\nAdmissions per Bed\n\nA surge in acute admission demand among those aged 65+ reflects the growing healthcare intensity of the elderly cohort.\n\n\nCommunity hospitals remain relatively stable, suggesting they are better sized for current demand — but forecasts raise concern."
+  },
+  {
+    "objectID": "Statistical Thinking for Data Science/index.html#inferential-statistics-correlation-analysis",
+    "href": "Statistical Thinking for Data Science/index.html#inferential-statistics-correlation-analysis",
+    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
+    "section": "Inferential Statistics · Correlation Analysis",
+    "text": "Inferential Statistics · Correlation Analysis\n\n\nWhat We Tested\nPearson correlation between:\n\nElderly population size and hospital bed demand\nAge-group proportions and admission rates\nHealthcare expenditure and population ageing\n\nSignificance Testing\nCorrelation Significance Test (Pearson) applied to validate the strength of observed relationships.\n\nKey Insight\n\nStrong positive correlations were found between elderly population growth and acute bed admissions, confirming age as a primary driver of healthcare demand.\n\nRegression coefficient significance tests confirmed that ageing population metrics are statistically significant predictors of bed utilisation."
+  },
+  {
+    "objectID": "Statistical Thinking for Data Science/index.html#inferential-statistics-forecasting",
+    "href": "Statistical Thinking for Data Science/index.html#inferential-statistics-forecasting",
+    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
+    "section": "Inferential Statistics · Forecasting",
+    "text": "Inferential Statistics · Forecasting\n\nElderly Population by 2030\n\n+36% increase in ageing population admission rate\n1,026,282 elderly residents projected by 2030\n\nAssumption: Proportion of beds for the elderly reflects admission rate — 73.8% of acute beds and 97.1% of community beds.\nHospital Beds by 2030\n\n\nAcute beds: +15.8% → 13,924 beds\n\n\nCommunity beds: +29.1% → 2,973 beds\n\n\n⚠️ Shortfall of ~6,800 beds Current growth rate insufficient"
+  },
+  {
+    "objectID": "Statistical Thinking for Data Science/index.html#results",
+    "href": "Statistical Thinking for Data Science/index.html#results",
+    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
+    "section": "Results",
+    "text": "Results\n\n\n📈 Increased Life Expectancy Drives sustained growth in elderly population\n\n\n📉 Lower Fertility & Birth Rate Negative population age pyramid\n\n\n💰 Increased Healthcare Expenditure Projected SGD 30B by 2030\n\n\n\n\n🏥 Higher Hospital Admissions Surge in acute demand among 65+\n\n\n⚠️ ~6,800 Bed Shortfall by 2030 MOH’s +4,000 beds plan falls short of projected need"
+  },
+  {
+    "objectID": "Statistical Thinking for Data Science/index.html#conclusion",
+    "href": "Statistical Thinking for Data Science/index.html#conclusion",
+    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
+    "section": "Conclusion",
+    "text": "Conclusion\n\n\n🟢 Near-Term Readiness Singapore’s healthcare system can meet ageing population needs in the near term\n\n\n🔴 Long-Term Limits Expansion is constrained by land and manpower shortages, even with higher spending\n\n\n💪 Healthy Ageing Encouraging healthy ageing reduces pressure on healthcare services\n\n\n🏛️ Government Measures Job support, economic sustainability, and retirement policies complement healthcare reform\n\n\n\nMore research is needed to assess the true effectiveness of Singapore’s overall ageing strategy."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Wu Jiayan",
+    "section": "",
+    "text": "Wu Jiayan\n  \n    Master of IT in Business (Data Science & Analytics) · Singapore Management University\n  \n  \n    🤖 Machine Learning\n    📊 Visual Analytics\n    💹 Financial Data Science\n    📐 Statistical Modelling\n  \n  View Projects ↓\n\n\n\n\n  Projects & Coursework\n  \n\n    \n    \n      \n      \n        Applied Machine Learning\n        CS610 Group Project\n        End-to-end machine learning pipeline — feature engineering, model selection, and evaluation presented as a team presentation.\n      \n      \n        Scikit-learn\n        Python\n        View PDF →\n      \n    \n\n    \n    \n      \n      \n        Visual Analytics & Applications\n        Interactive Data Dashboard\n        A deployed interactive visual analytics application exploring real-world datasets with dynamic filtering and storytelling.\n      \n      \n        R / Shiny\n        ggplot2\n        Live App →\n      \n    \n\n    \n    \n      \n      \n        Financial Services\n        Data Science in Finance\n        Applied data science methodologies to financial services use cases including risk modelling and predictive analytics.\n      \n      \n        Finance\n        Analytics\n        View Slides →\n      \n    \n\n    \n    \n      \n      \n        Statistical Thinking\n        Group Project Presentation\n        Statistical inference and hypothesis testing applied to a real dataset, presented as a group research project.\n      \n      \n        Statistics\n        R\n        View Slides →\n      \n    \n\n    \n    \n      \n      \n        Internship · Competition\n        LKY Global Business Plan Competition 2027\n        Executive summary and organiser playbook for the Lee Kuan Yew Student Startup Business Plan Competition.\n      \n      \n        Strategy\n        Entrepreneurship\n        View →\n      \n    \n\n  \n\n\n\n\n\n\n  Technical Skills\n  \n    \n      Languages\n      \n        Python\n        R\n        SQL\n      \n    \n    \n      Machine Learning\n      \n        Scikit-learn\n        XGBoost\n        PyTorch\n      \n    \n    \n      Visualisation\n      \n        ggplot2\n        Plotly\n        Tableau\n      \n    \n    \n      Tools & Platforms\n      \n        Quarto\n        Git\n        Shiny"
+  },
+  {
+    "objectID": "Data Science in Financial Services/index.html#section",
+    "href": "Data Science in Financial Services/index.html#section",
+    "title": "Detecting Misconduct in Trading Floor Communications",
+    "section": "",
+    "text": "Detecting Misconduct in Trading Floor Communications\nData Science in Financial Services · Lab Exercise\n\n🔍 Keyword Search 🤖 AI Analysis 📊 TradeGuard App\n\nSingapore Management University · MITB Programme"
+  },
+  {
+    "objectID": "Data Science in Financial Services/index.html#background",
+    "href": "Data Science in Financial Services/index.html#background",
+    "title": "Detecting Misconduct in Trading Floor Communications",
+    "section": "Background",
+    "text": "Background\n\nRegulatory Context\n\n📋 FMSB Annual Report 2017 FICC Markets Standards Board\n\n\n🏦 BNM Code of Conduct 2017 Malaysian Wholesale Financial Markets\n\n\n📘 Singapore Blue Book 2013 Guide to Conduct & Market Practice for Treasury Activities\n\nWhat Are We Detecting?\n\nTrading floor communications can contain evidence of market misconduct — attempts to manipulate prices, share confidential information, or collude with counterparties.\nIdentifying these patterns at scale requires systematic techniques that go beyond manual review."
+  },
+  {
+    "objectID": "Data Science in Financial Services/index.html#misconduct-taxonomy",
+    "href": "Data Science in Financial Services/index.html#misconduct-taxonomy",
+    "title": "Detecting Misconduct in Trading Floor Communications",
+    "section": "Misconduct Taxonomy",
+    "text": "Misconduct Taxonomy\n\n\n🎯 Market Influence False info, staggered orders, one-way quotes, opposing trades\n\n\n⚡ Front-Running Trading ahead of large client orders\n\n\n📍 Mark the Market Small-volume trades near close to skew price\n\n\n🔒 Confidential Info Soliciting or sharing MNPI\n\n\n🗝️ Codewords Disguised language (naga, askar, tiger, strawberry…)\n\n\n🌐 Non-Approved Languages Using disallowed languages to obscure intent"
+  },
+  {
+    "objectID": "Data Science in Financial Services/index.html#lab-1-codeword-detection",
+    "href": "Data Science in Financial Services/index.html#lab-1-codeword-detection",
+    "title": "Detecting Misconduct in Trading Floor Communications",
+    "section": "Lab 1 · Codeword Detection",
+    "text": "Lab 1 · Codeword Detection\n\n\nTechnique\nExcel keyword search (naga, askar, tiger) → highlight rows → manual context analysis of surrounding messages.\nFindings\n\n✅ naga — Confirmed misconduct: market sensitive client mandate shared\n\n\n✅ strawberry — Confirmed: spoofing request (“flash a huge sell order, don’t intend to trade”)\n\n\n⚠️ dragon — False alarm: refers to a known counterparty, not collusion\n\n\nLimitations\n\n❌ Keywords like tiger return zero results — exhaustive list is time-consuming\n\n\n❌ High proportion of false alarms for common words\n\n\n❌ Labour-intensive manual context review for every hit\n\n\nKeyword search is a useful starting point but not scalable for large message volumes."
+  },
+  {
+    "objectID": "Data Science in Financial Services/index.html#lab-2-soliciting-confidential-info",
+    "href": "Data Science in Financial Services/index.html#lab-2-soliciting-confidential-info",
+    "title": "Detecting Misconduct in Trading Floor Communications",
+    "section": "Lab 2 · Soliciting Confidential Info",
+    "text": "Lab 2 · Soliciting Confidential Info\n\n\nObjective\nIdentify attempts to solicit (ask for, request for) confidential / non-public information in chat logs.\nApproach\nAI tools used to generate a targeted misconduct keyword dictionary.\nExcel search for phrases such as:\n\nbehind the scenes off the record favor / favour axe mandate\n\n\nKeyword Dictionary Categories\n\n🔴 Front Running 🔴 Insider Trading 🔴 Marking the Close 🔴 Collusion & Price Fixing 🔴 Wash Trades & Position Parking 🔴 Spoofing 🟡 Gifts & Entertainment 🟡 Concealment & Ambiguous Language 🟡 Urgency & Pressure Signals"
+  },
+  {
+    "objectID": "Data Science in Financial Services/index.html#lab-3-tradeguard-ai-app",
+    "href": "Data Science in Financial Services/index.html#lab-3-tradeguard-ai-app",
+    "title": "Detecting Misconduct in Trading Floor Communications",
+    "section": "Lab 3 · TradeGuard AI App",
+    "text": "Lab 3 · TradeGuard AI App\n\nWhat We Built\nA Google AI Studio application — TradeGuard — that automates the full misconduct detection workflow:\n\n\n📁 Upload a CSV message log for full-document analysis\n\n\n🔍 Keyword search with click-to-filter by category\n\n\n💬 Context viewer — click any result to see surrounding messages\n\n\n🤖 AI segment analysis — instant LLM verdict on flagged messages\n\n\n\n\n🛡️ TradeGuard AI\nMisconduct detection powered by Google AI Studio\nLaunch App →"
+  },
+  {
+    "objectID": "Data Science in Financial Services/index.html#lab-3-app-results",
+    "href": "Data Science in Financial Services/index.html#lab-3-app-results",
+    "title": "Detecting Misconduct in Trading Floor Communications",
+    "section": "Lab 3 · App Results",
+    "text": "Lab 3 · App Results\n\nCodeword Outcomes\n\n✅ naga — True positive: client mandate leak “Hearing Naga might be looking to buy a lot GII next week”\n\n\n✅ strawberry — True positive: spoofing “Need to push the Strawberry price down… flash a huge sell order”\n\n\n⚠️ askar — App flagged as false alarm correctly Context analysis confirmed non-malicious usage\n\nvs. Excel Keyword Search\n\n\n\nDimension\nExcel\nTradeGuard AI\n\n\n\n\nSpeed\nSlow\nFast\n\n\nScale\nLimited\nLarge volumes\n\n\nContext\nManual\nAutomated\n\n\nAccuracy\nHuman-dependent\nAI-assisted\n\n\nDictionary\nStatic\nUpdateable"
+  },
+  {
+    "objectID": "Data Science in Financial Services/index.html#lab-4-full-scan-results",
+    "href": "Data Science in Financial Services/index.html#lab-4-full-scan-results",
+    "title": "Detecting Misconduct in Trading Floor Communications",
+    "section": "Lab 4 · Full Scan Results",
+    "text": "Lab 4 · Full Scan Results\nTradeGuard AI full-document scan identified 10 high-severity violations:\n\n\nHIGH Insider Trading / Confidentiality 200M client sell order disclosed — price-insensitive nature shared\n\n\nHIGH Front-Running Immediate 10M sell placed after leaked 200M order\n\n\nHIGH Collusion / Price Fixing Agreement to keep bid/ask spread wide on MGS 0735\n\n\nHIGH Spoofing / Market Manipulation “Flash a huge sell order… don’t intend to trade it”\n\n\nHIGH Bid Rigging Coordinated bid levels for GII 0535 government auction\n\n\nHIGH Client Mandate Leak 500M buy mandate shared — position adjusted on leaked info"
+  },
+  {
+    "objectID": "Data Science in Financial Services/index.html#comparative-assessment",
+    "href": "Data Science in Financial Services/index.html#comparative-assessment",
+    "title": "Detecting Misconduct in Trading Floor Communications",
+    "section": "Comparative Assessment",
+    "text": "Comparative Assessment\n\n\n🔎 Excel Keyword Search\nStrengths Simple, transparent, auditable\nWeaknesses Labour-intensive, high false alarm rate, no context awareness, doesn’t scale\n\n\n🤖 TradeGuard AI\nStrengths Scalable, context-aware, AI-powered verdict, updateable dictionary\nWeaknesses Requires internet access, LLM can hallucinate, needs validation layer\n\n\n✅ Recommendation\nHybrid approach — keyword search as a first-pass filter, TradeGuard AI for context analysis and prioritisation of true positives.\n\n\n\n🛡️ TradeGuard AI App — try it live →"
   },
   {
     "objectID": "Internship/SMU_Competition_2027_ExecutiveSummary.html#section",

@@ -1,4 +1,303 @@
 ---
-title: "Data Science Projects"
+title: "Wu Jiayan"
+subtitle: "Data Science & Analytics | Singapore Management University"
+page-layout: full
+toc: false
 ---
 
+```{=html}
+<style>
+  /* ── Reset Quarto page chrome ── */
+  #quarto-content { padding: 0; }
+  .page-layout-full .column-page { max-width: 100%; padding: 0; }
+
+  /* ── Design tokens ── */
+  :root {
+    --accent:    #2563a8;
+    --accent-lt: #e8f0fb;
+    --text:      #1a1a2e;
+    --muted:     #6b7280;
+    --border:    #e5e7eb;
+    --card-bg:   #ffffff;
+    --radius:    12px;
+    --shadow:    0 4px 24px rgba(0,0,0,.08);
+  }
+  [data-bs-theme="dark"] {
+    --accent:    #5b9bd5;
+    --accent-lt: #1e2d45;
+    --text:      #e2e8f0;
+    --muted:     #94a3b8;
+    --border:    #2d3748;
+    --card-bg:   #1e2535;
+  }
+
+  body { color: var(--text); }
+
+  /* ── Hero ── */
+  .hero {
+    background: linear-gradient(135deg, #1b2a4a 0%, #2563a8 100%);
+    color: #fff;
+    padding: 80px 40px 72px;
+    text-align: center;
+  }
+  .hero-avatar {
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    border: 4px solid rgba(255,255,255,.4);
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero h1 { font-size: 2.6rem; font-weight: 700; margin: 0 0 8px; }
+  .hero .tagline {
+    font-size: 1.1rem; opacity: .85; margin: 0 0 28px;
+    max-width: 560px; margin-left: auto; margin-right: auto;
+  }
+  .hero-badges { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 32px; }
+  .badge-pill {
+    background: rgba(255,255,255,.18);
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 999px;
+    padding: 5px 16px;
+    font-size: .85rem;
+    backdrop-filter: blur(4px);
+  }
+  .hero-cta {
+    display: inline-block;
+    background: #fff; color: #2563a8;
+    font-weight: 600; font-size: .95rem;
+    padding: 11px 28px; border-radius: 8px;
+    text-decoration: none;
+    transition: transform .15s, box-shadow .15s;
+  }
+  .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.2); }
+
+  /* ── Section chrome ── */
+  .section { padding: 64px 40px; max-width: 1100px; margin: 0 auto; }
+  .section-title {
+    font-size: 1.5rem; font-weight: 700;
+    color: var(--accent);
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin-bottom: 32px;
+  }
+
+  /* ── Project grid ── */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  .project-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .project-card:hover { transform: translateY(-4px); box-shadow: 0 10px 32px rgba(0,0,0,.12); }
+  .card-header-band {
+    height: 6px;
+    background: linear-gradient(90deg, #2563a8, #5b9bd5);
+  }
+  .card-body { padding: 22px 24px; flex: 1; }
+  .card-category {
+    font-size: .75rem; font-weight: 600; letter-spacing: .06em;
+    text-transform: uppercase; color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .card-title { font-size: 1.1rem; font-weight: 700; margin: 0 0 10px; }
+  .card-desc { font-size: .9rem; color: var(--muted); line-height: 1.6; margin: 0; }
+  .card-footer-row {
+    padding: 14px 24px;
+    border-top: 1px solid var(--border);
+    display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+  }
+  .tag {
+    background: var(--accent-lt);
+    color: var(--accent);
+    font-size: .75rem; font-weight: 500;
+    padding: 3px 10px; border-radius: 999px;
+  }
+  .card-link {
+    margin-left: auto;
+    font-size: .85rem; font-weight: 600;
+    color: var(--accent); text-decoration: none;
+    display: flex; align-items: center; gap: 4px;
+  }
+  .card-link:hover { text-decoration: underline; }
+
+  /* ── Skills ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .skill-group { }
+  .skill-group-title {
+    font-size: .8rem; font-weight: 700; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+  .skill-tag {
+    background: var(--accent-lt);
+    color: var(--accent);
+    font-size: .8rem;
+    padding: 4px 12px; border-radius: 6px;
+  }
+
+  /* ── Divider ── */
+  .section-divider { border: none; border-top: 1px solid var(--border); margin: 0 40px; }
+
+  /* ── Footer ── */
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 1.9rem; }
+    .project-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<!-- ══════ HERO ══════ -->
+<div class="hero">
+  <img class="hero-avatar" src="photo.jpg" alt="Wu Jiayan">
+  <h1>Wu Jiayan</h1>
+  <p class="tagline">
+    Master of IT in Business (Data Science & Analytics) · Singapore Management University
+  </p>
+  <div class="hero-badges">
+    <span class="badge-pill">🤖 Machine Learning</span>
+    <span class="badge-pill">📊 Visual Analytics</span>
+    <span class="badge-pill">💹 Financial Data Science</span>
+    <span class="badge-pill">📐 Statistical Modelling</span>
+  </div>
+  <a class="hero-cta" href="#projects">View Projects ↓</a>
+</div>
+
+<!-- ══════ PROJECTS ══════ -->
+<div class="section" id="projects">
+  <div class="section-title">Projects & Coursework</div>
+  <div class="project-grid">
+
+    <!-- Card 1 -->
+    <div class="project-card">
+      <div class="card-header-band"></div>
+      <div class="card-body">
+        <div class="card-category">Applied Machine Learning</div>
+        <div class="card-title">CS610 Group Project</div>
+        <p class="card-desc">End-to-end machine learning pipeline — feature engineering, model selection, and evaluation presented as a team presentation.</p>
+      </div>
+      <div class="card-footer-row">
+        <span class="tag">Scikit-learn</span>
+        <span class="tag">Python</span>
+        <a class="card-link" href="Applied Machine Learning/CS610_Team7_GroupProject_Presentation_Slides.pdf">View PDF →</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="project-card">
+      <div class="card-header-band"></div>
+      <div class="card-body">
+        <div class="card-category">Visual Analytics & Applications</div>
+        <div class="card-title">Interactive Data Dashboard</div>
+        <p class="card-desc">A deployed interactive visual analytics application exploring real-world datasets with dynamic filtering and storytelling.</p>
+      </div>
+      <div class="card-footer-row">
+        <span class="tag">R / Shiny</span>
+        <span class="tag">ggplot2</span>
+        <a class="card-link" href="https://isss-608-vaa-iota.vercel.app/" target="_blank">Live App →</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="project-card">
+      <div class="card-header-band"></div>
+      <div class="card-body">
+        <div class="card-category">Financial Services</div>
+        <div class="card-title">Data Science in Finance</div>
+        <p class="card-desc">Applied data science methodologies to financial services use cases including risk modelling and predictive analytics.</p>
+      </div>
+      <div class="card-footer-row">
+        <span class="tag">Finance</span>
+        <span class="tag">Analytics</span>
+        <a class="card-link" href="Data Science in Financial Services/index.html">View Slides →</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="project-card">
+      <div class="card-header-band"></div>
+      <div class="card-body">
+        <div class="card-category">Statistical Thinking</div>
+        <div class="card-title">Group Project Presentation</div>
+        <p class="card-desc">Statistical inference and hypothesis testing applied to a real dataset, presented as a group research project.</p>
+      </div>
+      <div class="card-footer-row">
+        <span class="tag">Statistics</span>
+        <span class="tag">R</span>
+        <a class="card-link" href="Statistical Thinking for Data Science/index.html">View Slides →</a>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="project-card">
+      <div class="card-header-band"></div>
+      <div class="card-body">
+        <div class="card-category">Internship · Competition</div>
+        <div class="card-title">LKY Global Business Plan Competition 2027</div>
+        <p class="card-desc">Executive summary and organiser playbook for the Lee Kuan Yew Student Startup Business Plan Competition.</p>
+      </div>
+      <div class="card-footer-row">
+        <span class="tag">Strategy</span>
+        <span class="tag">Entrepreneurship</span>
+        <a class="card-link" href="Internship/SMU_Competition_2027_ExecutiveSummary.html">View →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ══════ SKILLS ══════ -->
+<div class="section">
+  <div class="section-title">Technical Skills</div>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <div class="skill-group-title">Languages</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">R</span>
+        <span class="skill-tag">SQL</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Machine Learning</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Scikit-learn</span>
+        <span class="skill-tag">XGBoost</span>
+        <span class="skill-tag">PyTorch</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Visualisation</div>
+      <div class="skill-tags">
+        <span class="skill-tag">ggplot2</span>
+        <span class="skill-tag">Plotly</span>
+        <span class="skill-tag">Tableau</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Tools & Platforms</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Quarto</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Shiny</span>
+      </div>
+    </div>
+  </div>
+</div>
+```
