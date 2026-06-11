@@ -1,0 +1,85 @@
+---
+title: "Dynamic Pricing for Cape Town Airbnb Listings"
+subtitle: "Data Science for Business"
+author: "Wu Jiayan and project team"
+date: "2026-04-04"
+toc: true
+toc-depth: 3
+code-fold: true
+format:
+  html:
+    theme: cosmo
+    embed-resources: true
+---
+
+## Project overview
+
+This project builds a pricing engine that recommends a nightly rate by maximizing expected revenue rather than occupancy alone.
+
+$$
+\text{Expected Revenue}(p)=p\times P(\text{booking}\mid p,\mathbf{x})
+$$
+
+Here, $p$ is a candidate nightly price and $\mathbf{x}$ represents listing, location, host, review, and calendar features.
+
+## Decision workflow
+
+```{mermaid}
+flowchart LR
+  A["Listing and calendar data"] --> B["Booking-probability model"]
+  B --> C["Simulate candidate prices"]
+  C --> D["Estimate expected revenue"]
+  D --> E["Recommend revenue-maximizing price"]
+```
+
+## Data preparation
+
+Listing and calendar records are merged, after which a market-comparable anchor is calculated using median prices for the same neighbourhood, room type, and bedroom count. The model uses the listing's price relative to this local market median.
+
+Key predictors include:
+
+- Price ratio and market anchor.
+- Capacity, bedrooms, room type, and neighbourhood.
+- Month, day of week, and weekend indicator.
+- Review score and number of reviews.
+- Superhost status and minimum-night requirement.
+
+Numeric variables are imputed and standardized; categorical variables are imputed and one-hot encoded.
+
+## Predictive model
+
+A Random Forest classifier predicts booking probability. It was trained on a one-million-row sample with class balancing and achieved a reported holdout ROC-AUC of **0.8441**.
+
+The optimization layer evaluates a range of candidate prices and selects the point with the greatest expected daily revenue. The same process can be applied in batch to newly listed properties whose own pricing history is unavailable.
+
+## Demonstration
+
+For Cape Town listing `231402`, the project compares an off-peak and peak-season date.
+
+| Scenario | Market anchor | Recommended price | Booking probability | Expected revenue |
+|---|---:|---:|---:|---:|
+| 24 June 2026 | R1,200 | R2,400 | 24.58% | R589.82 |
+| 24 December 2026 | R1,200 | R1,900 | 40.4% | R767 |
+
+The June example nearly doubles expected revenue relative to the static-price estimate reported in the presentation. The December recommendation is lower than June's optimized price but generates greater expected revenue because predicted demand is stronger.
+
+## Business implications
+
+- Pricing should respond to date-level elasticity rather than rely only on fixed seasonal rules.
+- Premium, scarce, highly rated listings may retain demand at higher prices.
+- Better host revenue can also increase platform commission revenue.
+- Batch scoring makes the workflow suitable for targeted Smart Pricing recommendations.
+
+## Limitations and next steps
+
+- Replace the random split with a time-based evaluation for a temporal pricing application.
+- Calibrate predicted booking probabilities.
+- Add guardrails against extreme price recommendations.
+- Incorporate events, competitor availability, lead time, and length-of-stay effects.
+- Validate revenue uplift through controlled online experiments.
+
+## Source artifacts
+
+- [Pricing notebook](Pricing%20Optimization%20Model.ipynb)
+- [Presentation](Pricing%20Optimization%20Model%20Presentation.pptx)
+- [Presentation script](Presentation%20Script.docx)

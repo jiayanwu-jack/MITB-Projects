@@ -1,0 +1,114 @@
+---
+title: "Singapore Water Sufficiency to 2060"
+subtitle: "Spreadsheet Modelling for Decision Making"
+author: "Group 7"
+date: "2026-01-19"
+toc: true
+toc-depth: 3
+format:
+  html:
+    theme: cosmo
+    embed-resources: true
+---
+
+## Project overview
+
+This project evaluates whether Singapore's planned water supply can meet population and economic demand through 2060. It also models tariff adjustments that preserve a minimum security buffer.
+
+::: {.callout-note}
+## Hypothesis
+Singapore's water supply is sufficient to support population and economic growth until 2060 under plausible supply and demand scenarios.
+:::
+
+## Model structure
+
+```{mermaid}
+flowchart LR
+  P["Population forecast"] --> D["Total demand"]
+  C["Per-capita consumption"] --> D
+  T["Tariff and elasticity"] --> C
+  L["Local catchment"] --> S["Total supply"]
+  I["Imported water"] --> S
+  N["NEWater"] --> S
+  A["Desalination"] --> S
+  S --> R["Reserve margin"]
+  D --> R
+```
+
+Total domestic demand is:
+
+$$
+\text{Domestic Demand}_t =
+\frac{\text{Population}_t \times \text{Per-Capita Use}_t \times 365}{1000}
+$$
+
+Industrial demand is derived from an industrial share that increases toward 70% of total demand by 2060. System adequacy is measured as:
+
+$$
+\text{Reserve Margin}_t =
+\frac{\text{Total Supply}_t}{\text{Total Demand}_t}-1
+$$
+
+## Inputs and assumptions
+
+- Population history from 2000 to 2025, projected to 2060 with uncertainty bounds.
+- Per-capita consumption history from 2013 to 2022, with low, baseline, and high scenarios.
+- Baseline tariff elasticity of -0.2: a 10% tariff increase reduces consumption by approximately 2%.
+- Four supply sources: local catchment, imported water, NEWater, and desalination.
+- Imported-water reliability and agreement-expiry logic.
+- Existing and planned plants with an 80% capacity factor.
+- Rainfall and climate-trend controls for local catchment supply.
+
+## Capacity outlook
+
+The report projects total demand rising from roughly 765 million cubic metres per year in 2026 to about 1.19 billion by 2060 under its reported baseline narrative. Planned capacity additions at Tuas Nexus in 2027 and Kranji-Changi in 2035 increase modeled supply.
+
+The workbook's cached high-population, baseline-consumption scenario shows:
+
+| Year | Demand (million m³) | Supply (million m³) | Reserve margin |
+|---|---:|---:|---:|
+| 2026 | 797.5 | 1,029.1 | 29.0% |
+| 2027 | 820.2 | 1,263.5 | 54.0% |
+| 2035 | 986.0 | 1,557.5 | 58.0% |
+| 2055 | 1,413.2 | 1,557.5 | 10.2% |
+| 2060 | 1,415.9 | 1,557.5 | 10.0% |
+
+## Tariff optimization
+
+Excel Solver minimizes the average annual tariff increase from 2026 to 2060 subject to:
+
+- A minimum tariff-policy threshold.
+- A reserve margin of at least 10% in every year.
+- Selected population and consumption scenarios.
+
+In the cached scenario, the average annual increase is approximately **3.15%**. The required path becomes steep late in the horizon, reaching approximately 36.8% in 2060, which reveals an affordability and feasibility trade-off even when the physical security constraint is met.
+
+## Elasticity sensitivity
+
+At 2060:
+
+| Elasticity | Reserve margin |
+|---:|---:|
+| -0.1 | 5.8% |
+| -0.2 | 10.0% |
+| -0.3 | 14.6% |
+| -0.5 | 24.9% |
+| -1.0 | 61.3% |
+
+If consumers respond less strongly than assumed, the optimized tariff path no longer maintains the desired buffer. This makes behavioral uncertainty a material policy risk.
+
+## Conclusion and recommendations
+
+The exploratory model supports water sufficiency through 2060 if planned infrastructure is delivered and operated reliably. Recommended actions include:
+
+- Preserve capacity-expansion schedules and reliability.
+- Use adaptive tariffs alongside conservation programs.
+- Monitor demand and elasticity rather than rely on a fixed response assumption.
+- Plan post-2035 reclamation or desalination options for resilience beyond 2060.
+- Evaluate affordability separately from physical supply adequacy.
+
+## Source artifacts
+
+- [Excel model](Singapore_Water_Model_Template%20solver%20sensitivity%20working.xlsx)
+- [Final report](Final%20Report%20Group%207%20-%20Water%20Tariff.docx)
+- [Presentation](Group%207%20-%20Spreadsheet%20Modelling%20for%20Water%20Supply%20Presentation%20Slide.pptx)

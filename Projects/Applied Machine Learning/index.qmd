@@ -1,0 +1,81 @@
+---
+title: "Forecasting HDB Resale Prices with Ensemble Learning"
+subtitle: "Applied Machine Learning"
+author: "Wu Jiayan and project team"
+date: "2026-04-05"
+toc: true
+toc-depth: 3
+code-fold: true
+format:
+  html:
+    theme: cosmo
+    embed-resources: true
+---
+
+## Project overview
+
+This project develops a machine-learning estimator for future Singapore HDB resale prices and tests whether ensemble learning can outperform standalone models under genuine future-market conditions.
+
+::: {.callout-note}
+## Research question
+Can a stacking ensemble reduce forecasting error on future transactions when compared with linear, tree-based, and boosting baselines?
+:::
+
+## Data and validation design
+
+The analysis uses a chronological split to avoid temporal leakage.
+
+| Partition | Transaction period | Rows | Purpose |
+|---|---:|---:|---|
+| Training | Up to 2023 | 169,150 | Model fitting and time-series cross-validation |
+| Validation | 2024 | 27,832 | Model selection |
+| Test | 2025 onward | 27,683 | Locked future evaluation |
+
+Hyperparameters were tuned with five-fold time-series cross-validation. Each validation fold occurs after its training fold, matching the intended forecasting use case more closely than a random split.
+
+## Feature engineering
+
+The modelling dataset combines:
+
+- Property attributes: floor area, flat type, flat model, storey midpoint, and remaining lease.
+- Location attributes: town, coordinates, MRT distances, and nearest-school distance.
+- Time attributes: transaction year and continuous time index.
+- Structural-event indicators: post-COVID period, December 2021 cooling measures, September 2022 cooling measures, and higher-interest-rate period.
+- One-hot encoded categorical variables.
+
+The target is resale price per square metre. A log transformation is applied through `TransformedTargetRegressor`.
+
+## Models
+
+The comparison includes Linear Regression, Ridge, Lasso, Decision Tree, Random Forest, Gradient Boosting, and a stacking ensemble. The ensemble combines tuned Random Forest, Gradient Boosting, and Ridge base estimators with a Ridge meta-model.
+
+## Results
+
+| Model | Test MAE | Test RMSE | Test R² |
+|---|---:|---:|---:|
+| Linear Regression | 849.92 | 1,020.71 | 0.6261 |
+| Ridge | 849.83 | 1,020.56 | 0.6263 |
+| Lasso | 839.79 | 1,013.60 | 0.6313 |
+| Decision Tree | 836.01 | 1,025.20 | 0.6229 |
+| Random Forest | 827.34 | 985.85 | 0.6513 |
+| Gradient Boosting | 803.08 | 935.77 | 0.6858 |
+| **Stacking Ensemble** | **725.87** | **865.13** | **0.7314** |
+
+Relative to Ridge, the stacking ensemble reduces RMSE by approximately 155 per square metre, reduces MAE by approximately 124 per square metre, and improves R² by about 10 percentage points.
+
+## Conclusion
+
+The stacking ensemble provides the strongest future-period performance. The result supports using complementary nonlinear learners when modelling a housing market affected by location, property characteristics, policy interventions, and changing macroeconomic conditions.
+
+## Limitations and next steps
+
+- Monitor feature and price drift after deployment.
+- Retrain periodically using newly completed transactions.
+- Confirm that every feature is available at prediction time.
+- Add prediction intervals and subgroup error analysis by town and flat type.
+- Compare the ensemble with modern gradient-boosting libraries under the same temporal protocol.
+
+## Source artifacts
+
+- [Research report](Research%20Report.docx)
+- [Ensemble methods notebook](RQ4%20Ensemble%20Methods.ipynb)

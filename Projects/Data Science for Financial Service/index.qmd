@@ -1,0 +1,72 @@
+---
+title: "AI-Assisted Trade Surveillance"
+subtitle: "Data Science for Financial Services"
+author: "Wu Jiayan"
+date: "2026-05-12"
+toc: true
+toc-depth: 3
+format:
+  html:
+    theme: cosmo
+    embed-resources: true
+---
+
+## Project overview
+
+The lab examines how misconduct can be detected in trading-floor communications. It compares manual Excel keyword searches with an AI-assisted TradeGuard workflow built in Google AI Studio.
+
+## Surveillance scope
+
+The analysis searches for several forms of potential misconduct:
+
+- Market manipulation, including spoofing, layering, and price fixing.
+- Front-running ahead of a pending client order.
+- Solicitation or disclosure of material non-public information.
+- Codewords and non-approved languages used to conceal intent.
+
+## Approaches compared
+
+| Dimension | Excel keyword search | TradeGuard AI |
+|---|---|---|
+| Detection logic | Exact predefined terms | Terms plus contextual reasoning |
+| Review effort | Manual review around every match | Automated segment analysis |
+| False alarms | High when legitimate jargon matches | Better differentiation using intent |
+| New patterns | Limited to known words | Can suggest emerging codewords |
+| Regulatory context | Added manually | Can map behavior to regulatory concepts |
+
+## Key learning: intent matters
+
+Keyword matching is a useful transparent baseline, but misconduct is rarely captured by one word in isolation. The AI-assisted workflow linked conversation segments and interpreted intent, including:
+
+- Differentiating legitimate market colour from suspicious instructions.
+- Identifying possible concealed language such as newly emerging codewords.
+- Linking confidential-information leakage with a subsequent trade.
+- Explaining why a segment might represent spoofing or front-running.
+
+```{mermaid}
+flowchart TD
+  A["Chat communications"] --> B["Dictionary and keyword screening"]
+  B --> C["Context-window analysis"]
+  C --> D["Intent and behavior classification"]
+  D --> E["Regulatory mapping"]
+  E --> F["Human compliance review"]
+```
+
+## Conclusion
+
+Modern surveillance should move beyond static word hunting toward contextual intent analysis. AI can improve triage speed and surface linked behavior, but it should support rather than replace compliance professionals.
+
+## Governance requirements
+
+An operational implementation would require:
+
+- A labelled evaluation set with precision, recall, and false-positive reporting.
+- Human adjudication before any enforcement action.
+- Explainable alerts with preserved source context.
+- Access controls, privacy safeguards, and audit trails.
+- Version-controlled surveillance dictionaries and prompts.
+- Monitoring for model drift and language changes.
+
+## Source artifact
+
+- [Individual lab report](Individual%20Lab%20Report.docx)

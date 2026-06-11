@@ -248,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Wu Jiayan</span>
+    <span class="navbar-title">Data Analytics</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -263,24 +263,39 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
-    <a class="dropdown-item" href="./Applied Machine Learning/CS610_Team7_GroupProject_Presentation_Slides.pdf"><i class="bi bi-file-earmark-slides" role="img">
+    <a class="dropdown-item" href="./Projects/Applied Machine Learning/index.html"><i class="bi bi-file-earmark-slides" role="img">
 </i> 
  <span class="dropdown-text">Applied Machine Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://isss-608-vaa-iota.vercel.app/"><i class="bi bi-bar-chart-line" role="img">
+    <a class="dropdown-item" href="./Projects/Data Science for Business/index.html"><i class="bi bi-graph-up-arrow" role="img">
 </i> 
- <span class="dropdown-text">Visual Analytics &amp; Applications</span></a>
+ <span class="dropdown-text">Data Science for Business</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Data Science in Financial Services/index.html"><i class="bi bi-cash-coin" role="img">
+    <a class="dropdown-item" href="./Projects/Data Science for Financial Service/index.html"><i class="bi bi-cash-coin" role="img">
 </i> 
- <span class="dropdown-text">Data Science in Financial Services</span></a>
+ <span class="dropdown-text">Data Science for Financial Services</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Statistical Thinking for Data Science/index.html"><i class="bi bi-graph-up" role="img">
+    <a class="dropdown-item" href="./Projects/Query Processing and Optimisation/index.html"><i class="bi bi-database" role="img">
+</i> 
+ <span class="dropdown-text">Query Processing and Optimisation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Projects/Spreadsheet Modelling for Decision Making/index.html"><i class="bi bi-table" role="img">
+</i> 
+ <span class="dropdown-text">Spreadsheet Modelling</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Projects/Statistical Thinking for Data Science/index.html"><i class="bi bi-graph-up" role="img">
 </i> 
  <span class="dropdown-text">Statistical Thinking for Data Science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://isss-608-vaa-iota.vercel.app/"><i class="bi bi-bar-chart-line" role="img">
+</i> 
+ <span class="dropdown-text">Visual Analytics and Applications</span></a>
   </li>  
     </ul>
   </li>
@@ -383,7 +398,13 @@ ul.task-list li input[type="checkbox"] {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transition: transform .2s, box-shadow .2s;
   }
+  .hero-avatar:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 28px rgba(0,0,0,.28);
+  }
+  .profile-link { display: inline-block; text-decoration: none; }
   .hero h1 { font-size: 2.6rem; font-weight: 700; margin: 0 0 8px; }
   .hero .tagline {
     font-size: 1.1rem; opacity: .85; margin: 0 0 28px;
@@ -497,10 +518,12 @@ ul.task-list li input[type="checkbox"] {
 
 <!-- ══════ HERO ══════ -->
 <div class="hero">
-  <img class="hero-avatar" src="photo.jpg" alt="Wu Jiayan">
+  <a class="profile-link" href="Resume/" aria-label="View Wu Jiayan's resume" title="View resume">
+    <img class="hero-avatar" src="photo.jpg" alt="Wu Jiayan">
+  </a>
   <h1>Wu Jiayan</h1>
   <p class="tagline">
-    Master of IT in Business (Data Science &amp; Analytics) · Singapore Management University
+    Master of IT in Business (Data Science &amp; Analytics)<br>Singapore Management University
   </p>
   <div class="hero-badges">
     <span class="badge-pill">🤖 Machine Learning</span>
@@ -520,14 +543,14 @@ ul.task-list li input[type="checkbox"] {
     <div class="project-card">
       <div class="card-header-band"></div>
       <div class="card-body">
-        <div class="card-category">Applied Machine Learning</div>
-        <div class="card-title">CS610 Group Project</div>
-        <p class="card-desc">End-to-end machine learning pipeline — feature engineering, model selection, and evaluation presented as a team presentation.</p>
+        <div class="card-category">Visual Analytics and Applications</div>
+        <div class="card-title">Interactive Visual Analytics Application</div>
+        <p class="card-desc">A deployed visual analytics website presenting interactive exploration and data-driven storytelling.</p>
       </div>
       <div class="card-footer-row">
-        <span class="tag">Scikit-learn</span>
-        <span class="tag">Python</span>
-        <a class="card-link" href="Applied Machine Learning/CS610_Team7_GroupProject_Presentation_Slides.pdf">View PDF →</a>
+        <span class="tag">Visual Analytics</span>
+        <span class="tag">Interactive App</span>
+        <a class="card-link" href="https://isss-608-vaa-iota.vercel.app/" target="_blank" rel="noopener">Visit website →</a>
       </div>
     </div>
 
@@ -535,14 +558,14 @@ ul.task-list li input[type="checkbox"] {
     <div class="project-card">
       <div class="card-header-band"></div>
       <div class="card-body">
-        <div class="card-category">Visual Analytics &amp; Applications</div>
-        <div class="card-title">Interactive Data Dashboard</div>
-        <p class="card-desc">A deployed interactive visual analytics application exploring real-world datasets with dynamic filtering and storytelling.</p>
+        <div class="card-category">Applied Machine Learning</div>
+        <div class="card-title">HDB Resale Price Forecasting</div>
+        <p class="card-desc">Leakage-aware future price forecasting using tuned baseline models and an optimized stacking ensemble.</p>
       </div>
       <div class="card-footer-row">
-        <span class="tag">R / Shiny</span>
-        <span class="tag">ggplot2</span>
-        <a class="card-link" href="https://isss-608-vaa-iota.vercel.app/" target="_blank">Live App →</a>
+        <span class="tag">Scikit-learn</span>
+        <span class="tag">Python</span>
+        <a class="card-link" href="Projects/Applied Machine Learning/">View report →</a>
       </div>
     </div>
 
@@ -550,14 +573,14 @@ ul.task-list li input[type="checkbox"] {
     <div class="project-card">
       <div class="card-header-band"></div>
       <div class="card-body">
-        <div class="card-category">Financial Services</div>
-        <div class="card-title">Data Science in Finance</div>
-        <p class="card-desc">Applied data science methodologies to financial services use cases including risk modelling and predictive analytics.</p>
+        <div class="card-category">Data Science for Business</div>
+        <div class="card-title">Airbnb Dynamic Pricing</div>
+        <p class="card-desc">A booking-probability and expected-revenue engine that recommends date-specific nightly prices.</p>
       </div>
       <div class="card-footer-row">
-        <span class="tag">Finance</span>
-        <span class="tag">Analytics</span>
-        <a class="card-link" href="Data Science in Financial Services/index.html">View Slides →</a>
+        <span class="tag">Random Forest</span>
+        <span class="tag">Optimization</span>
+        <a class="card-link" href="Projects/Data Science for Business/">View report →</a>
       </div>
     </div>
 
@@ -565,14 +588,14 @@ ul.task-list li input[type="checkbox"] {
     <div class="project-card">
       <div class="card-header-band"></div>
       <div class="card-body">
-        <div class="card-category">Statistical Thinking</div>
-        <div class="card-title">Group Project Presentation</div>
-        <p class="card-desc">Statistical inference and hypothesis testing applied to a real dataset, presented as a group research project.</p>
+        <div class="card-category">Financial Services</div>
+        <div class="card-title">AI Trade Surveillance</div>
+        <p class="card-desc">Comparison of keyword screening and contextual AI analysis for misconduct detection in trading communications.</p>
       </div>
       <div class="card-footer-row">
-        <span class="tag">Statistics</span>
-        <span class="tag">R</span>
-        <a class="card-link" href="Statistical Thinking for Data Science/index.html">View Slides →</a>
+        <span class="tag">Compliance</span>
+        <span class="tag">LLM</span>
+        <a class="card-link" href="Projects/Data Science for Financial Service/">View report →</a>
       </div>
     </div>
 
@@ -580,14 +603,44 @@ ul.task-list li input[type="checkbox"] {
     <div class="project-card">
       <div class="card-header-band"></div>
       <div class="card-body">
-        <div class="card-category">Internship · Competition</div>
-        <div class="card-title">LKY Global Business Plan Competition 2027</div>
-        <p class="card-desc">Executive summary and organiser playbook for the Lee Kuan Yew Student Startup Business Plan Competition.</p>
+        <div class="card-category">Query Processing</div>
+        <div class="card-title">Full-Text Index Optimisation</div>
+        <p class="card-desc">A MySQL benchmark comparing FULLTEXT indexing with wildcard LIKE searches on Airbnb listing text.</p>
       </div>
       <div class="card-footer-row">
-        <span class="tag">Strategy</span>
-        <span class="tag">Entrepreneurship</span>
-        <a class="card-link" href="Internship/SMU_Competition_2027_ExecutiveSummary.html">View →</a>
+        <span class="tag">MySQL</span>
+        <span class="tag">Benchmarking</span>
+        <a class="card-link" href="Projects/Query Processing and Optimisation/">View report →</a>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="project-card">
+      <div class="card-header-band"></div>
+      <div class="card-body">
+        <div class="card-category">Spreadsheet Modelling</div>
+        <div class="card-title">Singapore Water Sufficiency</div>
+        <p class="card-desc">Forecasting, Solver optimization, and elasticity sensitivity for Singapore's water security through 2060.</p>
+      </div>
+      <div class="card-footer-row">
+        <span class="tag">Excel Solver</span>
+        <span class="tag">Sensitivity</span>
+        <a class="card-link" href="Projects/Spreadsheet Modelling for Decision Making/">View report →</a>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="project-card">
+      <div class="card-header-band"></div>
+      <div class="card-body">
+        <div class="card-category">Statistical Thinking</div>
+        <div class="card-title">Healthcare and Population Ageing</div>
+        <p class="card-desc">Correlation, regression, and hypothesis testing assess whether healthcare capacity has kept pace with ageing.</p>
+      </div>
+      <div class="card-footer-row">
+        <span class="tag">Inference</span>
+        <span class="tag">Regression</span>
+        <a class="card-link" href="Projects/Statistical Thinking for Data Science/">View report →</a>
       </div>
     </div>
 

@@ -1,0 +1,93 @@
+---
+title: "Full-Text Index Optimisation"
+subtitle: "Query Processing and Optimisation"
+author: "Team 3"
+date: "2026-03-24"
+toc: true
+toc-depth: 3
+format:
+  html:
+    theme: cosmo
+    embed-resources: true
+---
+
+## Project overview
+
+This project benchmarks MySQL `FULLTEXT` search against multi-column wildcard `LIKE` queries on text-rich Airbnb listing data.
+
+## Why optimize text search?
+
+A query such as:
+
+```sql
+SELECT *
+FROM listings
+WHERE description LIKE '%beach%';
+```
+
+must inspect rows sequentially because the leading wildcard prevents a conventional index lookup. A full-text index instead tokenizes text, removes configured stop words, and stores an inverted mapping from terms to matching rows.
+
+```sql
+CREATE FULLTEXT INDEX idx_fulltext
+ON listings(description);
+
+SELECT *
+FROM listings
+WHERE MATCH(description)
+      AGAINST ('beach' IN NATURAL LANGUAGE MODE);
+```
+
+## Dataset and benchmark
+
+- Source: Inside Airbnb.
+- Raw dataset: 36,261 listings and 85 attributes.
+- Search fields include listing names, descriptions, neighbourhood overviews, host descriptions, and amenities.
+- Benchmark: 34 realistic Airbnb keywords and phrases.
+- Repetitions: 10 runs per query to calculate average search time.
+- Comparison: multi-column `%LIKE%` against multi-column `MATCH() AGAINST()`.
+
+## Results
+
+The main benchmark reports:
+
+| Metric | FULLTEXT | Non-optimized LIKE |
+|---|---:|---:|
+| Average query time | 16.69 ms | 169.58 ms |
+| Rows examined | approximately 1 | 33,407 |
+| Average time reduction | **90.16%** | — |
+
+Performance varied with query selectivity.
+
+| Query | Matches | FULLTEXT | LIKE | Speedup |
+|---|---:|---:|---:|---:|
+| `highly recommend` | 29 | 0.31 ms | 215.67 ms | 700.23x |
+| `restaurant` | 1,835 | 1.19 ms | 160.81 ms | 135.37x |
+| `private` | 17,668 | 4.74 ms | 137.03 ms | 28.91x |
+| `walking distance` | 4,677 | 25.01 ms | 166.88 ms | 6.67x |
+| `washer dryer` | 2,265 | 69.21 ms | 207.07 ms | 2.99x |
+
+## Complexity and trade-offs
+
+The project characterizes wildcard scanning as approximately $O(N)$ and indexed retrieval as approximately $O(\log N + M)$, where $N$ is dataset size and $M$ is the number of matches.
+
+Benefits:
+
+- Faster retrieval and improved read scalability.
+- Particularly strong gains for selective searches.
+- Relevance scoring in natural-language mode.
+
+Costs and limitations:
+
+- Additional index storage.
+- Slower inserts and updates.
+- Text columns only; structured filters need other indexes.
+- Search semantics differ from arbitrary substring matching.
+- Stop-word and tokenization configuration affects recall.
+
+## Recommendation
+
+Full-text indexing is well suited to read-heavy, text-dense search systems. Before production adoption, benchmarks should verify semantic equivalence, cache conditions, relevance quality, database configuration, and performance at the intended scale.
+
+## Source artifact
+
+- [Full-text indexing presentation](ISSS625_Team3_Full%20Text%20Index.pptx)

@@ -1,150 +1,304 @@
 [
   {
-    "objectID": "Statistical Thinking for Data Science/index.html#section",
-    "href": "Statistical Thinking for Data Science/index.html#section",
-    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
+    "objectID": "Resume/index.html",
+    "href": "Resume/index.html",
+    "title": "Wu Jia Yan",
     "section": "",
-    "text": "Is Singapore’s Healthcare Adequate for its Ageing Population?\nIS630 Statistical Thinking in Data Science\n\nCheng Ho Wang Hong Huajie Teo Cher In Wu Jiayan Ye Zhili Yee Weicong Mark\n\nG1 Team 3"
+    "text": "Note\n\n\n\nContact: +65 8206 3291\nEmail: jiayan.wu.2025@mitb.smu.edu.sg\nProfile: ERP Systems · Project Management · Data Analytics · Bilingual Localization"
   },
   {
-    "objectID": "Statistical Thinking for Data Science/index.html#agenda",
-    "href": "Statistical Thinking for Data Science/index.html#agenda",
-    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
-    "section": "Agenda",
-    "text": "Agenda\n\n\n01 Introduction Global ageing phenomenon & context\n\n\n02 Study Objective Key research questions\n\n\n03 Data Sources & cleaning methodology\n\n\n04 Summary Statistics Population & hospital beds overview\n\n\n05 Inferential Statistics Correlation, hypothesis, forecasting\n\n\n06 Results & Conclusion Findings & recommendations"
+    "objectID": "Resume/index.html#professional-summary",
+    "href": "Resume/index.html#professional-summary",
+    "title": "Wu Jia Yan",
+    "section": "Professional Summary",
+    "text": "Professional Summary\nIT business and data analytics professional combining business-technology delivery experience with applied analytics skills. Experienced in ERP requirements gathering, stakeholder coordination, project delivery, workflow design, bilingual localization, and quality assurance. Currently completing the Master of IT in Business at Singapore Management University."
   },
   {
-    "objectID": "Statistical Thinking for Data Science/index.html#introduction",
-    "href": "Statistical Thinking for Data Science/index.html#introduction",
-    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
-    "section": "Introduction",
-    "text": "Introduction\n\n\nPopulation ageing is a global phenomenon.\nBy 2080, the elderly (aged 65+) is expected to outnumber children (under 18) worldwide.\nSingapore is at the forefront of this demographic shift, creating urgent pressure on healthcare infrastructure.\n\n\n\nEconomic Impact Workforce contraction, rising pension costs, productivity challenges\n\n\nHealthcare Impact Surge in chronic disease burden, demand for long-term care\n\n\nSocietal Impact Policy reforms needed for demographic transition"
+    "objectID": "Resume/index.html#core-skills",
+    "href": "Resume/index.html#core-skills",
+    "title": "Wu Jia Yan",
+    "section": "Core Skills",
+    "text": "Core Skills\n\nData Analytics\n\nPython, R, Tableau, machine learning, predictive analytics, and data visualization.\n\nBusiness and Systems\n\nERP requirements gathering, stakeholder coordination, project scheduling, issue resolution, workflow and interface design, documentation, progress reporting, and change reporting.\n\nLocalization and Quality\n\nSimplified Chinese localization, English-Chinese translation, proofreading, terminology management, linguistic quality assurance, vendor test review, and community support.\n\nLanguages\n\nEnglish and Chinese."
   },
   {
-    "objectID": "Statistical Thinking for Data Science/index.html#study-objective",
-    "href": "Statistical Thinking for Data Science/index.html#study-objective",
-    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
-    "section": "Study Objective",
-    "text": "Study Objective\n\nThrough data analysis, we aim to gain insights into the state of Singapore’s healthcare infrastructure and its ability to support the future needs of its population.\n\n\n\nQuestion 1\nWhat is the impact of age on healthcare demand?\nExamining admission rates and chronic illness burden by age group\n\n\nQuestion 2\nWill there be enough hospital beds by 2030?\nForecasting bed supply vs. projected elderly admissions"
+    "objectID": "Resume/index.html#education",
+    "href": "Resume/index.html#education",
+    "title": "Wu Jia Yan",
+    "section": "Education",
+    "text": "Education\n\nMaster of IT in Business\nSingapore Management University, Singapore | August 2025–Present\nCumulative GPA: 3.47 / 4.00\nRelevant coursework includes Computational Thinking with Python, Applied Machine Learning, Statistical Thinking for Data Science, Data Science for Business, Spreadsheet Modelling for Decision Making, Query Processing and Optimisation, Visual Analytics, Social Analytics, and Data Science in Financial Services.\n\n\nBachelor of Science in Applied Accounting\nOxford Brookes University, United Kingdom | June 2018–March 2024\n\n\nMaster of Science in Marketing\nUniversity of Leicester, United Kingdom | October 2009–January 2011\n\n\nBA in Business Management\nUniversity of Sunderland, United Kingdom | January 2008–March 2009"
   },
   {
-    "objectID": "Statistical Thinking for Data Science/index.html#data",
-    "href": "Statistical Thinking for Data Science/index.html#data",
-    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
-    "section": "Data",
-    "text": "Data\n\nSources\n\n🏛️ Singapore Government Official health statistics, MOH data, population census\n\n\n📊 Statista Supplementary demographic & healthcare metrics\n\nCleaning Pipeline\n\n\n1 Combined all data sources into a single unified file\n\n\n2 Addressed null values and data inconsistencies\n\n\n3 Aggregated data for analysis — elderly sub-groups, bed categories"
+    "objectID": "Resume/index.html#selected-mitb-projects",
+    "href": "Resume/index.html#selected-mitb-projects",
+    "title": "Wu Jia Yan",
+    "section": "Selected MITB Projects",
+    "text": "Selected MITB Projects\n\nHDB Resale Price Prediction Using Ensemble Machine Learning\nApplied Machine Learning | 2026\nDeveloped a model to predict future Singapore HDB resale prices using historical transactions and engineered housing features. The stacking ensemble outperformed baseline methods, achieving \\(R^2=0.7314\\) and RMSE of 865.13.\nTools: Python, pandas, scikit-learn, Jupyter Notebook\nView project report\n\n\nAirbnb Dynamic Pricing and Revenue Optimization\nData Science for Business | 2026\nBuilt a predictive pricing model that recommends Airbnb nightly rates by balancing booking probability and expected revenue. The Random Forest model achieved ROC-AUC of 0.8441 and generated optimized recommendations for new listings.\nTools: Python, Random Forest, predictive analytics\nView project report\n\n\nMySQL Query Performance Optimization\nQuery Processing and Optimisation | 2026\nEvaluated FULLTEXT indexing against wildcard search queries on Airbnb listing data. The benchmark achieved approximately 90% average runtime reduction, with selected searches improving by more than 20 times.\nTools: MySQL, SQL, database optimization\nView project report\n\n\nAI-Assisted Trade Surveillance\nData Science for Financial Services | 2026\nDesigned an AI-assisted workflow to identify suspicious trader communications, including market manipulation and confidential-information leakage. Compared traditional keyword searches with contextual AI analysis.\nTools: Google AI Studio, generative AI, prompt engineering\nView project report"
   },
   {
-    "objectID": "Statistical Thinking for Data Science/index.html#summary-statistics-ageing-population",
-    "href": "Statistical Thinking for Data Science/index.html#summary-statistics-ageing-population",
-    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
-    "section": "Summary Statistics · Ageing Population",
-    "text": "Summary Statistics · Ageing Population\n\n\n7.2% Elderly share (2000)\n\n\n18% Elderly share (2024)\n\n\n83.5 yrs Life expectancy (2024)\n\n\n↓ Fertility & birth rate\n\n\n\n\nPopulation Age Profile\nNegative population age graph reflecting low fertility. Middle-aged cohort forms the largest resident share. Rapidly increasing proportion of residents aged 65+.\n\n\nOutlook\nWith steady life expectancy growth reaching 83.5 years in 2024, a continuous rise in the elderly population proportion is expected through 2030 and beyond."
+    "objectID": "Resume/index.html#professional-experience",
+    "href": "Resume/index.html#professional-experience",
+    "title": "Wu Jia Yan",
+    "section": "Professional Experience",
+    "text": "Professional Experience\n\nProject Manager / ERP System Manager\nShanghai Zhenghe Communication Equipment Leasing Co., Ltd. | November 2016–November 2022\n\nCoordinated schedules, resources, documentation, and cross-functional activities across project stages.\nTranslated business needs into ERP functional requirements and clarified enhancement requests with developers.\nSupported user-friendly ERP interfaces and workflows aligned with operational processes.\nMonitored progress, risks, and changes; prepared stakeholder updates and close-out reports; and coordinated issue resolution.\n\n\n\nSimplified Chinese Linguist\nKeywords International Pte Ltd | March 2015–October 2016\nFull-time: March 2015–February 2016 | Freelance: March 2016–October 2016\n\nTranslated, reviewed, proofread, and performed linguistic QA for Simplified Chinese content.\nCreated glossaries, terminology guidelines, and language resources.\nReviewed vendor tests and collaborated with project managers, testing teams, and multilingual teams.\nGuided junior linguists and contributed to quality and process improvements.\n\n\n\nTranslator cum Game Master\nIGG Singapore Pte Ltd | June 2013–February 2015\n\nLocalized game content, advertisements, training documents, legal documents, and player-facing materials between Chinese and English.\nProduced English marketing copy and supported publication across social media and community channels.\nResolved player issues and escalated feedback to project teams; promoted to team leader.\n\n\n\nEditor\nSingapore Children Newspaper | February 2011–August 2011\n\nSelected and edited publication content.\nTranslated journals and documents between Chinese and English.\nDesigned marketing materials."
   },
   {
-    "objectID": "Statistical Thinking for Data Science/index.html#summary-statistics-hospital-beds",
-    "href": "Statistical Thinking for Data Science/index.html#summary-statistics-hospital-beds",
-    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
-    "section": "Summary Statistics · Hospital Beds",
-    "text": "Summary Statistics · Hospital Beds\n\nOverall Bed Supply\n\n+74.22% total increase since baseline\n\n\n+9.46% maximum single-year growth (2015)\n\nNursing home beds now exceed 50% share — the largest single bed category.\nCommunity hospital beds show the fastest growth at +198.7%.\nAdmissions per Bed\n\nA surge in acute admission demand among those aged 65+ reflects the growing healthcare intensity of the elderly cohort.\n\n\nCommunity hospitals remain relatively stable, suggesting they are better sized for current demand — but forecasts raise concern."
+    "objectID": "Resume/index.html#source-document",
+    "href": "Resume/index.html#source-document",
+    "title": "Wu Jia Yan",
+    "section": "Source Document",
+    "text": "Source Document\nDownload the original resume"
   },
   {
-    "objectID": "Statistical Thinking for Data Science/index.html#inferential-statistics-correlation-analysis",
-    "href": "Statistical Thinking for Data Science/index.html#inferential-statistics-correlation-analysis",
-    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
-    "section": "Inferential Statistics · Correlation Analysis",
-    "text": "Inferential Statistics · Correlation Analysis\n\n\nWhat We Tested\nPearson correlation between:\n\nElderly population size and hospital bed demand\nAge-group proportions and admission rates\nHealthcare expenditure and population ageing\n\nSignificance Testing\nCorrelation Significance Test (Pearson) applied to validate the strength of observed relationships.\n\nKey Insight\n\nStrong positive correlations were found between elderly population growth and acute bed admissions, confirming age as a primary driver of healthcare demand.\n\nRegression coefficient significance tests confirmed that ageing population metrics are statistically significant predictors of bed utilisation."
+    "objectID": "Projects/Spreadsheet Modelling for Decision Making/index.html",
+    "href": "Projects/Spreadsheet Modelling for Decision Making/index.html",
+    "title": "Singapore Water Sufficiency to 2060",
+    "section": "",
+    "text": "This project evaluates whether Singapore’s planned water supply can meet population and economic demand through 2060. It also models tariff adjustments that preserve a minimum security buffer.\n\n\n\n\n\n\nNoteHypothesis\n\n\n\nSingapore’s water supply is sufficient to support population and economic growth until 2060 under plausible supply and demand scenarios."
   },
   {
-    "objectID": "Statistical Thinking for Data Science/index.html#inferential-statistics-forecasting",
-    "href": "Statistical Thinking for Data Science/index.html#inferential-statistics-forecasting",
-    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
-    "section": "Inferential Statistics · Forecasting",
-    "text": "Inferential Statistics · Forecasting\n\nElderly Population by 2030\n\n+36% increase in ageing population admission rate\n1,026,282 elderly residents projected by 2030\n\nAssumption: Proportion of beds for the elderly reflects admission rate — 73.8% of acute beds and 97.1% of community beds.\nHospital Beds by 2030\n\n\nAcute beds: +15.8% → 13,924 beds\n\n\nCommunity beds: +29.1% → 2,973 beds\n\n\n⚠️ Shortfall of ~6,800 beds Current growth rate insufficient"
+    "objectID": "Projects/Spreadsheet Modelling for Decision Making/index.html#project-overview",
+    "href": "Projects/Spreadsheet Modelling for Decision Making/index.html#project-overview",
+    "title": "Singapore Water Sufficiency to 2060",
+    "section": "",
+    "text": "This project evaluates whether Singapore’s planned water supply can meet population and economic demand through 2060. It also models tariff adjustments that preserve a minimum security buffer.\n\n\n\n\n\n\nNoteHypothesis\n\n\n\nSingapore’s water supply is sufficient to support population and economic growth until 2060 under plausible supply and demand scenarios."
   },
   {
-    "objectID": "Statistical Thinking for Data Science/index.html#results",
-    "href": "Statistical Thinking for Data Science/index.html#results",
-    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
-    "section": "Results",
-    "text": "Results\n\n\n📈 Increased Life Expectancy Drives sustained growth in elderly population\n\n\n📉 Lower Fertility & Birth Rate Negative population age pyramid\n\n\n💰 Increased Healthcare Expenditure Projected SGD 30B by 2030\n\n\n\n\n🏥 Higher Hospital Admissions Surge in acute demand among 65+\n\n\n⚠️ ~6,800 Bed Shortfall by 2030 MOH’s +4,000 beds plan falls short of projected need"
+    "objectID": "Projects/Spreadsheet Modelling for Decision Making/index.html#model-structure",
+    "href": "Projects/Spreadsheet Modelling for Decision Making/index.html#model-structure",
+    "title": "Singapore Water Sufficiency to 2060",
+    "section": "Model structure",
+    "text": "Model structure\n\n\n\n\n\nflowchart LR\n  P[\"Population forecast\"] --&gt; D[\"Total demand\"]\n  C[\"Per-capita consumption\"] --&gt; D\n  T[\"Tariff and elasticity\"] --&gt; C\n  L[\"Local catchment\"] --&gt; S[\"Total supply\"]\n  I[\"Imported water\"] --&gt; S\n  N[\"NEWater\"] --&gt; S\n  A[\"Desalination\"] --&gt; S\n  S --&gt; R[\"Reserve margin\"]\n  D --&gt; R\n\n\n\n\n\n\nTotal domestic demand is:\n\\[\n\\text{Domestic Demand}_t =\n\\frac{\\text{Population}_t \\times \\text{Per-Capita Use}_t \\times 365}{1000}\n\\]\nIndustrial demand is derived from an industrial share that increases toward 70% of total demand by 2060. System adequacy is measured as:\n\\[\n\\text{Reserve Margin}_t =\n\\frac{\\text{Total Supply}_t}{\\text{Total Demand}_t}-1\n\\]"
   },
   {
-    "objectID": "Statistical Thinking for Data Science/index.html#conclusion",
-    "href": "Statistical Thinking for Data Science/index.html#conclusion",
-    "title": "Is Singapore’s Healthcare Adequate for its Ageing Population?",
+    "objectID": "Projects/Spreadsheet Modelling for Decision Making/index.html#inputs-and-assumptions",
+    "href": "Projects/Spreadsheet Modelling for Decision Making/index.html#inputs-and-assumptions",
+    "title": "Singapore Water Sufficiency to 2060",
+    "section": "Inputs and assumptions",
+    "text": "Inputs and assumptions\n\nPopulation history from 2000 to 2025, projected to 2060 with uncertainty bounds.\nPer-capita consumption history from 2013 to 2022, with low, baseline, and high scenarios.\nBaseline tariff elasticity of -0.2: a 10% tariff increase reduces consumption by approximately 2%.\nFour supply sources: local catchment, imported water, NEWater, and desalination.\nImported-water reliability and agreement-expiry logic.\nExisting and planned plants with an 80% capacity factor.\nRainfall and climate-trend controls for local catchment supply."
+  },
+  {
+    "objectID": "Projects/Spreadsheet Modelling for Decision Making/index.html#capacity-outlook",
+    "href": "Projects/Spreadsheet Modelling for Decision Making/index.html#capacity-outlook",
+    "title": "Singapore Water Sufficiency to 2060",
+    "section": "Capacity outlook",
+    "text": "Capacity outlook\nThe report projects total demand rising from roughly 765 million cubic metres per year in 2026 to about 1.19 billion by 2060 under its reported baseline narrative. Planned capacity additions at Tuas Nexus in 2027 and Kranji-Changi in 2035 increase modeled supply.\nThe workbook’s cached high-population, baseline-consumption scenario shows:\n\n\n\nYear\nDemand (million m³)\nSupply (million m³)\nReserve margin\n\n\n\n\n2026\n797.5\n1,029.1\n29.0%\n\n\n2027\n820.2\n1,263.5\n54.0%\n\n\n2035\n986.0\n1,557.5\n58.0%\n\n\n2055\n1,413.2\n1,557.5\n10.2%\n\n\n2060\n1,415.9\n1,557.5\n10.0%"
+  },
+  {
+    "objectID": "Projects/Spreadsheet Modelling for Decision Making/index.html#tariff-optimization",
+    "href": "Projects/Spreadsheet Modelling for Decision Making/index.html#tariff-optimization",
+    "title": "Singapore Water Sufficiency to 2060",
+    "section": "Tariff optimization",
+    "text": "Tariff optimization\nExcel Solver minimizes the average annual tariff increase from 2026 to 2060 subject to:\n\nA minimum tariff-policy threshold.\nA reserve margin of at least 10% in every year.\nSelected population and consumption scenarios.\n\nIn the cached scenario, the average annual increase is approximately 3.15%. The required path becomes steep late in the horizon, reaching approximately 36.8% in 2060, which reveals an affordability and feasibility trade-off even when the physical security constraint is met."
+  },
+  {
+    "objectID": "Projects/Spreadsheet Modelling for Decision Making/index.html#elasticity-sensitivity",
+    "href": "Projects/Spreadsheet Modelling for Decision Making/index.html#elasticity-sensitivity",
+    "title": "Singapore Water Sufficiency to 2060",
+    "section": "Elasticity sensitivity",
+    "text": "Elasticity sensitivity\nAt 2060:\n\n\n\nElasticity\nReserve margin\n\n\n\n\n-0.1\n5.8%\n\n\n-0.2\n10.0%\n\n\n-0.3\n14.6%\n\n\n-0.5\n24.9%\n\n\n-1.0\n61.3%\n\n\n\nIf consumers respond less strongly than assumed, the optimized tariff path no longer maintains the desired buffer. This makes behavioral uncertainty a material policy risk."
+  },
+  {
+    "objectID": "Projects/Spreadsheet Modelling for Decision Making/index.html#conclusion-and-recommendations",
+    "href": "Projects/Spreadsheet Modelling for Decision Making/index.html#conclusion-and-recommendations",
+    "title": "Singapore Water Sufficiency to 2060",
+    "section": "Conclusion and recommendations",
+    "text": "Conclusion and recommendations\nThe exploratory model supports water sufficiency through 2060 if planned infrastructure is delivered and operated reliably. Recommended actions include:\n\nPreserve capacity-expansion schedules and reliability.\nUse adaptive tariffs alongside conservation programs.\nMonitor demand and elasticity rather than rely on a fixed response assumption.\nPlan post-2035 reclamation or desalination options for resilience beyond 2060.\nEvaluate affordability separately from physical supply adequacy."
+  },
+  {
+    "objectID": "Projects/Spreadsheet Modelling for Decision Making/index.html#source-artifacts",
+    "href": "Projects/Spreadsheet Modelling for Decision Making/index.html#source-artifacts",
+    "title": "Singapore Water Sufficiency to 2060",
+    "section": "Source artifacts",
+    "text": "Source artifacts\n\nExcel model\nFinal report\nPresentation"
+  },
+  {
+    "objectID": "Projects/Data Science for Financial Service/index.html",
+    "href": "Projects/Data Science for Financial Service/index.html",
+    "title": "AI-Assisted Trade Surveillance",
+    "section": "",
+    "text": "The lab examines how misconduct can be detected in trading-floor communications. It compares manual Excel keyword searches with an AI-assisted TradeGuard workflow built in Google AI Studio."
+  },
+  {
+    "objectID": "Projects/Data Science for Financial Service/index.html#project-overview",
+    "href": "Projects/Data Science for Financial Service/index.html#project-overview",
+    "title": "AI-Assisted Trade Surveillance",
+    "section": "",
+    "text": "The lab examines how misconduct can be detected in trading-floor communications. It compares manual Excel keyword searches with an AI-assisted TradeGuard workflow built in Google AI Studio."
+  },
+  {
+    "objectID": "Projects/Data Science for Financial Service/index.html#surveillance-scope",
+    "href": "Projects/Data Science for Financial Service/index.html#surveillance-scope",
+    "title": "AI-Assisted Trade Surveillance",
+    "section": "Surveillance scope",
+    "text": "Surveillance scope\nThe analysis searches for several forms of potential misconduct:\n\nMarket manipulation, including spoofing, layering, and price fixing.\nFront-running ahead of a pending client order.\nSolicitation or disclosure of material non-public information.\nCodewords and non-approved languages used to conceal intent."
+  },
+  {
+    "objectID": "Projects/Data Science for Financial Service/index.html#approaches-compared",
+    "href": "Projects/Data Science for Financial Service/index.html#approaches-compared",
+    "title": "AI-Assisted Trade Surveillance",
+    "section": "Approaches compared",
+    "text": "Approaches compared\n\n\n\n\n\n\n\n\nDimension\nExcel keyword search\nTradeGuard AI\n\n\n\n\nDetection logic\nExact predefined terms\nTerms plus contextual reasoning\n\n\nReview effort\nManual review around every match\nAutomated segment analysis\n\n\nFalse alarms\nHigh when legitimate jargon matches\nBetter differentiation using intent\n\n\nNew patterns\nLimited to known words\nCan suggest emerging codewords\n\n\nRegulatory context\nAdded manually\nCan map behavior to regulatory concepts"
+  },
+  {
+    "objectID": "Projects/Data Science for Financial Service/index.html#key-learning-intent-matters",
+    "href": "Projects/Data Science for Financial Service/index.html#key-learning-intent-matters",
+    "title": "AI-Assisted Trade Surveillance",
+    "section": "Key learning: intent matters",
+    "text": "Key learning: intent matters\nKeyword matching is a useful transparent baseline, but misconduct is rarely captured by one word in isolation. The AI-assisted workflow linked conversation segments and interpreted intent, including:\n\nDifferentiating legitimate market colour from suspicious instructions.\nIdentifying possible concealed language such as newly emerging codewords.\nLinking confidential-information leakage with a subsequent trade.\nExplaining why a segment might represent spoofing or front-running.\n\n\n\n\n\n\nflowchart TD\n  A[\"Chat communications\"] --&gt; B[\"Dictionary and keyword screening\"]\n  B --&gt; C[\"Context-window analysis\"]\n  C --&gt; D[\"Intent and behavior classification\"]\n  D --&gt; E[\"Regulatory mapping\"]\n  E --&gt; F[\"Human compliance review\"]"
+  },
+  {
+    "objectID": "Projects/Data Science for Financial Service/index.html#conclusion",
+    "href": "Projects/Data Science for Financial Service/index.html#conclusion",
+    "title": "AI-Assisted Trade Surveillance",
     "section": "Conclusion",
-    "text": "Conclusion\n\n\n🟢 Near-Term Readiness Singapore’s healthcare system can meet ageing population needs in the near term\n\n\n🔴 Long-Term Limits Expansion is constrained by land and manpower shortages, even with higher spending\n\n\n💪 Healthy Ageing Encouraging healthy ageing reduces pressure on healthcare services\n\n\n🏛️ Government Measures Job support, economic sustainability, and retirement policies complement healthcare reform\n\n\n\nMore research is needed to assess the true effectiveness of Singapore’s overall ageing strategy."
+    "text": "Conclusion\nModern surveillance should move beyond static word hunting toward contextual intent analysis. AI can improve triage speed and surface linked behavior, but it should support rather than replace compliance professionals."
+  },
+  {
+    "objectID": "Projects/Data Science for Financial Service/index.html#governance-requirements",
+    "href": "Projects/Data Science for Financial Service/index.html#governance-requirements",
+    "title": "AI-Assisted Trade Surveillance",
+    "section": "Governance requirements",
+    "text": "Governance requirements\nAn operational implementation would require:\n\nA labelled evaluation set with precision, recall, and false-positive reporting.\nHuman adjudication before any enforcement action.\nExplainable alerts with preserved source context.\nAccess controls, privacy safeguards, and audit trails.\nVersion-controlled surveillance dictionaries and prompts.\nMonitoring for model drift and language changes."
+  },
+  {
+    "objectID": "Projects/Data Science for Financial Service/index.html#source-artifact",
+    "href": "Projects/Data Science for Financial Service/index.html#source-artifact",
+    "title": "AI-Assisted Trade Surveillance",
+    "section": "Source artifact",
+    "text": "Source artifact\n\nIndividual lab report"
+  },
+  {
+    "objectID": "Projects/Data Science for Business/index.html",
+    "href": "Projects/Data Science for Business/index.html",
+    "title": "Dynamic Pricing for Cape Town Airbnb Listings",
+    "section": "",
+    "text": "This project builds a pricing engine that recommends a nightly rate by maximizing expected revenue rather than occupancy alone.\n\\[\n\\text{Expected Revenue}(p)=p\\times P(\\text{booking}\\mid p,\\mathbf{x})\n\\]\nHere, \\(p\\) is a candidate nightly price and \\(\\mathbf{x}\\) represents listing, location, host, review, and calendar features."
+  },
+  {
+    "objectID": "Projects/Data Science for Business/index.html#project-overview",
+    "href": "Projects/Data Science for Business/index.html#project-overview",
+    "title": "Dynamic Pricing for Cape Town Airbnb Listings",
+    "section": "",
+    "text": "This project builds a pricing engine that recommends a nightly rate by maximizing expected revenue rather than occupancy alone.\n\\[\n\\text{Expected Revenue}(p)=p\\times P(\\text{booking}\\mid p,\\mathbf{x})\n\\]\nHere, \\(p\\) is a candidate nightly price and \\(\\mathbf{x}\\) represents listing, location, host, review, and calendar features."
+  },
+  {
+    "objectID": "Projects/Data Science for Business/index.html#decision-workflow",
+    "href": "Projects/Data Science for Business/index.html#decision-workflow",
+    "title": "Dynamic Pricing for Cape Town Airbnb Listings",
+    "section": "Decision workflow",
+    "text": "Decision workflow\n\n\n\n\n\nflowchart LR\n  A[\"Listing and calendar data\"] --&gt; B[\"Booking-probability model\"]\n  B --&gt; C[\"Simulate candidate prices\"]\n  C --&gt; D[\"Estimate expected revenue\"]\n  D --&gt; E[\"Recommend revenue-maximizing price\"]"
+  },
+  {
+    "objectID": "Projects/Data Science for Business/index.html#data-preparation",
+    "href": "Projects/Data Science for Business/index.html#data-preparation",
+    "title": "Dynamic Pricing for Cape Town Airbnb Listings",
+    "section": "Data preparation",
+    "text": "Data preparation\nListing and calendar records are merged, after which a market-comparable anchor is calculated using median prices for the same neighbourhood, room type, and bedroom count. The model uses the listing’s price relative to this local market median.\nKey predictors include:\n\nPrice ratio and market anchor.\nCapacity, bedrooms, room type, and neighbourhood.\nMonth, day of week, and weekend indicator.\nReview score and number of reviews.\nSuperhost status and minimum-night requirement.\n\nNumeric variables are imputed and standardized; categorical variables are imputed and one-hot encoded."
+  },
+  {
+    "objectID": "Projects/Data Science for Business/index.html#predictive-model",
+    "href": "Projects/Data Science for Business/index.html#predictive-model",
+    "title": "Dynamic Pricing for Cape Town Airbnb Listings",
+    "section": "Predictive model",
+    "text": "Predictive model\nA Random Forest classifier predicts booking probability. It was trained on a one-million-row sample with class balancing and achieved a reported holdout ROC-AUC of 0.8441.\nThe optimization layer evaluates a range of candidate prices and selects the point with the greatest expected daily revenue. The same process can be applied in batch to newly listed properties whose own pricing history is unavailable."
+  },
+  {
+    "objectID": "Projects/Data Science for Business/index.html#demonstration",
+    "href": "Projects/Data Science for Business/index.html#demonstration",
+    "title": "Dynamic Pricing for Cape Town Airbnb Listings",
+    "section": "Demonstration",
+    "text": "Demonstration\nFor Cape Town listing 231402, the project compares an off-peak and peak-season date.\n\n\n\n\n\n\n\n\n\n\nScenario\nMarket anchor\nRecommended price\nBooking probability\nExpected revenue\n\n\n\n\n24 June 2026\nR1,200\nR2,400\n24.58%\nR589.82\n\n\n24 December 2026\nR1,200\nR1,900\n40.4%\nR767\n\n\n\nThe June example nearly doubles expected revenue relative to the static-price estimate reported in the presentation. The December recommendation is lower than June’s optimized price but generates greater expected revenue because predicted demand is stronger."
+  },
+  {
+    "objectID": "Projects/Data Science for Business/index.html#business-implications",
+    "href": "Projects/Data Science for Business/index.html#business-implications",
+    "title": "Dynamic Pricing for Cape Town Airbnb Listings",
+    "section": "Business implications",
+    "text": "Business implications\n\nPricing should respond to date-level elasticity rather than rely only on fixed seasonal rules.\nPremium, scarce, highly rated listings may retain demand at higher prices.\nBetter host revenue can also increase platform commission revenue.\nBatch scoring makes the workflow suitable for targeted Smart Pricing recommendations."
+  },
+  {
+    "objectID": "Projects/Data Science for Business/index.html#limitations-and-next-steps",
+    "href": "Projects/Data Science for Business/index.html#limitations-and-next-steps",
+    "title": "Dynamic Pricing for Cape Town Airbnb Listings",
+    "section": "Limitations and next steps",
+    "text": "Limitations and next steps\n\nReplace the random split with a time-based evaluation for a temporal pricing application.\nCalibrate predicted booking probabilities.\nAdd guardrails against extreme price recommendations.\nIncorporate events, competitor availability, lead time, and length-of-stay effects.\nValidate revenue uplift through controlled online experiments."
+  },
+  {
+    "objectID": "Projects/Data Science for Business/index.html#source-artifacts",
+    "href": "Projects/Data Science for Business/index.html#source-artifacts",
+    "title": "Dynamic Pricing for Cape Town Airbnb Listings",
+    "section": "Source artifacts",
+    "text": "Source artifacts\n\nPricing notebook\nPresentation\nPresentation script"
+  },
+  {
+    "objectID": "Projects/Applied Machine Learning/index.html",
+    "href": "Projects/Applied Machine Learning/index.html",
+    "title": "Forecasting HDB Resale Prices with Ensemble Learning",
+    "section": "",
+    "text": "This project develops a machine-learning estimator for future Singapore HDB resale prices and tests whether ensemble learning can outperform standalone models under genuine future-market conditions.\n\n\n\n\n\n\nNoteResearch question\n\n\n\nCan a stacking ensemble reduce forecasting error on future transactions when compared with linear, tree-based, and boosting baselines?"
+  },
+  {
+    "objectID": "Projects/Applied Machine Learning/index.html#project-overview",
+    "href": "Projects/Applied Machine Learning/index.html#project-overview",
+    "title": "Forecasting HDB Resale Prices with Ensemble Learning",
+    "section": "",
+    "text": "This project develops a machine-learning estimator for future Singapore HDB resale prices and tests whether ensemble learning can outperform standalone models under genuine future-market conditions.\n\n\n\n\n\n\nNoteResearch question\n\n\n\nCan a stacking ensemble reduce forecasting error on future transactions when compared with linear, tree-based, and boosting baselines?"
+  },
+  {
+    "objectID": "Projects/Applied Machine Learning/index.html#data-and-validation-design",
+    "href": "Projects/Applied Machine Learning/index.html#data-and-validation-design",
+    "title": "Forecasting HDB Resale Prices with Ensemble Learning",
+    "section": "Data and validation design",
+    "text": "Data and validation design\nThe analysis uses a chronological split to avoid temporal leakage.\n\n\n\n\n\n\n\n\n\nPartition\nTransaction period\nRows\nPurpose\n\n\n\n\nTraining\nUp to 2023\n169,150\nModel fitting and time-series cross-validation\n\n\nValidation\n2024\n27,832\nModel selection\n\n\nTest\n2025 onward\n27,683\nLocked future evaluation\n\n\n\nHyperparameters were tuned with five-fold time-series cross-validation. Each validation fold occurs after its training fold, matching the intended forecasting use case more closely than a random split."
+  },
+  {
+    "objectID": "Projects/Applied Machine Learning/index.html#feature-engineering",
+    "href": "Projects/Applied Machine Learning/index.html#feature-engineering",
+    "title": "Forecasting HDB Resale Prices with Ensemble Learning",
+    "section": "Feature engineering",
+    "text": "Feature engineering\nThe modelling dataset combines:\n\nProperty attributes: floor area, flat type, flat model, storey midpoint, and remaining lease.\nLocation attributes: town, coordinates, MRT distances, and nearest-school distance.\nTime attributes: transaction year and continuous time index.\nStructural-event indicators: post-COVID period, December 2021 cooling measures, September 2022 cooling measures, and higher-interest-rate period.\nOne-hot encoded categorical variables.\n\nThe target is resale price per square metre. A log transformation is applied through TransformedTargetRegressor."
+  },
+  {
+    "objectID": "Projects/Applied Machine Learning/index.html#models",
+    "href": "Projects/Applied Machine Learning/index.html#models",
+    "title": "Forecasting HDB Resale Prices with Ensemble Learning",
+    "section": "Models",
+    "text": "Models\nThe comparison includes Linear Regression, Ridge, Lasso, Decision Tree, Random Forest, Gradient Boosting, and a stacking ensemble. The ensemble combines tuned Random Forest, Gradient Boosting, and Ridge base estimators with a Ridge meta-model."
+  },
+  {
+    "objectID": "Projects/Applied Machine Learning/index.html#results",
+    "href": "Projects/Applied Machine Learning/index.html#results",
+    "title": "Forecasting HDB Resale Prices with Ensemble Learning",
+    "section": "Results",
+    "text": "Results\n\n\n\nModel\nTest MAE\nTest RMSE\nTest R²\n\n\n\n\nLinear Regression\n849.92\n1,020.71\n0.6261\n\n\nRidge\n849.83\n1,020.56\n0.6263\n\n\nLasso\n839.79\n1,013.60\n0.6313\n\n\nDecision Tree\n836.01\n1,025.20\n0.6229\n\n\nRandom Forest\n827.34\n985.85\n0.6513\n\n\nGradient Boosting\n803.08\n935.77\n0.6858\n\n\nStacking Ensemble\n725.87\n865.13\n0.7314\n\n\n\nRelative to Ridge, the stacking ensemble reduces RMSE by approximately 155 per square metre, reduces MAE by approximately 124 per square metre, and improves R² by about 10 percentage points."
+  },
+  {
+    "objectID": "Projects/Applied Machine Learning/index.html#conclusion",
+    "href": "Projects/Applied Machine Learning/index.html#conclusion",
+    "title": "Forecasting HDB Resale Prices with Ensemble Learning",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe stacking ensemble provides the strongest future-period performance. The result supports using complementary nonlinear learners when modelling a housing market affected by location, property characteristics, policy interventions, and changing macroeconomic conditions."
+  },
+  {
+    "objectID": "Projects/Applied Machine Learning/index.html#limitations-and-next-steps",
+    "href": "Projects/Applied Machine Learning/index.html#limitations-and-next-steps",
+    "title": "Forecasting HDB Resale Prices with Ensemble Learning",
+    "section": "Limitations and next steps",
+    "text": "Limitations and next steps\n\nMonitor feature and price drift after deployment.\nRetrain periodically using newly completed transactions.\nConfirm that every feature is available at prediction time.\nAdd prediction intervals and subgroup error analysis by town and flat type.\nCompare the ensemble with modern gradient-boosting libraries under the same temporal protocol."
+  },
+  {
+    "objectID": "Projects/Applied Machine Learning/index.html#source-artifacts",
+    "href": "Projects/Applied Machine Learning/index.html#source-artifacts",
+    "title": "Forecasting HDB Resale Prices with Ensemble Learning",
+    "section": "Source artifacts",
+    "text": "Source artifacts\n\nResearch report\nEnsemble methods notebook"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Wu Jiayan",
     "section": "",
-    "text": "Wu Jiayan\n  \n    Master of IT in Business (Data Science & Analytics) · Singapore Management University\n  \n  \n    🤖 Machine Learning\n    📊 Visual Analytics\n    💹 Financial Data Science\n    📐 Statistical Modelling\n  \n  View Projects ↓\n\n\n\n\n  Projects & Coursework\n  \n\n    \n    \n      \n      \n        Applied Machine Learning\n        CS610 Group Project\n        End-to-end machine learning pipeline — feature engineering, model selection, and evaluation presented as a team presentation.\n      \n      \n        Scikit-learn\n        Python\n        View PDF →\n      \n    \n\n    \n    \n      \n      \n        Visual Analytics & Applications\n        Interactive Data Dashboard\n        A deployed interactive visual analytics application exploring real-world datasets with dynamic filtering and storytelling.\n      \n      \n        R / Shiny\n        ggplot2\n        Live App →\n      \n    \n\n    \n    \n      \n      \n        Financial Services\n        Data Science in Finance\n        Applied data science methodologies to financial services use cases including risk modelling and predictive analytics.\n      \n      \n        Finance\n        Analytics\n        View Slides →\n      \n    \n\n    \n    \n      \n      \n        Statistical Thinking\n        Group Project Presentation\n        Statistical inference and hypothesis testing applied to a real dataset, presented as a group research project.\n      \n      \n        Statistics\n        R\n        View Slides →\n      \n    \n\n    \n    \n      \n      \n        Internship · Competition\n        LKY Global Business Plan Competition 2027\n        Executive summary and organiser playbook for the Lee Kuan Yew Student Startup Business Plan Competition.\n      \n      \n        Strategy\n        Entrepreneurship\n        View →\n      \n    \n\n  \n\n\n\n\n\n\n  Technical Skills\n  \n    \n      Languages\n      \n        Python\n        R\n        SQL\n      \n    \n    \n      Machine Learning\n      \n        Scikit-learn\n        XGBoost\n        PyTorch\n      \n    \n    \n      Visualisation\n      \n        ggplot2\n        Plotly\n        Tableau\n      \n    \n    \n      Tools & Platforms\n      \n        Quarto\n        Git\n        Shiny"
-  },
-  {
-    "objectID": "Data Science in Financial Services/index.html#section",
-    "href": "Data Science in Financial Services/index.html#section",
-    "title": "Detecting Misconduct in Trading Floor Communications",
-    "section": "",
-    "text": "Detecting Misconduct in Trading Floor Communications\nData Science in Financial Services · Lab Exercise\n\n🔍 Keyword Search 🤖 AI Analysis 📊 TradeGuard App\n\nSingapore Management University · MITB Programme"
-  },
-  {
-    "objectID": "Data Science in Financial Services/index.html#background",
-    "href": "Data Science in Financial Services/index.html#background",
-    "title": "Detecting Misconduct in Trading Floor Communications",
-    "section": "Background",
-    "text": "Background\n\nRegulatory Context\n\n📋 FMSB Annual Report 2017 FICC Markets Standards Board\n\n\n🏦 BNM Code of Conduct 2017 Malaysian Wholesale Financial Markets\n\n\n📘 Singapore Blue Book 2013 Guide to Conduct & Market Practice for Treasury Activities\n\nWhat Are We Detecting?\n\nTrading floor communications can contain evidence of market misconduct — attempts to manipulate prices, share confidential information, or collude with counterparties.\nIdentifying these patterns at scale requires systematic techniques that go beyond manual review."
-  },
-  {
-    "objectID": "Data Science in Financial Services/index.html#misconduct-taxonomy",
-    "href": "Data Science in Financial Services/index.html#misconduct-taxonomy",
-    "title": "Detecting Misconduct in Trading Floor Communications",
-    "section": "Misconduct Taxonomy",
-    "text": "Misconduct Taxonomy\n\n\n🎯 Market Influence False info, staggered orders, one-way quotes, opposing trades\n\n\n⚡ Front-Running Trading ahead of large client orders\n\n\n📍 Mark the Market Small-volume trades near close to skew price\n\n\n🔒 Confidential Info Soliciting or sharing MNPI\n\n\n🗝️ Codewords Disguised language (naga, askar, tiger, strawberry…)\n\n\n🌐 Non-Approved Languages Using disallowed languages to obscure intent"
-  },
-  {
-    "objectID": "Data Science in Financial Services/index.html#lab-1-codeword-detection",
-    "href": "Data Science in Financial Services/index.html#lab-1-codeword-detection",
-    "title": "Detecting Misconduct in Trading Floor Communications",
-    "section": "Lab 1 · Codeword Detection",
-    "text": "Lab 1 · Codeword Detection\n\n\nTechnique\nExcel keyword search (naga, askar, tiger) → highlight rows → manual context analysis of surrounding messages.\nFindings\n\n✅ naga — Confirmed misconduct: market sensitive client mandate shared\n\n\n✅ strawberry — Confirmed: spoofing request (“flash a huge sell order, don’t intend to trade”)\n\n\n⚠️ dragon — False alarm: refers to a known counterparty, not collusion\n\n\nLimitations\n\n❌ Keywords like tiger return zero results — exhaustive list is time-consuming\n\n\n❌ High proportion of false alarms for common words\n\n\n❌ Labour-intensive manual context review for every hit\n\n\nKeyword search is a useful starting point but not scalable for large message volumes."
-  },
-  {
-    "objectID": "Data Science in Financial Services/index.html#lab-2-soliciting-confidential-info",
-    "href": "Data Science in Financial Services/index.html#lab-2-soliciting-confidential-info",
-    "title": "Detecting Misconduct in Trading Floor Communications",
-    "section": "Lab 2 · Soliciting Confidential Info",
-    "text": "Lab 2 · Soliciting Confidential Info\n\n\nObjective\nIdentify attempts to solicit (ask for, request for) confidential / non-public information in chat logs.\nApproach\nAI tools used to generate a targeted misconduct keyword dictionary.\nExcel search for phrases such as:\n\nbehind the scenes off the record favor / favour axe mandate\n\n\nKeyword Dictionary Categories\n\n🔴 Front Running 🔴 Insider Trading 🔴 Marking the Close 🔴 Collusion & Price Fixing 🔴 Wash Trades & Position Parking 🔴 Spoofing 🟡 Gifts & Entertainment 🟡 Concealment & Ambiguous Language 🟡 Urgency & Pressure Signals"
-  },
-  {
-    "objectID": "Data Science in Financial Services/index.html#lab-3-tradeguard-ai-app",
-    "href": "Data Science in Financial Services/index.html#lab-3-tradeguard-ai-app",
-    "title": "Detecting Misconduct in Trading Floor Communications",
-    "section": "Lab 3 · TradeGuard AI App",
-    "text": "Lab 3 · TradeGuard AI App\n\nWhat We Built\nA Google AI Studio application — TradeGuard — that automates the full misconduct detection workflow:\n\n\n📁 Upload a CSV message log for full-document analysis\n\n\n🔍 Keyword search with click-to-filter by category\n\n\n💬 Context viewer — click any result to see surrounding messages\n\n\n🤖 AI segment analysis — instant LLM verdict on flagged messages\n\n\n\n\n🛡️ TradeGuard AI\nMisconduct detection powered by Google AI Studio\nLaunch App →"
-  },
-  {
-    "objectID": "Data Science in Financial Services/index.html#lab-3-app-results",
-    "href": "Data Science in Financial Services/index.html#lab-3-app-results",
-    "title": "Detecting Misconduct in Trading Floor Communications",
-    "section": "Lab 3 · App Results",
-    "text": "Lab 3 · App Results\n\nCodeword Outcomes\n\n✅ naga — True positive: client mandate leak “Hearing Naga might be looking to buy a lot GII next week”\n\n\n✅ strawberry — True positive: spoofing “Need to push the Strawberry price down… flash a huge sell order”\n\n\n⚠️ askar — App flagged as false alarm correctly Context analysis confirmed non-malicious usage\n\nvs. Excel Keyword Search\n\n\n\nDimension\nExcel\nTradeGuard AI\n\n\n\n\nSpeed\nSlow\nFast\n\n\nScale\nLimited\nLarge volumes\n\n\nContext\nManual\nAutomated\n\n\nAccuracy\nHuman-dependent\nAI-assisted\n\n\nDictionary\nStatic\nUpdateable"
-  },
-  {
-    "objectID": "Data Science in Financial Services/index.html#lab-4-full-scan-results",
-    "href": "Data Science in Financial Services/index.html#lab-4-full-scan-results",
-    "title": "Detecting Misconduct in Trading Floor Communications",
-    "section": "Lab 4 · Full Scan Results",
-    "text": "Lab 4 · Full Scan Results\nTradeGuard AI full-document scan identified 10 high-severity violations:\n\n\nHIGH Insider Trading / Confidentiality 200M client sell order disclosed — price-insensitive nature shared\n\n\nHIGH Front-Running Immediate 10M sell placed after leaked 200M order\n\n\nHIGH Collusion / Price Fixing Agreement to keep bid/ask spread wide on MGS 0735\n\n\nHIGH Spoofing / Market Manipulation “Flash a huge sell order… don’t intend to trade it”\n\n\nHIGH Bid Rigging Coordinated bid levels for GII 0535 government auction\n\n\nHIGH Client Mandate Leak 500M buy mandate shared — position adjusted on leaked info"
-  },
-  {
-    "objectID": "Data Science in Financial Services/index.html#comparative-assessment",
-    "href": "Data Science in Financial Services/index.html#comparative-assessment",
-    "title": "Detecting Misconduct in Trading Floor Communications",
-    "section": "Comparative Assessment",
-    "text": "Comparative Assessment\n\n\n🔎 Excel Keyword Search\nStrengths Simple, transparent, auditable\nWeaknesses Labour-intensive, high false alarm rate, no context awareness, doesn’t scale\n\n\n🤖 TradeGuard AI\nStrengths Scalable, context-aware, AI-powered verdict, updateable dictionary\nWeaknesses Requires internet access, LLM can hallucinate, needs validation layer\n\n\n✅ Recommendation\nHybrid approach — keyword search as a first-pass filter, TradeGuard AI for context analysis and prioritisation of true positives.\n\n\n\n🛡️ TradeGuard AI App — try it live →"
+    "text": "Wu Jiayan\n  \n    Master of IT in Business (Data Science & Analytics)Singapore Management University\n  \n  \n    🤖 Machine Learning\n    📊 Visual Analytics\n    💹 Financial Data Science\n    📐 Statistical Modelling\n  \n  View Projects ↓\n\n\n\n\n  Projects & Coursework\n  \n\n    \n    \n      \n      \n        Visual Analytics and Applications\n        Interactive Visual Analytics Application\n        A deployed visual analytics website presenting interactive exploration and data-driven storytelling.\n      \n      \n        Visual Analytics\n        Interactive App\n        Visit website →\n      \n    \n\n    \n    \n      \n      \n        Applied Machine Learning\n        HDB Resale Price Forecasting\n        Leakage-aware future price forecasting using tuned baseline models and an optimized stacking ensemble.\n      \n      \n        Scikit-learn\n        Python\n        View report →\n      \n    \n\n    \n    \n      \n      \n        Data Science for Business\n        Airbnb Dynamic Pricing\n        A booking-probability and expected-revenue engine that recommends date-specific nightly prices.\n      \n      \n        Random Forest\n        Optimization\n        View report →\n      \n    \n\n    \n    \n      \n      \n        Financial Services\n        AI Trade Surveillance\n        Comparison of keyword screening and contextual AI analysis for misconduct detection in trading communications.\n      \n      \n        Compliance\n        LLM\n        View report →\n      \n    \n\n    \n    \n      \n      \n        Query Processing\n        Full-Text Index Optimisation\n        A MySQL benchmark comparing FULLTEXT indexing with wildcard LIKE searches on Airbnb listing text.\n      \n      \n        MySQL\n        Benchmarking\n        View report →\n      \n    \n\n    \n    \n      \n      \n        Spreadsheet Modelling\n        Singapore Water Sufficiency\n        Forecasting, Solver optimization, and elasticity sensitivity for Singapore's water security through 2060.\n      \n      \n        Excel Solver\n        Sensitivity\n        View report →\n      \n    \n\n    \n    \n      \n      \n        Statistical Thinking\n        Healthcare and Population Ageing\n        Correlation, regression, and hypothesis testing assess whether healthcare capacity has kept pace with ageing.\n      \n      \n        Inference\n        Regression\n        View report →\n      \n    \n\n  \n\n\n\n\n\n\n  Technical Skills\n  \n    \n      Languages\n      \n        Python\n        R\n        SQL\n      \n    \n    \n      Machine Learning\n      \n        Scikit-learn\n        XGBoost\n        PyTorch\n      \n    \n    \n      Visualisation\n      \n        ggplot2\n        Plotly\n        Tableau\n      \n    \n    \n      Tools & Platforms\n      \n        Quarto\n        Git\n        Shiny"
   },
   {
     "objectID": "Internship/SMU_Competition_2027_ExecutiveSummary.html#section",
@@ -292,5 +446,138 @@
     "title": "SMU Student Startup Business Plan Competition 2027",
     "section": "Summary & Key Decisions Required",
     "text": "Summary & Key Decisions Required\n\n\n✓ Confirmed by this playbook\n\nCompetition structure and eligibility criteria\nFive core operational tasks and their workflows\nDual approach: human + agentic AI for each task\nAI guardrail framework\nJudge profile targets and invitation process\nScoring rubric and evaluation design\n\n\n\n→ Decisions required from leadership\n\nConfirm prize structure and funding allocation\nAppoint Competition Director and chief judge\nApprove agentic AI tool stack and budget\nSign off on PDPA-compliant T&Cs before 1 Jan 2027\nConfirm SMU letterhead authority for judge invitation letters\nApprove launch communications strategy\n\n\n\n\nApplications open 1 January 2027 · Results announced 30 June 2027\nSingapore Management University — Organized by SMU Institute of Innovation & Entrepreneurship\n\n\nThis closing slide sets up the conversation about what the organizing team needs from leadership before the competition can launch.\nThe left column represents what has been decided and documented. The right column represents genuine open items that require leadership input — these are not things the organizing team can decide unilaterally.\nThe most time-sensitive items are: appointing the Competition Director (should happen by July 2026 to allow them time to hire the rest of the team), confirming the prize funding (judges and participants both want to know the prize structure before they commit), and getting legal sign-off on the T&Cs (this often takes longer than expected).\nThe agentic AI tool stack approval is also worth flagging as time-sensitive. If SMU has procurement processes or IT security reviews for new software platforms, these need to begin well in advance of October 2026 when outreach starts.\nThank you — happy to take questions on any of the five tasks or the AI approach in more detail."
+  },
+  {
+    "objectID": "Projects/Applied Machine Learning/RQ4 Ensemble Methods.html",
+    "href": "Projects/Applied Machine Learning/RQ4 Ensemble Methods.html",
+    "title": "Wu Jiayan · MITB Portfolio",
+    "section": "",
+    "text": "import pandas as pd\nimport numpy as np\nimport re\nfrom sklearn.linear_model import LinearRegression, Ridge, Lasso\nfrom sklearn.tree import DecisionTreeRegressor\nfrom sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, StackingRegressor\nfrom sklearn.model_selection import GridSearchCV, TimeSeriesSplit\nfrom sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score, make_scorer\nfrom sklearn.compose import TransformedTargetRegressor\n\n\ndf = pd.read_csv('HDB_Resale_Enriched.csv')\n\n\nprint(\"1. Starting data preparation...\")\n\n# Target variable: resale_price_per_sqm\ndf['resale_price_per_sqm'] = df['resale_price'] / df['floor_area_sqm']\n\n# Precise Time Features\ndf['month_dt'] = pd.to_datetime(df['month'])\ndf = df.sort_values('month_dt').reset_index(drop=True) # Sort chronologically\n\ndf['transaction_year'] = df['month_dt'].dt.year\n\n# Create a continuous index (Month 1, Month 2...) to capture linear market trends\ndf['time_index'] = (df['transaction_year'] - df['transaction_year'].min()) * 12 + df['month_dt'].dt.month\n\n\n# Map storey_range to mid-point and rename to 'storey_mid' based on your new list\ndef get_storey_midpoint(val):\n    try:\n        parts = val.split(' TO ')\n        return (int(parts[0]) + int(parts[1])) / 2\n    except:\n        return np.nan\ndf['storey_mid'] = df['storey_range'].apply(get_storey_midpoint)\n\n# Parse remaining_lease to a continuous numeric value (Years)\ndef parse_lease(val):\n    if pd.isna(val): return np.nan\n    val_str = str(val).lower()\n    years, months = 0, 0\n    year_match = re.search(r'(\\d+)\\s*year', val_str)\n    month_match = re.search(r'(\\d+)\\s*month', val_str)\n    \n    if year_match: years = int(year_match.group(1))\n    elif val_str.isdigit(): years = int(val_str)\n    if month_match: months = int(month_match.group(1))\n    return years + (months / 12.0)\ndf['remaining_lease_years'] = df['remaining_lease'].apply(parse_lease)\n\n# Structural Event Flags (based on proposal feedback)\n# 1. Post-COVID impact (Circuit breaker started Apr 2020, WFH caused space demand)\ndf['is_post_covid'] = (df['month'] &gt;= '2020-04').astype(int)\n# 2. Cooling Measure: Dec 2021 (ABSD rates raised)\ndf['cooling_measure_dec2021'] = (df['month'] &gt;= '2021-12').astype(int)\n# 3. Cooling Measure: Sep 2022 (15-month wait-out period for private downgraders)\ndf['cooling_measure_sep2022'] = (df['month'] &gt;= '2022-09').astype(int)\n# 4. Interest Rate Hikes: US Fed started aggressive hikes around mid-2022\ndf['high_interest_rates'] = (df['month'] &gt;= '2022-07').astype(int)\n\nstructural_flags = [\n    'is_post_covid', 'cooling_measure_dec2021', \n    'cooling_measure_sep2022', 'high_interest_rates'\n]\n\n# ---------------------------------------------------------\n# Feature Definitions & One-Hot Encoding\n# ---------------------------------------------------------\n# Your defined continuous features\nbase_features = [\n    'floor_area_sqm', 'storey_mid', 'remaining_lease_years', \n    'nearest_mrt_1_dist_m', 'nearest_mrt_2_dist_m', 'nearest_mrt_3_dist_m',\n    'nearest_school_dist_m', 'hdb_latitude', 'hdb_longitude', \n    'transaction_year', 'time_index'\n]\n\n# categorical features\ncat_features = ['town', 'flat_type', 'flat_model']\n\nprint(\"Performing One-Hot Encoding for categorical features...\")\n# Convert categorical text into 0/1 columns. drop_first=True prevents multi-collinearity\ndf_encoded = pd.get_dummies(df, columns=cat_features, drop_first=True, dtype=int)\n\n# Extract the newly created one-hot encoded column names\nencoded_cat_cols = [col for col in df_encoded.columns if any(col.startswith(f\"{cat}_\") for cat in cat_features)]\n\n# Combine all features into final training list\nfinal_features = base_features + structural_flags + encoded_cat_cols\ntarget = 'resale_price_per_sqm'\n\n# Drop rows with missing values\ndata = df_encoded[final_features + [target]].dropna()\nprint(f\"Data preparation complete. Total features used: {len(final_features)}\")\nprint(f\"Total rows ready for modeling: {len(data):,}\")\n\n# ---------------------------------------------------------\n# Splitting & Training\n# ---------------------------------------------------------\nprint(\"\\n2. Performing Chronological Splitting...\")\ntrain_df = data[data['transaction_year'] &lt;= 2023]\nval_df = data[data['transaction_year'] == 2024]\ntest_df = data[data['transaction_year'] &gt;= 2025]\n\nX_train, y_train = train_df[final_features], train_df[target]\nX_val, y_val = val_df[final_features], val_df[target]\nX_test, y_test = test_df[final_features], test_df[target]\n\nprint(f\"Training set (&lt;=2023): {len(train_df):,} rows\")\nprint(f\"Validation set (2024): {len(val_df):,} rows\")\nprint(f\"Test set (&gt;=2025): {len(test_df):,} rows\")\n\n1. Starting data preparation...\nPerforming One-Hot Encoding for categorical features...\nData preparation complete. Total features used: 66\nTotal rows ready for modeling: 224,665\n\n2. Performing Chronological Splitting...\nTraining set (&lt;=2023): 169,150 rows\nValidation set (2024): 27,832 rows\nTest set (&gt;=2025): 27,683 rows\n\n\n\nprint(\"\\n=======================================================\")\nprint(\"STARTING GRID SEARCH FOR INDIVIDUAL MODELS\")\nprint(\"=======================================================\")\n# ---------------------------------------------------------\n# Setting up Grid Search CV\n# ---------------------------------------------------------\n# 1. Setup Evaluation Metrics\ndef rmse_scorer(y_true, y_pred):\n    return np.sqrt(mean_squared_error(y_true, y_pred))\n\n# Custom scorer for GridSearchCV\ngrid_scorer = make_scorer(rmse_scorer, greater_is_better=False)\n\ndef evaluate_best_model(model, X, y_true):\n    preds = model.predict(X)\n    rmse = np.sqrt(mean_squared_error(y_true, preds))\n    mae = mean_absolute_error(y_true, preds)\n    r2 = r2_score(y_true, preds)\n    return rmse, mae, r2\n\n# 2. Define the Base Models\nbase_models = {\n    \"Linear Regression\": LinearRegression(),\n    \"Ridge\": Ridge(),\n    # Lasso max_iter increased to ensure it converges\n    \"Lasso\": Lasso(max_iter=10000), \n    \"Decision Tree\": DecisionTreeRegressor(random_state=42),\n    \"Random Forest\": RandomForestRegressor(random_state=42, n_jobs=-1),\n    \"Gradient Boosting\": GradientBoostingRegressor(random_state=42)\n}\n\n# 3. Define the Hyperparameter Grids\n# Note: 'regressor__' is required to wrap models in TransformedTargetRegressor\nparam_grids = {\n    \"Linear Regression\": {}, # No hyperparameters to tune\n    \"Ridge\": {\n        \"regressor__alpha\": [0.1, 1.0, 10.0, 100.0]\n    },\n    \"Lasso\": {\n        # Using very small alphas to prevent Lasso from turning all features to 0\n        \"regressor__alpha\": [0.0001, 0.001, 0.01, 0.1] \n    },\n    \"Decision Tree\": {\n        \"regressor__max_depth\": [10, 15, 20, None],\n        \"regressor__min_samples_split\": [2, 10, 20]\n    },\n    \"Random Forest\": {\n        \"regressor__n_estimators\": [50, 100],\n        \"regressor__max_depth\": [10, 15, 20]\n    },\n    \"Gradient Boosting\": {\n        \"regressor__n_estimators\": [50, 100],\n        \"regressor__learning_rate\": [0.05, 0.1],\n        \"regressor__max_depth\": [3, 5, 7]\n    }\n}\n\nprint(\"Initializing 5-Fold Time-Series Cross Validation...\")\ntscv = TimeSeriesSplit(n_splits=5)\n\nresults = []\nbest_trained_models = {} # save the best models to use in Stacking\n\nfor name in base_models.keys():\n    print(f\"\\n--- Tuning {name} ---\")\n    \n    # Wrap model with Log-Transformer\n    log_model = TransformedTargetRegressor(\n        regressor=base_models[name], \n        func=np.log, \n        inverse_func=np.exp\n    )\n    \n    # Setup Grid Search\n    grid_search = GridSearchCV(\n        estimator=log_model,\n        param_grid=param_grids[name],\n        cv=tscv,\n        scoring=grid_scorer,\n        n_jobs=-1,\n        verbose=1\n    )\n    \n    # Run Grid Search on 2017-2023 Training Data\n    grid_search.fit(X_train, y_train)\n    \n    # Extract Best Model\n    best_model = grid_search.best_estimator_\n    best_trained_models[name] = best_model\n    \n    # Print the winning parameters (removing the 'regressor__' prefix for readability)\n    best_params_clean = {k.replace('regressor__', ''): v for k, v in grid_search.best_params_.items()}\n    print(f\"Best Params: {best_params_clean}\")\n    \n    # Evaluate on Validation (2024) and Test (2025) Sets\n    val_rmse, val_mae, val_r2 = evaluate_best_model(best_model, X_val, y_val)\n    test_rmse, test_mae, test_r2 = evaluate_best_model(best_model, X_test, y_test)\n    \n    results.append({\n        \"Model\": name,\n        \"Best Params\": str(best_params_clean),\n        \"Val 2024 RMSE\": round(val_rmse, 2), \"Val 2024 MAE\": round(val_mae, 2), \"Val 2024 R2\": round(val_r2, 4),\n        \"Test 2025 RMSE\": round(test_rmse, 2), \"Test 2025 MAE\": round(test_mae, 2), \"Test 2025 R2\": round(test_r2, 4)\n    })\n\n\n=======================================================\nSTARTING GRID SEARCH FOR INDIVIDUAL MODELS\n=======================================================\nInitializing 5-Fold Time-Series Cross Validation...\n\n--- Tuning Linear Regression ---\nFitting 5 folds for each of 1 candidates, totalling 5 fits\nBest Params: {}\n\n--- Tuning Ridge ---\nFitting 5 folds for each of 4 candidates, totalling 20 fits\nBest Params: {'alpha': 0.1}\n\n--- Tuning Lasso ---\nFitting 5 folds for each of 4 candidates, totalling 20 fits\nBest Params: {'alpha': 0.0001}\n\n--- Tuning Decision Tree ---\nFitting 5 folds for each of 12 candidates, totalling 60 fits\nBest Params: {'max_depth': None, 'min_samples_split': 20}\n\n--- Tuning Random Forest ---\nFitting 5 folds for each of 6 candidates, totalling 30 fits\nBest Params: {'max_depth': 20, 'n_estimators': 100}\n\n--- Tuning Gradient Boosting ---\nFitting 5 folds for each of 12 candidates, totalling 60 fits\nBest Params: {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 100}\n\n\n\nprint(\"=======================================================\")\nprint(\"BUILDING THE OPTIMIZED STACKING ENSEMBLE\")\nprint(\"=======================================================\")\nprint(\"Using the best tuned Random Forest and Gradient Boosting as base estimators...\")\n\n# Extract the purely tuned regressors\ntuned_rf = best_trained_models[\"Random Forest\"].regressor_\ntuned_gb = best_trained_models[\"Gradient Boosting\"].regressor_\ntuned_ridge = best_trained_models[\"Ridge\"].regressor_\n\nestimators = [\n    ('rf', tuned_rf),\n    ('gb', tuned_gb),\n    ('ridge', tuned_ridge)\n]\n\n# Build Stacking Regressor\nstacking_model = StackingRegressor(\n    estimators=estimators,\n    final_estimator=Ridge(alpha=1.0),\n    cv=5, \n    n_jobs=-1\n)\n\n# Wrap Stacking in Log-Transformer and Train\nlog_stacking = TransformedTargetRegressor(regressor=stacking_model, func=np.log, inverse_func=np.exp)\nlog_stacking.fit(X_train, y_train)\n\n# Evaluate Stacking\nval_rmse, val_mae, val_r2 = evaluate_best_model(log_stacking, X_val, y_val)\ntest_rmse, test_mae, test_r2 = evaluate_best_model(log_stacking, X_test, y_test)\n\nresults.append({\n    \"Model\": \"Stacking Ensemble\",\n    \"Best Params\": \"Meta: Ridge | Base: Tuned RF & GB\",\n    \"Val 2024 RMSE\": round(val_rmse, 2), \"Val 2024 MAE\": round(val_mae, 2), \"Val 2024 R2\": round(val_r2, 4),\n    \"Test 2025 RMSE\": round(test_rmse, 2), \"Test 2025 MAE\": round(test_mae, 2), \"Test 2025 R2\": round(test_r2, 4)\n})\n\nprint(\"\\n=======================================================\")\nprint(\"ALL TUNING & EVALUATION COMPLETED. FINAL RESULTS:\")\nprint(\"=======================================================\")\nresults_df = pd.DataFrame(results)\n\n# Display just the metrics for easy reading\ndisplay_df = results_df[['Model', 'Test 2025 MAE', 'Test 2025 RMSE', 'Test 2025 R2']]\nprint(display_df.to_string(index=False))\n\n\n=======================================================\nBUILDING THE OPTIMIZED STACKING ENSEMBLE\n=======================================================\nUsing the best tuned Random Forest and Gradient Boosting as base estimators...\n\n=======================================================\nALL TUNING & EVALUATION COMPLETED. FINAL RESULTS:\n=======================================================\n                        Model  Test 2025 MAE  Test 2025 RMSE  Test 2025 R2\n            Linear Regression         849.92         1020.71        0.6261\n                        Ridge         849.83         1020.56        0.6263\n                        Lasso         839.79         1013.60        0.6313\n                Decision Tree         836.01         1025.20        0.6229\n                Random Forest         827.34          985.85        0.6513\n            Gradient Boosting         803.08          935.77        0.6858\nStacking Ensemble (Optimized)         725.87          865.13        0.7314"
+  },
+  {
+    "objectID": "Projects/Data Science for Business/Pricing Optimization Model.html",
+    "href": "Projects/Data Science for Business/Pricing Optimization Model.html",
+    "title": "Training Random Forest Classifier Model",
+    "section": "",
+    "text": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.preprocessing import StandardScaler, OneHotEncoder\nfrom sklearn.impute import SimpleImputer\nfrom sklearn.compose import ColumnTransformer\nfrom sklearn.pipeline import Pipeline\nfrom sklearn.metrics import roc_auc_score\n\n\n# Data loading\nlistings_df = pd.read_csv(\"Airbnb Cape Town listings.csv\", encoding='utf-8')\ncalendar_df = pd.read_csv(\"Cape Town Calendar.csv\", encoding='utf-8', usecols=['listing_id', 'date', 'available'])\n\nprint(\"Loading complete\")\n\nLoading complete\n\n\n\n# ==========================================\n# 1. Data Preparation\n# ==========================================\n# Clean Price\nlistings_df['price'] = listings_df['price'].astype(str).str.replace(r'[R\\$,]', '', regex=True).astype(float)\nlistings_df = listings_df.dropna(subset=['price'])\n\n# Clean Superhost (Convert 't'/'f' to 1/0)\nlistings_df['host_is_superhost'] = np.where(listings_df['host_is_superhost'] == 't', 1, 0)\n\nlisting_cols = ['id', 'price', 'accommodates', 'bedrooms', 'room_type', 'neighbourhood_cleansed', \n                'review_scores_rating', 'number_of_reviews', 'host_is_superhost', 'minimum_nights']\nlistings_clean = listings_df[listing_cols].copy()\n\n# Clean Calendar\ncalendar_df['is_booked'] = np.where(calendar_df['available'] == 'f', 1, 0)\ncalendar_df['date'] = pd.to_datetime(calendar_df['date'])\ncalendar_df['month'] = calendar_df['date'].dt.month\ncalendar_df['day_of_week'] = calendar_df['date'].dt.dayofweek\ncalendar_df['is_weekend'] = np.where(calendar_df['day_of_week'] &gt;= 5, 1, 0)\n\nlistings_df['has_pool'] = listings_df['amenities'].str.contains('pool', case=False, na=False).astype(int)\nlistings_df['has_ac'] = listings_df['amenities'].str.contains('air conditioning', case=False, na=False).astype(int)\nlistings_df['has_parking'] = listings_df['amenities'].str.contains('parking', case=False, na=False).astype(int)\nlistings_df['has_wifi'] = listings_df['amenities'].str.contains('wifi', case=False, na=False).astype(int)\n\n\n# ==========================================\n# 2. MERGING & SAMPLING\n# ==========================================\n# 1. Create the Market Medians Lookup Table\n# Group by the main structural features to find the typical local price\nmarket_medians = listings_clean.groupby(['neighbourhood_cleansed', 'room_type', 'bedrooms'])['price'].median().reset_index()\nmarket_medians.rename(columns={'price': 'market_median_price'}, inplace=True)\n\n# 2. Merge Calendar and Listings\nprint(\"Merging Datasets...\")\nmerged_df = pd.merge(calendar_df, listings_clean, left_on='listing_id', right_on='id', how='inner')\n\n# 3. Merge the Medians into training dataset\nmerged_df = pd.merge(merged_df, market_medians, on=['neighbourhood_cleansed', 'room_type', 'bedrooms'], how='left')\n\n# Fallback for any rare listings that didn't get a median match\nmerged_df['market_median_price'] = merged_df['market_median_price'].fillna(merged_df['price'])\n\n# 4. Calculate the Price Ratio\n# A ratio of 1.0 means it is priced exactly at market average. 1.5 means 50% above average.\nmerged_df['price_ratio'] = merged_df['price'] / merged_df['market_median_price']\n\n# 5. Take Sample\ndf_sample = merged_df.sample(n=1000000, random_state=42)\n\nX = df_sample[['price_ratio', 'accommodates', 'bedrooms', 'room_type', 'neighbourhood_cleansed', \n               'month', 'day_of_week', 'is_weekend', \n               'review_scores_rating', 'number_of_reviews', 'host_is_superhost', 'minimum_nights']]\n\ny = df_sample['is_booked']\n\n# 7. Update the numeric features list for your Pipeline\nnumeric_features = ['price_ratio', 'accommodates', 'bedrooms', 'review_scores_rating', 'number_of_reviews', 'minimum_nights']\ncategorical_features = ['room_type', 'neighbourhood_cleansed', 'month', 'day_of_week', 'is_weekend', 'host_is_superhost']\n\n# ==========================================\n# 3. PREPARING FEATURES\n# ==========================================\nprint(\"Building Pipeline...\")\n\n# pipeline handles the NaNs in 'review_scores_rating' automatically\nnumeric_transformer = Pipeline(steps=[\n    ('imputer', SimpleImputer(strategy='median')),\n    ('scaler', StandardScaler())\n])\n\ncategorical_transformer = Pipeline(steps=[\n    ('imputer', SimpleImputer(strategy='most_frequent')),\n    ('encoder', OneHotEncoder(handle_unknown='ignore'))\n])\n\npreprocessor = ColumnTransformer(\n    transformers=[\n        ('num', numeric_transformer, numeric_features),\n        ('cat', categorical_transformer, categorical_features)\n    ])\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n\n# ==========================================\n# 4. TRAINING & EVALUATION (UPGRADED MODEL)\n# ==========================================\nprint(\"Training Random Forest...\")\n\nmodel = Pipeline(steps=[\n    ('preprocessor', preprocessor),\n    ('classifier', RandomForestClassifier(\n        n_estimators=100,           \n        max_depth=30,               \n        class_weight='balanced',    \n        random_state=42, \n        n_jobs=-1\n    ))\n])\n\nmodel.fit(X_train, y_train)\n\n# Quick Evaluation\nprobs = model.predict_proba(X_test)[:, 1]\nprint(f\"✅ Model Trained, ROC-AUC Score: {roc_auc_score(y_test, probs):.4f}\")\n\nMerging Datasets...\nBuilding Pipeline...\nTraining Random Forest...\n✅ Model Trained, ROC-AUC Score: 0.8441\n\n\n\nBatch optimization using new_listing.csv\n\n# Inject historic median price based on same traits\nmerged_df['price_clean'] = pd.to_numeric(merged_df['price'], errors='coerce')\n\nmerged_df = merged_df.dropna(subset=['price_clean'])\n\ndf_sample = merged_df.sample(n=3000000, random_state=42)\n\nmarket_comps = df_sample.groupby(['neighbourhood_cleansed', 'room_type', 'bedrooms'])['price_clean'].median().reset_index()\nmarket_comps.rename(columns={'price_clean': 'proxy_base_price'}, inplace=True)\n\nnew_df = pd.read_csv(\"new_listing.csv\", encoding='ISO-8859-1')\nnew_df['bedrooms'] = new_df['bedrooms'].astype(float)\n\nnew_listings_clean = pd.merge(new_df, market_comps, \n                                   on=['neighbourhood_cleansed', 'room_type', 'bedrooms'], \n                                   how='left')\n\nneighborhood_medians = df_sample.groupby('neighbourhood_cleansed')['price_clean'].median()\nnew_listings_clean['proxy_base_price'] = new_listings_clean['proxy_base_price'].fillna(\n    new_listings_clean['neighbourhood_cleansed'].map(neighborhood_medians)\n)\n\n# Fill missing proxy prices with the overall city median as a fallback\ncity_median = df_sample['price_clean'].median()\nnew_listings_clean['proxy_base_price'] = new_listings_clean['proxy_base_price'].fillna(city_median)\n\n# Ensure accommodates and bedrooms are not NaN\nnew_listings_clean['accommodates'] = new_listings_clean['accommodates'].fillna(2)\nnew_listings_clean['bedrooms'] = new_listings_clean['bedrooms'].fillna(1)\n\n# Final check: drop any remaining rows that might have critical missing data\nnew_listings_clean = new_listings_clean.dropna(subset=['proxy_base_price', 'accommodates', 'bedrooms'])\n\nprint(\"Price columns matched and market comparative price generated.\")\n# print(new_listings_clean[['id', 'proxy_base_price']].head())\n\nPrice columns matched and market comparative price generated.\n\n\n\n# 1. Set target date\ntarget_date = pd.to_datetime(\"2026-08-09\")\nresults_list = [] # List to store results for final export\n\nprint(f\"--- DYNAMIC BATCH PRICING FOR {target_date.strftime('%Y-%m-%d')} ---\")\nprint(f\"Optimizing {len(new_listings_clean)} listings...\\n\")\n\n# 2. Iterate through the new listings\nfor index, row in new_listings_clean.iterrows():\n    \n    anchor_price = row['proxy_base_price']\n    \n    # Skip if anchor_price is NaN or non-numeric\n    if pd.isna(anchor_price) or not np.isfinite(anchor_price):\n        print(f\"Skipping Listing ID: {row['id']} - Missing proxy price.\")\n        continue\n\n    # Add NaN prevention for structural features\n    bedrooms_val = row['bedrooms']\n    clean_bedrooms = float(bedrooms_val) if not pd.isna(bedrooms_val) else 1.0\n\n    accommodates_val = row['accommodates']\n    clean_accommodates = float(accommodates_val) if not pd.isna(accommodates_val) else 2.0\n\n    # 3. Build the raw dictionary\n    raw_dict = {\n        'price_ratio': 0,  \n        'accommodates': clean_accommodates,\n        'bedrooms': clean_bedrooms,\n        'room_type': row['room_type'],\n        'neighbourhood_cleansed': row['neighbourhood_cleansed'],\n        'month': target_date.month,\n        'day_of_week': target_date.dayofweek,\n        'is_weekend': 1 if target_date.dayofweek &gt;= 5 else 0,\n        'review_scores_rating': row.get('review_scores_rating', np.nan), \n        'number_of_reviews': row.get('number_of_reviews', 0),            \n        'host_is_superhost': row.get('host_is_superhost', 0),            \n        'minimum_nights': row.get('minimum_nights', 1)                   \n    }\n    \n    # Convert to DataFrame\n    single_listing_raw = pd.DataFrame([raw_dict])\n\n    try:\n            optimal_price, expected_revenue, optimal_prob, _, _, _ = optimize_daily_price(\n            listing_features=single_listing_raw, \n            trained_model=model, \n            base_price=anchor_price, \n            market_median_price=anchor_price, # The proxy price acts as local median\n            lower_bound=0.5, \n            upper_bound=2, \n            step=50 \n        )\n        \n    except Exception as e:\n        print(f\"Error processing listing {row['id']}: {e}\")\n        continue\n    \n    # 4. Console output for tracking\n    print(f\"Listing ID: {row['id']:.0f} | {row['neighbourhood_cleansed']} | {row['room_type']} ({clean_bedrooms} Bed)\")\n    print(f\"  -&gt; Market Base Price: R{anchor_price:.2f}\")\n    print(f\"  -&gt; Optimal Price:     R{optimal_price}\")\n    print(f\"  -&gt; Booking Chance:    {optimal_prob * 100:.1f}%\")\n    print(f\"  -&gt; Expected Revenue:  R{expected_revenue:.2f}\")\n    print(\"-\" * 60)\n\n    # 5. Append to results list for export\n    results_list.append({\n        'listing_id': row['id'],\n        'neighbourhood': row['neighbourhood_cleansed'],\n        'market_price': anchor_price,\n        'optimal_price': optimal_price,\n        'expected_revenue': expected_revenue,\n        'booking_prob': optimal_prob\n    })\n\n# 6. Convert results to DataFrame and Save\noptimized_results_df = pd.DataFrame(results_list)\noptimized_results_df.to_csv('cape_town_optimized_prices.csv', index=False)\nprint(\"\\nBatch Optimization Complete. Results saved to 'cape_town_optimized_prices.csv'\")\n\n--- DYNAMIC BATCH PRICING FOR 2026-08-09 ---\nOptimizing 22 listings...\n\nListing ID: 122455 | Ward 115 | Entire home/apt (4.0 Bed)\n  -&gt; Market Base Price: R6398.00\n  -&gt; Optimal Price:     R19199\n  -&gt; Booking Chance:    49.7%\n  -&gt; Expected Revenue:  R9534.38\n------------------------------------------------------------\nListing ID: 123012 | Ward 77 | Entire home/apt (0.0 Bed)\n  -&gt; Market Base Price: R914.00\n  -&gt; Optimal Price:     R2757\n  -&gt; Booking Chance:    39.0%\n  -&gt; Expected Revenue:  R1075.31\n------------------------------------------------------------\nListing ID: 123076 | Ward 77 | Entire home/apt (2.0 Bed)\n  -&gt; Market Base Price: R1858.00\n  -&gt; Optimal Price:     R5579\n  -&gt; Booking Chance:    66.4%\n  -&gt; Expected Revenue:  R3706.79\n------------------------------------------------------------\nListing ID: 133339 | Ward 77 | Private room (1.0 Bed)\n  -&gt; Market Base Price: R754.00\n  -&gt; Optimal Price:     R2277\n  -&gt; Booking Chance:    66.9%\n  -&gt; Expected Revenue:  R1523.23\n------------------------------------------------------------\nListing ID: 200211 | Ward 54 | Entire home/apt (2.0 Bed)\n  -&gt; Market Base Price: R2901.00\n  -&gt; Optimal Price:     R8750\n  -&gt; Booking Chance:    36.3%\n  -&gt; Expected Revenue:  R3179.98\n------------------------------------------------------------\nListing ID: 218269 | Ward 115 | Entire home/apt (1.0 Bed)\n  -&gt; Market Base Price: R1200.00\n  -&gt; Optimal Price:     R3450\n  -&gt; Booking Chance:    44.8%\n  -&gt; Expected Revenue:  R1544.18\n------------------------------------------------------------\nListing ID: 231402 | Ward 115 | Entire home/apt (1.0 Bed)\n  -&gt; Market Base Price: R1200.00\n  -&gt; Optimal Price:     R3600\n  -&gt; Booking Chance:    49.8%\n  -&gt; Expected Revenue:  R1792.78\n------------------------------------------------------------\nListing ID: 590826 | Ward 115 | Entire home/apt (1.0 Bed)\n  -&gt; Market Base Price: R1200.00\n  -&gt; Optimal Price:     R3600\n  -&gt; Booking Chance:    32.3%\n  -&gt; Expected Revenue:  R1162.71\n------------------------------------------------------------\nListing ID: 606963 | Ward 64 | Private room (1.0 Bed)\n  -&gt; Market Base Price: R675.00\n  -&gt; Optimal Price:     R2037\n  -&gt; Booking Chance:    25.5%\n  -&gt; Expected Revenue:  R519.52\n------------------------------------------------------------\nListing ID: 613068 | Ward 21 | Entire home/apt (2.0 Bed)\n  -&gt; Market Base Price: R1424.00\n  -&gt; Optimal Price:     R4312\n  -&gt; Booking Chance:    44.6%\n  -&gt; Expected Revenue:  R1921.86\n------------------------------------------------------------\nListing ID: 688644 | Ward 77 | Entire home/apt (1.0 Bed)\n  -&gt; Market Base Price: R1130.00\n  -&gt; Optimal Price:     R3415\n  -&gt; Booking Chance:    55.9%\n  -&gt; Expected Revenue:  R1907.42\n------------------------------------------------------------\nListing ID: 690609 | Ward 57 | Entire home/apt (2.0 Bed)\n  -&gt; Market Base Price: R1402.00\n  -&gt; Optimal Price:     R4251\n  -&gt; Booking Chance:    49.4%\n  -&gt; Expected Revenue:  R2098.64\n------------------------------------------------------------\nListing ID: 697880 | Ward 57 | Entire home/apt (1.0 Bed)\n  -&gt; Market Base Price: R858.00\n  -&gt; Optimal Price:     R2579\n  -&gt; Booking Chance:    41.9%\n  -&gt; Expected Revenue:  R1081.60\n------------------------------------------------------------\nListing ID: 708351 | Ward 64 | Entire home/apt (3.0 Bed)\n  -&gt; Market Base Price: R2296.00\n  -&gt; Optimal Price:     R6898\n  -&gt; Booking Chance:    38.6%\n  -&gt; Expected Revenue:  R2664.41\n------------------------------------------------------------\nListing ID: 731764 | Ward 54 | Entire home/apt (2.0 Bed)\n  -&gt; Market Base Price: R2901.00\n  -&gt; Optimal Price:     R8750\n  -&gt; Booking Chance:    54.0%\n  -&gt; Expected Revenue:  R4723.83\n------------------------------------------------------------\nListing ID: 731882 | Ward 115 | Entire home/apt (1.0 Bed)\n  -&gt; Market Base Price: R1200.00\n  -&gt; Optimal Price:     R3600\n  -&gt; Booking Chance:    48.5%\n  -&gt; Expected Revenue:  R1746.54\n------------------------------------------------------------\nListing ID: 732339 | Ward 21 | Entire home/apt (2.0 Bed)\n  -&gt; Market Base Price: R1424.00\n  -&gt; Optimal Price:     R4312\n  -&gt; Booking Chance:    48.6%\n  -&gt; Expected Revenue:  R2094.06\n------------------------------------------------------------\nListing ID: 795614 | Ward 77 | Entire home/apt (4.0 Bed)\n  -&gt; Market Base Price: R8563.00\n  -&gt; Optimal Price:     R25731\n  -&gt; Booking Chance:    53.0%\n  -&gt; Expected Revenue:  R13648.04\n------------------------------------------------------------\nListing ID: 800546 | Ward 54 | Entire home/apt (4.0 Bed)\n  -&gt; Market Base Price: R11672.00\n  -&gt; Optimal Price:     R35036\n  -&gt; Booking Chance:    43.2%\n  -&gt; Expected Revenue:  R15119.72\n------------------------------------------------------------\nListing ID: 800623 | Ward 54 | Entire home/apt (2.0 Bed)\n  -&gt; Market Base Price: R2901.00\n  -&gt; Optimal Price:     R8750\n  -&gt; Booking Chance:    48.6%\n  -&gt; Expected Revenue:  R4253.44\n------------------------------------------------------------\nListing ID: 801953 | Ward 115 | Entire home/apt (1.0 Bed)\n  -&gt; Market Base Price: R1200.00\n  -&gt; Optimal Price:     R3600\n  -&gt; Booking Chance:    53.4%\n  -&gt; Expected Revenue:  R1922.68\n------------------------------------------------------------\nListing ID: 807366 | Ward 55 | Entire home/apt (2.0 Bed)\n  -&gt; Market Base Price: R1743.00\n  -&gt; Optimal Price:     R5271\n  -&gt; Booking Chance:    60.6%\n  -&gt; Expected Revenue:  R3195.14\n------------------------------------------------------------\n\nBatch Optimization Complete. Results saved to 'cape_town_optimized_prices.csv'\n\n\n\n\nSingle listing optimization\n\n# 1. Grab the needed features and select a specific row \nfeatures_needed = ['id', 'accommodates', 'bedrooms', 'room_type', 'neighbourhood_cleansed', 'proxy_base_price']\nselected_listing_row = new_listings_clean[features_needed].iloc[6]\n\n# Select Target date\ntarget_date = pd.to_datetime(\"2026-6-24\") \n\n# Extract variables\nlisting_id = selected_listing_row['id']\nanchor_price = selected_listing_row['proxy_base_price']\n\n# 2. ALIGNMENT & NaN PREVENTION\nbedrooms_val = selected_listing_row['bedrooms']\nclean_bedrooms = float(bedrooms_val) if not pd.isna(bedrooms_val) else 1.0\n\naccommodates_val = selected_listing_row['accommodates']\nclean_accommodates = float(accommodates_val) if not pd.isna(accommodates_val) else 2.0\n\nraw_dict = {\n        'price_ratio': 0, \n        'accommodates': clean_accommodates,\n        'bedrooms': clean_bedrooms,\n        'room_type': selected_listing_row['room_type'],\n        'neighbourhood_cleansed': selected_listing_row['neighbourhood_cleansed'],\n        'month': target_date.month,\n        'day_of_week': target_date.dayofweek,\n        'is_weekend': 1 if target_date.dayofweek &gt;= 5 else 0,\n        'review_scores_rating': selected_listing_row.get('review_scores_rating', np.nan), # Pipeline imputer handles the NaN\n        'number_of_reviews': selected_listing_row.get('number_of_reviews', 0),            # 0 reviews for a new listing\n        'host_is_superhost': selected_listing_row.get('host_is_superhost', 0),            # New hosts aren't superhosts\n        'minimum_nights': selected_listing_row.get('minimum_nights', 1)                   # Default to 1-night minimum\n    }\n\nsingle_listing_raw = pd.DataFrame([raw_dict])\n\n# 3. Run the optimization engine\noptimal_price, expected_revenue, optimal_prob, prices, revenues, probabilities = optimize_daily_price(\n    listing_features=single_listing_raw, \n    trained_model=model, \n    base_price=anchor_price, \n    market_median_price=anchor_price, \n    lower_bound=0.5, \n    upper_bound=2, \n    step=50\n)\n\n# 4. RESULTS OUTPUT\nprint(f\"--- RESULTS FOR CAPE TOWN LISTING {listing_id:.0f} ---\")\nprint(f\"Target Date: {target_date.strftime('%Y-%m-%d')}\")\nprint(f\"Market Proxy Base Price: R{anchor_price:.2f}\")\nprint(\"-\" * 40)\nprint(f\"RECOMMENDED OPTIMAL PRICE: R{optimal_price}\")\nprint(f\"CHANCE OF BOOKING:         {optimal_prob * 100:.2f}%\") \nprint(f\"EXPECTED DAILY REVENUE:    R{expected_revenue:.2f}\")\nprint(\"-\" * 40)\n\n# 5. PLOT THE DUAL-AXIS CURVE\nfig, ax1 = plt.subplots(figsize=(12, 6))\n\n# --- PRIMARY AXIS: Expected Revenue ---\nax1.plot(prices, revenues, color='#1f77b4', marker='o', linestyle='-', linewidth=3, label='Expected Revenue (R)')\nax1.set_xlabel('Tested Nightly Price (ZAR)', fontsize=12, fontweight='bold')\nax1.set_ylabel('Expected Revenue (R)', color='#1f77b4', fontsize=12, fontweight='bold')\nax1.tick_params(axis='y', labelcolor='#1f77b4')\n\n# --- SECONDARY AXIS: Probability ---\nax2 = ax1.twinx() \n# Plotting the booking probability trend\nax2.plot(prices, probabilities, color='#ff7f0e', marker='x', linestyle='--', alpha=0.8, linewidth=2, label='Booking Probability (%)')\nax2.set_ylabel('Probability of Booking (%)', color='#ff7f0e', fontsize=12, fontweight='bold')\nax2.tick_params(axis='y', labelcolor='#ff7f0e')\nax2.set_ylim(0, 105) # Keep probability scale consistent\n\n# --- OPTIMAL PRICE LINE (Updated Label) ---\n# Highlighting both the Price and the resulting Booking Probability at that price\nax1.axvline(x=optimal_price, color='#d62728', linestyle='-.', linewidth=2.5,\n            label=f'Optimal: R{optimal_price} (Prob: {optimal_prob*100:.1f}%)')\n\n# Formatting the chart\nplt.title(f'Cape Town Revenue Optimization (ID: {listing_id:.0f})\\nTarget Date: {target_date.strftime(\"%Y-%m-%d\")}', fontsize=14, pad=15)\n\n# Merging legends\nlines_1, labels_1 = ax1.get_legend_handles_labels()\nlines_2, labels_2 = ax2.get_legend_handles_labels()\nax1.legend(lines_1 + lines_2, labels_1 + labels_2, loc='upper left', framealpha=0.9)\n\nax1.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.show()\n\n--- RESULTS FOR CAPE TOWN LISTING 231402 ---\nTarget Date: 2026-06-24\nMarket Proxy Base Price: R1200.00\n----------------------------------------\nRECOMMENDED OPTIMAL PRICE: R2400\nCHANCE OF BOOKING:         24.58%\nEXPECTED DAILY REVENUE:    R589.82\n----------------------------------------\n\n\n\n\n\n\n\n\n\n\n\nFeature Importance\n\n# 1. Isolate the two parts of your pipeline\npreprocessor = model.named_steps['preprocessor']\nrf_classifier = model.named_steps['classifier']\n\n# 2. Get the new, one-hot encoded feature names from the preprocessor\n# It will generate names like 'num__price' or 'cat__room_type_Private room'\nfeature_names = preprocessor.get_feature_names_out()\n\n# 3. Get the Gini importance scores from the Random Forest\nimportances = rf_classifier.feature_importances_\n\n# 4. Combine them into a clean Pandas DataFrame\nimportance_df = pd.DataFrame({\n    'Feature': feature_names,\n    'Importance': importances\n})\n\n# 5. Clean up the feature names for the presentation graph (remove 'num__' and 'cat__')\nimportance_df['Feature'] = importance_df['Feature'].str.replace('num__', '', regex=False)\nimportance_df['Feature'] = importance_df['Feature'].str.replace('cat__', '', regex=False)\n\n# Sort the top 15 most important features\ntop_15_features = importance_df.sort_values(by='Importance', ascending=False).head(15)\n\nprint(\"Top 5 Drivers of Airbnb Demand in Cape Town:\")\nprint(top_15_features.head(5))\n\n# ==========================================\n# 6. PLOTTING THE RESULTS\n# ==========================================\nplt.figure(figsize=(12, 7))\n\n# Create a horizontal bar chart\nplt.barh(top_15_features['Feature'][::-1], top_15_features['Importance'][::-1], color='tab:purple', edgecolor='black')\n\nplt.title('What Drives Booking Decisions in Cape Town?\\n(Random Forest Feature Importance)', fontsize=15, pad=15)\nplt.xlabel('Relative Importance (Gini)', fontsize=12, fontweight='bold')\nplt.ylabel('Listing Features', fontsize=12, fontweight='bold')\nplt.grid(axis='x', linestyle='--', alpha=0.5)\nplt.tight_layout()\n\n# Save for your presentation\nplt.savefig('capetown_feature_importance.png', dpi=300)\nplt.show()\n\nTop 5 Drivers of Airbnb Demand in Cape Town:\n                Feature  Importance\n0           price_ratio    0.196681\n4     number_of_reviews    0.131328\n3  review_scores_rating    0.104859\n5        minimum_nights    0.083808\n1          accommodates    0.052729"
+  },
+  {
+    "objectID": "Projects/Query Processing and Optimisation/index.html",
+    "href": "Projects/Query Processing and Optimisation/index.html",
+    "title": "Full-Text Index Optimisation",
+    "section": "",
+    "text": "This project benchmarks MySQL FULLTEXT search against multi-column wildcard LIKE queries on text-rich Airbnb listing data."
+  },
+  {
+    "objectID": "Projects/Query Processing and Optimisation/index.html#project-overview",
+    "href": "Projects/Query Processing and Optimisation/index.html#project-overview",
+    "title": "Full-Text Index Optimisation",
+    "section": "",
+    "text": "This project benchmarks MySQL FULLTEXT search against multi-column wildcard LIKE queries on text-rich Airbnb listing data."
+  },
+  {
+    "objectID": "Projects/Query Processing and Optimisation/index.html#why-optimize-text-search",
+    "href": "Projects/Query Processing and Optimisation/index.html#why-optimize-text-search",
+    "title": "Full-Text Index Optimisation",
+    "section": "Why optimize text search?",
+    "text": "Why optimize text search?\nA query such as:\nSELECT *\nFROM listings\nWHERE description LIKE '%beach%';\nmust inspect rows sequentially because the leading wildcard prevents a conventional index lookup. A full-text index instead tokenizes text, removes configured stop words, and stores an inverted mapping from terms to matching rows.\nCREATE FULLTEXT INDEX idx_fulltext\nON listings(description);\n\nSELECT *\nFROM listings\nWHERE MATCH(description)\n      AGAINST ('beach' IN NATURAL LANGUAGE MODE);"
+  },
+  {
+    "objectID": "Projects/Query Processing and Optimisation/index.html#dataset-and-benchmark",
+    "href": "Projects/Query Processing and Optimisation/index.html#dataset-and-benchmark",
+    "title": "Full-Text Index Optimisation",
+    "section": "Dataset and benchmark",
+    "text": "Dataset and benchmark\n\nSource: Inside Airbnb.\nRaw dataset: 36,261 listings and 85 attributes.\nSearch fields include listing names, descriptions, neighbourhood overviews, host descriptions, and amenities.\nBenchmark: 34 realistic Airbnb keywords and phrases.\nRepetitions: 10 runs per query to calculate average search time.\nComparison: multi-column %LIKE% against multi-column MATCH() AGAINST()."
+  },
+  {
+    "objectID": "Projects/Query Processing and Optimisation/index.html#results",
+    "href": "Projects/Query Processing and Optimisation/index.html#results",
+    "title": "Full-Text Index Optimisation",
+    "section": "Results",
+    "text": "Results\nThe main benchmark reports:\n\n\n\nMetric\nFULLTEXT\nNon-optimized LIKE\n\n\n\n\nAverage query time\n16.69 ms\n169.58 ms\n\n\nRows examined\napproximately 1\n33,407\n\n\nAverage time reduction\n90.16%\n—\n\n\n\nPerformance varied with query selectivity.\n\n\n\nQuery\nMatches\nFULLTEXT\nLIKE\nSpeedup\n\n\n\n\nhighly recommend\n29\n0.31 ms\n215.67 ms\n700.23x\n\n\nrestaurant\n1,835\n1.19 ms\n160.81 ms\n135.37x\n\n\nprivate\n17,668\n4.74 ms\n137.03 ms\n28.91x\n\n\nwalking distance\n4,677\n25.01 ms\n166.88 ms\n6.67x\n\n\nwasher dryer\n2,265\n69.21 ms\n207.07 ms\n2.99x"
+  },
+  {
+    "objectID": "Projects/Query Processing and Optimisation/index.html#complexity-and-trade-offs",
+    "href": "Projects/Query Processing and Optimisation/index.html#complexity-and-trade-offs",
+    "title": "Full-Text Index Optimisation",
+    "section": "Complexity and trade-offs",
+    "text": "Complexity and trade-offs\nThe project characterizes wildcard scanning as approximately \\(O(N)\\) and indexed retrieval as approximately \\(O(\\log N + M)\\), where \\(N\\) is dataset size and \\(M\\) is the number of matches.\nBenefits:\n\nFaster retrieval and improved read scalability.\nParticularly strong gains for selective searches.\nRelevance scoring in natural-language mode.\n\nCosts and limitations:\n\nAdditional index storage.\nSlower inserts and updates.\nText columns only; structured filters need other indexes.\nSearch semantics differ from arbitrary substring matching.\nStop-word and tokenization configuration affects recall."
+  },
+  {
+    "objectID": "Projects/Query Processing and Optimisation/index.html#recommendation",
+    "href": "Projects/Query Processing and Optimisation/index.html#recommendation",
+    "title": "Full-Text Index Optimisation",
+    "section": "Recommendation",
+    "text": "Recommendation\nFull-text indexing is well suited to read-heavy, text-dense search systems. Before production adoption, benchmarks should verify semantic equivalence, cache conditions, relevance quality, database configuration, and performance at the intended scale."
+  },
+  {
+    "objectID": "Projects/Query Processing and Optimisation/index.html#source-artifact",
+    "href": "Projects/Query Processing and Optimisation/index.html#source-artifact",
+    "title": "Full-Text Index Optimisation",
+    "section": "Source artifact",
+    "text": "Source artifact\n\nFull-text indexing presentation"
+  },
+  {
+    "objectID": "Projects/Statistical Thinking for Data Science/index.html",
+    "href": "Projects/Statistical Thinking for Data Science/index.html",
+    "title": "Is Singapore Healthcare Adequate for an Ageing Population?",
+    "section": "",
+    "text": "This project assesses whether Singapore’s healthcare expenditure and infrastructure have kept pace with growth in the elderly population."
+  },
+  {
+    "objectID": "Projects/Statistical Thinking for Data Science/index.html#project-overview",
+    "href": "Projects/Statistical Thinking for Data Science/index.html#project-overview",
+    "title": "Is Singapore Healthcare Adequate for an Ageing Population?",
+    "section": "",
+    "text": "This project assesses whether Singapore’s healthcare expenditure and infrastructure have kept pace with growth in the elderly population."
+  },
+  {
+    "objectID": "Projects/Statistical Thinking for Data Science/index.html#analytical-approach",
+    "href": "Projects/Statistical Thinking for Data Science/index.html#analytical-approach",
+    "title": "Is Singapore Healthcare Adequate for an Ageing Population?",
+    "section": "Analytical approach",
+    "text": "Analytical approach\nThe study combines:\n\nDescriptive statistics.\nPearson correlation analysis and significance tests.\nSimple linear regression of healthcare expenditure on elderly population share.\nPaired tests comparing elderly-population growth with bed-capacity growth."
+  },
+  {
+    "objectID": "Projects/Statistical Thinking for Data Science/index.html#correlation-findings",
+    "href": "Projects/Statistical Thinking for Data Science/index.html#correlation-findings",
+    "title": "Is Singapore Healthcare Adequate for an Ageing Population?",
+    "section": "Correlation findings",
+    "text": "Correlation findings\n\n\n\n\n\n\n\n\nRelationship\nCorrelation\nInterpretation\n\n\n\n\nElderly share and health expenditure per capita\n0.96\nHigher ageing is associated with higher per-person spending\n\n\nElderly share and hospital beds\n0.98-0.99\nPhysical capacity broadly tracks ageing\n\n\nHealth expenditure and bed occupancy\n0.81\nAdded resources are rapidly absorbed by demand\n\n\nElderly share and community-hospital admissions\n0.89\nPost-acute and rehabilitation needs rise with ageing\n\n\nElderly share and psychiatric beds\n-0.81\nMental-health capacity appears to lag\n\n\n\nReported significance tests for elderly share against expenditure and acute, community, and nursing-home beds all have p-values below 0.05."
+  },
+  {
+    "objectID": "Projects/Statistical Thinking for Data Science/index.html#regression-result",
+    "href": "Projects/Statistical Thinking for Data Science/index.html#regression-result",
+    "title": "Is Singapore Healthcare Adequate for an Ageing Population?",
+    "section": "Regression result",
+    "text": "Regression result\nThe simple regression reports:\n\n\\(R^2=0.92\\): 92% of the observed variation in healthcare expenditure per capita is explained by elderly population share within the analysed sample.\nA positive coefficient for elderly share.\nA p-value below 0.01.\n\nThese findings show a strong association between demographic ageing and healthcare expenditure."
+  },
+  {
+    "objectID": "Projects/Statistical Thinking for Data Science/index.html#growth-rate-tests",
+    "href": "Projects/Statistical Thinking for Data Science/index.html#growth-rate-tests",
+    "title": "Is Singapore Healthcare Adequate for an Ageing Population?",
+    "section": "Growth-rate tests",
+    "text": "Growth-rate tests\n\n\n\n\n\n\n\n\n\nComparison\nt-statistic\np-value\nReported decision\n\n\n\n\nElderly vs acute-bed growth\n-5.270\n0.99996\nFail to reject the null\n\n\nElderly vs community-bed growth\n0.823\n0.21134\nFail to reject the null\n\n\nElderly vs nursing-home-bed growth\n-0.167\n0.56539\nFail to reject the null\n\n\n\nThe project finds no statistical evidence that elderly growth has outpaced these bed-capacity categories over the analysis period."
+  },
+  {
+    "objectID": "Projects/Statistical Thinking for Data Science/index.html#interpretation",
+    "href": "Projects/Statistical Thinking for Data Science/index.html#interpretation",
+    "title": "Is Singapore Healthcare Adequate for an Ageing Population?",
+    "section": "Interpretation",
+    "text": "Interpretation\nSingapore’s physical healthcare system appears to have expanded broadly in line with population ageing. However, two risks remain:\n\nHigh occupancy suggests that capacity additions are quickly consumed.\nPsychiatric-bed trends indicate a potential gap in geriatric mental-health services."
+  },
+  {
+    "objectID": "Projects/Statistical Thinking for Data Science/index.html#statistical-cautions",
+    "href": "Projects/Statistical Thinking for Data Science/index.html#statistical-cautions",
+    "title": "Is Singapore Healthcare Adequate for an Ageing Population?",
+    "section": "Statistical cautions",
+    "text": "Statistical cautions\n\nCorrelation does not establish causality.\nVariables that trend over time can exhibit strong shared correlations.\nSmall time-series samples can limit statistical power.\nService adequacy depends on staffing, access, quality, waiting times, and case complexity, not beds alone.\n\nFuture analysis should test stationarity, lagged effects, demographic and economic confounders, and per-capita or age-standardized service measures."
+  },
+  {
+    "objectID": "Projects/Statistical Thinking for Data Science/index.html#source-artifact",
+    "href": "Projects/Statistical Thinking for Data Science/index.html#source-artifact",
+    "title": "Is Singapore Healthcare Adequate for an Ageing Population?",
+    "section": "Source artifact",
+    "text": "Source artifact\n\nGroup project report"
   }
 ]

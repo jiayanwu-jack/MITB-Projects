@@ -1,0 +1,77 @@
+---
+title: "Is Singapore Healthcare Adequate for an Ageing Population?"
+subtitle: "Statistical Thinking for Data Science"
+author: "IS630 Group 1, Team 3"
+date: "2025-11-03"
+toc: true
+toc-depth: 3
+format:
+  html:
+    theme: cosmo
+    embed-resources: true
+---
+
+## Project overview
+
+This project assesses whether Singapore's healthcare expenditure and infrastructure have kept pace with growth in the elderly population.
+
+## Analytical approach
+
+The study combines:
+
+- Descriptive statistics.
+- Pearson correlation analysis and significance tests.
+- Simple linear regression of healthcare expenditure on elderly population share.
+- Paired tests comparing elderly-population growth with bed-capacity growth.
+
+## Correlation findings
+
+| Relationship | Correlation | Interpretation |
+|---|---:|---|
+| Elderly share and health expenditure per capita | 0.96 | Higher ageing is associated with higher per-person spending |
+| Elderly share and hospital beds | 0.98-0.99 | Physical capacity broadly tracks ageing |
+| Health expenditure and bed occupancy | 0.81 | Added resources are rapidly absorbed by demand |
+| Elderly share and community-hospital admissions | 0.89 | Post-acute and rehabilitation needs rise with ageing |
+| Elderly share and psychiatric beds | -0.81 | Mental-health capacity appears to lag |
+
+Reported significance tests for elderly share against expenditure and acute, community, and nursing-home beds all have p-values below 0.05.
+
+## Regression result
+
+The simple regression reports:
+
+- $R^2=0.92$: 92% of the observed variation in healthcare expenditure per capita is explained by elderly population share within the analysed sample.
+- A positive coefficient for elderly share.
+- A p-value below 0.01.
+
+These findings show a strong association between demographic ageing and healthcare expenditure.
+
+## Growth-rate tests
+
+| Comparison | t-statistic | p-value | Reported decision |
+|---|---:|---:|---|
+| Elderly vs acute-bed growth | -5.270 | 0.99996 | Fail to reject the null |
+| Elderly vs community-bed growth | 0.823 | 0.21134 | Fail to reject the null |
+| Elderly vs nursing-home-bed growth | -0.167 | 0.56539 | Fail to reject the null |
+
+The project finds no statistical evidence that elderly growth has outpaced these bed-capacity categories over the analysis period.
+
+## Interpretation
+
+Singapore's physical healthcare system appears to have expanded broadly in line with population ageing. However, two risks remain:
+
+1. High occupancy suggests that capacity additions are quickly consumed.
+2. Psychiatric-bed trends indicate a potential gap in geriatric mental-health services.
+
+## Statistical cautions
+
+- Correlation does not establish causality.
+- Variables that trend over time can exhibit strong shared correlations.
+- Small time-series samples can limit statistical power.
+- Service adequacy depends on staffing, access, quality, waiting times, and case complexity, not beds alone.
+
+Future analysis should test stationarity, lagged effects, demographic and economic confounders, and per-capita or age-standardized service measures.
+
+## Source artifact
+
+- [Group project report](IS630%20Statistical%20Thinking%20Group%20Project.docx)
