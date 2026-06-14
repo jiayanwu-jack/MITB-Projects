@@ -12,126 +12,99 @@ format:
 ::: callout-note
 **Contact:** +65 8206 3291\
 **Email:** [jiayan.wu.2025\@mitb.smu.edu.sg](mailto:jiayan.wu.2025@mitb.smu.edu.sg)\
-**Profile:** ERP Systems · Project Management · Data Analytics · Bilingual Localization
+**Citizenship:** Singapore Citizen\
+**Portfolio:** [mitb-projects.vercel.app](https://mitb-projects.vercel.app/)
 :::
-
-## Professional Summary
-
-IT business and data analytics professional combining business-technology delivery experience with applied analytics skills. Experienced in ERP requirements gathering, stakeholder coordination, project delivery, workflow design, bilingual localization, and quality assurance. Currently completing the Master of IT in Business at Singapore Management University.
 
 ## Core Skills
 
 **Data Analytics**
 
-:   Python, R, Tableau, machine learning, predictive analytics, and data visualization.
+:   Combines business-technology delivery experience with applied skills in Python, R, Tableau, machine learning, and data visualization.
 
-**Business and Systems**
+**Business & Systems**
 
-:   ERP requirements gathering, stakeholder coordination, project scheduling, issue resolution, workflow and interface design, documentation, progress reporting, and change reporting.
+:   ERP requirements gathering, stakeholder coordination, project scheduling, issue resolution, workflow/interface design, documentation, progress and change reporting.
 
-**Localization and Quality**
+**Project Delivery**
 
-:   Simplified Chinese localization, English-Chinese translation, proofreading, terminology management, linguistic quality assurance, vendor test review, and community support.
-
-**Languages**
-
-:   English and Chinese.
+:   Coordination, Change Management, Reporting.
 
 ## Education
 
-### Master of IT in Business
-
-**Singapore Management University, Singapore** \| August 2025–Present\
+### Singapore Management University, Singapore
+**Aug 2025 - Present**\
+Master of IT in Business\
 Cumulative GPA: **3.47 / 4.00**
 
-Relevant coursework includes Computational Thinking with Python, Applied Machine Learning, Statistical Thinking for Data Science, Data Science for Business, Spreadsheet Modelling for Decision Making, Query Processing and Optimisation, Visual Analytics, Social Analytics, and Data Science in Financial Services.
+### Oxford Brookes University, United Kingdom
+**Jun 2018 - Mar 2024**\
+Bachelor of Science in Applied Accounting
 
-### Bachelor of Science in Applied Accounting
+### University of Leicester, United Kingdom
+**Oct 2009 - Jan 2011**\
+Master of Science in Marketing
 
-**Oxford Brookes University, United Kingdom** \| June 2018–March 2024
-
-### Master of Science in Marketing
-
-**University of Leicester, United Kingdom** \| October 2009–January 2011
-
-### BA in Business Management
-
-**University of Sunderland, United Kingdom** \| January 2008–March 2009
+### University of Sunderland, United Kingdom
+**Jan 2008 - Mar 2009**\
+BA in Business Management
 
 ## Selected MITB Projects
 
-### HDB Resale Price Prediction Using Ensemble Machine Learning
-
-**Applied Machine Learning \| 2026**
-
-Developed a model to predict future Singapore HDB resale prices using historical transactions and engineered housing features. The stacking ensemble outperformed baseline methods, achieving $R^2=0.7314$ and RMSE of 865.13.
+### HDB Resale Price Prediction using Ensemble Machine Learning
 
 **Tools:** Python, pandas, scikit-learn, Jupyter Notebook\
+Developed a machine learning model to predict future Singapore HDB resale prices using historical transaction data and engineered housing features. Built a stacking ensemble model that outperformed baseline methods, achieving $R^2 = 0.7314$ and RMSE = 865.13.\
 [View project report](../Projects/Applied%20Machine%20Learning/)
 
-### Airbnb Dynamic Pricing and Revenue Optimization
-
-**Data Science for Business \| 2026**
-
-Built a predictive pricing model that recommends Airbnb nightly rates by balancing booking probability and expected revenue. The Random Forest model achieved ROC-AUC of 0.8441 and generated optimized recommendations for new listings.
+### Airbnb Dynamic Pricing & Revenue Optimization Model
 
 **Tools:** Python, Random Forest, predictive analytics\
+Built a predictive pricing model to recommend Airbnb nightly rates by balancing booking probability and expected revenue. Trained a Random Forest model that achieved ROC-AUC = 0.8441 and generated optimized pricing recommendations for new listings.\
 [View project report](../Projects/Data%20Science%20for%20Business/)
 
-### MySQL Query Performance Optimization
+### MySQL Query Performance Optimization for Airbnb Search
 
-**Query Processing and Optimisation \| 2026**
-
-Evaluated FULLTEXT indexing against wildcard search queries on Airbnb listing data. The benchmark achieved approximately 90% average runtime reduction, with selected searches improving by more than 20 times.
-
-**Tools:** MySQL, SQL, database optimization\
+**Tools:** MySQL, SQL, Database Optimization\
+Evaluated FULLTEXT indexing against wildcard search queries to improve keyword search efficiency on Airbnb listing datasets. Achieved approximately 90% average runtime reduction, with selected search scenarios improving by over 20x.\
 [View project report](../Projects/Query%20Processing%20and%20Optimisation/)
 
-### AI-Assisted Trade Surveillance
+### AI-Assisted Trade Surveillance for Financial Misconduct Detection
 
-**Data Science for Financial Services \| 2026**
-
-Designed an AI-assisted workflow to identify suspicious trader communications, including market manipulation and confidential-information leakage. Compared traditional keyword searches with contextual AI analysis.
-
-**Tools:** Google AI Studio, generative AI, prompt engineering\
+**Tools:** Google AI Studio, Generative AI, Prompt Engineering\
+Designed an AI-assisted workflow to detect suspicious trader communications, including market manipulation and confidential information leakage. Compared traditional keyword searches with contextual AI analysis to improve compliance monitoring and misconduct detection.\
 [View project report](../Projects/Data%20Science%20for%20Financial%20Service/)
 
 ## Professional Experience
 
-### Project Manager / ERP System Manager
-
-**Shanghai Zhenghe Communication Equipment Leasing Co., Ltd.** \| November 2016–November 2022
+### Shanghai Zhenghe Communication Equipment Leasing Co., Ltd.
+**Nov 2016 - Nov 2022**\
+Project Manager / ERP System Manager
 
 - Coordinated schedules, resources, documentation, and cross-functional activities across project stages.
-- Translated business needs into ERP functional requirements and clarified enhancement requests with developers.
-- Supported user-friendly ERP interfaces and workflows aligned with operational processes.
+- Translated business needs into ERP functional requirements and clarified enhancement requests with software developers.
+- Supported user-friendly ERP interface and workflow design aligned with operational processes and stakeholder needs.
 - Monitored progress, risks, and changes; prepared stakeholder updates and close-out reports; and coordinated issue resolution.
 
-### Simplified Chinese Linguist
+### Simplified Chinese Linguist | Keywords International Pte Ltd
+**Mar 2015 - Oct 2016**
 
-**Keywords International Pte Ltd** \| March 2015–October 2016\
-Full-time: March 2015–February 2016 \| Freelance: March 2016–October 2016
+- Translated, reviewed, proofread, and performed linguistic QA for Simplified Chinese content across assigned projects.
+- Created and maintained glossaries, terminology guidelines, and language resources to improve consistency and quality.
+- Reviewed vendor tests, supported testing teams, and collaborated with project managers and multilingual teams.
+- Guided junior linguists and contributed to quality improvement and process enhancement initiatives.
 
-- Translated, reviewed, proofread, and performed linguistic QA for Simplified Chinese content.
-- Created glossaries, terminology guidelines, and language resources.
-- Reviewed vendor tests and collaborated with project managers, testing teams, and multilingual teams.
-- Guided junior linguists and contributed to quality and process improvements.
-
-### Translator cum Game Master
-
-**IGG Singapore Pte Ltd** \| June 2013–February 2015
+### Translator cum Game Master | IGG Singapore Pte Ltd
+**Jun 2013 - Feb 2015**
 
 - Localized game content, advertisements, training documents, legal documents, and player-facing materials between Chinese and English.
-- Produced English marketing copy and supported publication across social media and community channels.
-- Resolved player issues and escalated feedback to project teams; promoted to team leader.
+- Produced English marketing copy, and supported publication across social media and community channels.
+- Resolved player issues; escalated feedback to project teams and was promoted to team leader.
 
-### Editor
+### Editor | Singapore Children Newspaper
+**Feb 2011 - Aug 2011**
 
-**Singapore Children Newspaper** \| February 2011–August 2011
-
-- Selected and edited publication content.
-- Translated journals and documents between Chinese and English.
-- Designed marketing materials.
+- Selected and edited publication content, translated journals and documents between Chinese and English, and designed marketing materials.
 
 ## Source Document
 
