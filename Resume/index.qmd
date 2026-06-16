@@ -33,19 +33,23 @@ format:
 ## Education
 
 ### Singapore Management University, Singapore
+
 **Aug 2025 - Present**\
 Master of IT in Business\
 Cumulative GPA: **3.47 / 4.00**
 
 ### Oxford Brookes University, United Kingdom
+
 **Jun 2018 - Mar 2024**\
 Bachelor of Science in Applied Accounting
 
 ### University of Leicester, United Kingdom
+
 **Oct 2009 - Jan 2011**\
 Master of Science in Marketing
 
 ### University of Sunderland, United Kingdom
+
 **Jan 2008 - Mar 2009**\
 BA in Business Management
 
@@ -78,6 +82,7 @@ Designed an AI-assisted workflow to detect suspicious trader communications, inc
 ## Professional Experience
 
 ### Shanghai Zhenghe Communication Equipment Leasing Co., Ltd.
+
 **Nov 2016 - Nov 2022**\
 Project Manager / ERP System Manager
 
@@ -86,7 +91,8 @@ Project Manager / ERP System Manager
 - Supported user-friendly ERP interface and workflow design aligned with operational processes and stakeholder needs.
 - Monitored progress, risks, and changes; prepared stakeholder updates and close-out reports; and coordinated issue resolution.
 
-### Simplified Chinese Linguist | Keywords International Pte Ltd
+### Simplified Chinese Linguist \| Keywords International Pte Ltd
+
 **Mar 2015 - Oct 2016**
 
 - Translated, reviewed, proofread, and performed linguistic QA for Simplified Chinese content across assigned projects.
@@ -94,14 +100,16 @@ Project Manager / ERP System Manager
 - Reviewed vendor tests, supported testing teams, and collaborated with project managers and multilingual teams.
 - Guided junior linguists and contributed to quality improvement and process enhancement initiatives.
 
-### Translator cum Game Master | IGG Singapore Pte Ltd
+### Translator cum Game Master \| IGG Singapore Pte Ltd
+
 **Jun 2013 - Feb 2015**
 
 - Localized game content, advertisements, training documents, legal documents, and player-facing materials between Chinese and English.
 - Produced English marketing copy, and supported publication across social media and community channels.
 - Resolved player issues; escalated feedback to project teams and was promoted to team leader.
 
-### Editor | Singapore Children Newspaper
+### Editor \| Singapore Children Newspaper
+
 **Feb 2011 - Aug 2011**
 
 - Selected and edited publication content, translated journals and documents between Chinese and English, and designed marketing materials.
