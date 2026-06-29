@@ -1,0 +1,77 @@
+---
+title: "AI-Enhanced AML Transaction Monitoring"
+subtitle: "Data Science for Financial Services"
+author: "Wu Jiayan"
+date: "2026-06-15"
+toc: true
+toc-depth: 3
+format:
+  html:
+    theme: cosmo
+    embed-resources: true
+---
+
+## Project overview
+
+This project implements an AI-enhanced anti-money-laundering (AML) transaction
+monitoring and investigation system, deployed as an interactive
+[Streamlit application](https://data-science-in-financial-service-project.streamlit.app/).
+It is designed for the bank's middle office and validated on the IBM AML
+LI-Small synthetic dataset of 234,534 accounts and 250,000 transactions, at a
+2.26 % suspicious-account prevalence.
+
+The system is a **prioritisation overlay** on top of existing rules, not a
+replacement detector: the rules continue to define the population that must be
+reviewed (preserving regulatory coverage), while a combined AI risk score
+re-ranks that population so investigators reach genuine cases first. All final
+decisions remain with qualified human investigators, in alignment with MAS
+Notice 626 and the MAS FEAT framework.
+
+## Detection pipeline
+
+A three-layer pipeline produces a single weighted risk score per account:
+
+- **Rule engine** — 10 MAS Notice 626-aligned deterministic checks producing
+  auditable, threshold-based evidence.
+- **XGBoost classifier** — trained on 35 behavioural and network features,
+  achieving AUC-ROC 0.856 / AUC-PR 0.186 on a 30 % held-out test set.
+- **Leiden community detection** — partitions the transaction graph into 69,878
+  communities, scoring each account on cluster suspicious density, size, and
+  internal transaction intensity.
+
+The three signals are combined — 50 % XGBoost, 25 % community detection, 25 %
+rules — into a 0–100 risk score that prioritises high-risk accounts for review.
+SHAP values provide per-account explainability.
+
+## Results
+
+Measured on the held-out test set (30 % of 234,534 accounts):
+
+| Detection method | Alerts | Precision | Recall | F1 |
+|---|---|---|---|---|
+| Rules only | 14,800 | 2.3 % | 21.4 % | 4.2 % |
+| XGBoost (optimised) | 1,992 | 22.1 % | 27.7 % | 24.6 % |
+| Community detection | 3,926 | 12.0 % | 29.7 % | 17.2 % |
+| **Combined AI system** | **1,172** | **31.8 %** | **23.4 %** | **27.0 %** |
+
+The combined system raises top-queue precision from 2.3 % to 31.8 % — roughly a
+14× improvement — while shrinking the deep-review queue by about 92 %. Reviewing
+the top 100 ranked accounts surfaces 85 true suspicious accounts versus 13 under
+rule-severity ordering, an estimated saving on the order of 3,400
+investigator-hours per monitoring cycle.
+
+## Investigation copilot
+
+A scripted generative-AI layer — implemented as a fully offline, reproducible
+simulation requiring no external model or API key — provides on-demand
+investigation briefs, Suspicious Transaction Report (STR) drafts, and an
+investigator copilot, grounded entirely in the predictive-AI output.
+
+## Live application
+
+- [Open the deployed Streamlit app](https://data-science-in-financial-service-project.streamlit.app/)
+
+## Documentation
+
+- [Prototype report](Documentation/AML_AI_Prototype_Report.docx)
+- [Technical report](Documentation/AML_AI_Technical_Report.docx)
