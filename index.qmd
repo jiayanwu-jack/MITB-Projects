@@ -22,7 +22,7 @@ toc: false
     --radius:    12px;
     --shadow:    0 4px 24px rgba(0,0,0,.08);
   }
-  [data-bs-theme="dark"] {
+  body.quarto-dark {
     --accent:    #5b9bd5;
     --accent-lt: #1e2d45;
     --text:      #e2e8f0;
@@ -129,14 +129,17 @@ toc: false
     font-size: .75rem; font-weight: 500;
     padding: 3px 10px; border-radius: 999px;
   }
+  .card-links {
+    flex-basis: 100%;
+    display: flex; flex-wrap: wrap; gap: 16px;
+    margin-top: 4px;
+  }
   .card-link {
-    margin-left: auto;
     font-size: .85rem; font-weight: 600;
     color: var(--accent); text-decoration: none;
     display: flex; align-items: center; gap: 4px;
   }
   .card-link:hover { text-decoration: underline; }
-  .card-link ~ .card-link { margin-left: 14px; }
 
   /* ── Skills ── */
   .skills-grid {
@@ -156,6 +159,34 @@ toc: false
     color: var(--accent);
     font-size: .8rem;
     padding: 4px 12px; border-radius: 6px;
+  }
+
+  /* ── Dark mode: word-box pills grey with white text ── */
+  body.quarto-dark .tag,
+  body.quarto-dark .skill-tag,
+  body.quarto-dark .badge-pill {
+    background: #6b7280;
+    color: #ffffff;
+    border-color: #6b7280;
+  }
+
+  /* ── Dark mode: project cards grey with white text ── */
+  body.quarto-dark .project-card {
+    background: #4b5563;
+    border-color: #5b6675;
+  }
+  body.quarto-dark .project-card .card-title,
+  body.quarto-dark .project-card .card-category,
+  body.quarto-dark .project-card .card-desc,
+  body.quarto-dark .project-card .card-link {
+    color: #ffffff;
+  }
+  body.quarto-dark .card-footer-row { border-top-color: #5b6675; }
+
+  /* ── Dark mode: page title text white ── */
+  body.quarto-dark #title-block-header .title,
+  body.quarto-dark #title-block-header .subtitle {
+    color: #ffffff;
   }
 
   /* ── Divider ── */
@@ -202,7 +233,9 @@ toc: false
       <div class="card-footer-row">
         <span class="tag">Visual Analytics</span>
         <span class="tag">Interactive App</span>
-        <a class="card-link" href="https://isss-608-vaa-iota.vercel.app/" target="_blank" rel="noopener">Visit website →</a>
+        <div class="card-links">
+          <a class="card-link" href="https://isss-608-vaa-iota.vercel.app/" target="_blank" rel="noopener">Visit website →</a>
+        </div>
       </div>
     </div>
 
@@ -217,7 +250,9 @@ toc: false
       <div class="card-footer-row">
         <span class="tag">Scikit-learn</span>
         <span class="tag">Python</span>
-        <a class="card-link" href="Projects/Applied Machine Learning/">View report →</a>
+        <div class="card-links">
+          <a class="card-link" href="Projects/Applied Machine Learning/">View report →</a>
+        </div>
       </div>
     </div>
 
@@ -232,7 +267,9 @@ toc: false
       <div class="card-footer-row">
         <span class="tag">Random Forest</span>
         <span class="tag">Optimization</span>
-        <a class="card-link" href="Projects/Data Science for Business/">View report →</a>
+        <div class="card-links">
+          <a class="card-link" href="Projects/Data Science for Business/">View report →</a>
+        </div>
       </div>
     </div>
 
@@ -247,8 +284,10 @@ toc: false
       <div class="card-footer-row">
         <span class="tag">Compliance</span>
         <span class="tag">LLM</span>
-        <a class="card-link" href="Projects/Data Science for Financial Service/Trade Floor Misconduction Detection/">View report →</a>
-        <a class="card-link" href="https://ai.studio/apps/13b976f4-bce5-4f34-8b6d-2459a77b1a5b" target="_blank" rel="noopener">Visit app →</a>
+        <div class="card-links">
+          <a class="card-link" href="Projects/Data Science for Financial Service/Trade Floor Misconduction Detection/">View report →</a>
+          <a class="card-link" href="https://ai.studio/apps/13b976f4-bce5-4f34-8b6d-2459a77b1a5b" target="_blank" rel="noopener">Visit app →</a>
+        </div>
       </div>
     </div>
 
@@ -263,8 +302,10 @@ toc: false
       <div class="card-footer-row">
         <span class="tag">XGBoost</span>
         <span class="tag">Graph Analytics</span>
-        <a class="card-link" href="Projects/Data Science for Financial Service/Anti Money Laundering Project/">View report →</a>
-        <a class="card-link" href="https://data-science-in-financial-service-project.streamlit.app/" target="_blank" rel="noopener">Visit app →</a>
+        <div class="card-links">
+          <a class="card-link" href="Projects/Data Science for Financial Service/Anti Money Laundering Project/">View report →</a>
+          <a class="card-link" href="https://data-science-in-financial-service-project.streamlit.app/" target="_blank" rel="noopener">Visit app →</a>
+        </div>
       </div>
     </div>
 
@@ -279,7 +320,9 @@ toc: false
       <div class="card-footer-row">
         <span class="tag">MySQL</span>
         <span class="tag">Benchmarking</span>
-        <a class="card-link" href="Projects/Query Processing and Optimisation/">View report →</a>
+        <div class="card-links">
+          <a class="card-link" href="Projects/Query Processing and Optimisation/">View report →</a>
+        </div>
       </div>
     </div>
 
@@ -294,7 +337,9 @@ toc: false
       <div class="card-footer-row">
         <span class="tag">Excel Solver</span>
         <span class="tag">Sensitivity</span>
-        <a class="card-link" href="Projects/Spreadsheet Modelling for Decision Making/">View report →</a>
+        <div class="card-links">
+          <a class="card-link" href="Projects/Spreadsheet Modelling for Decision Making/">View report →</a>
+        </div>
       </div>
     </div>
 
@@ -309,7 +354,9 @@ toc: false
       <div class="card-footer-row">
         <span class="tag">Inference</span>
         <span class="tag">Regression</span>
-        <a class="card-link" href="Projects/Statistical Thinking for Data Science/">View report →</a>
+        <div class="card-links">
+          <a class="card-link" href="Projects/Statistical Thinking for Data Science/">View report →</a>
+        </div>
       </div>
     </div>
 
