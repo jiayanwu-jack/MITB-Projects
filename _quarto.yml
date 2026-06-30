@@ -9,7 +9,7 @@ project:
     - "Resume/**/*.qmd"
 
 website:
-  title: "Wu Jiayan · MITB Portfolio"
+  title: "MITB Portfolio"
   description: "Data Science & Analytics portfolio — SMU Master of IT in Business"
   favicon: ""
   page-footer:
