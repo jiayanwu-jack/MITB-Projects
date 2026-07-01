@@ -25,7 +25,7 @@ website:
         menu:
           - text: "Applied Data Science in Social Networks"
             icon: "diagram-3"
-            href: "Courses/Social Network Analytics/Exam_Reference_Notes_Applied_Data_Science_in_Social_Networks.md"
+            href: "Courses/Social Network Analytics/Lecture_Notes_Applied_Data_Science_in_Social_Networks.md"
       - text: "Projects"
         menu:
           - text: "Applied Machine Learning"
