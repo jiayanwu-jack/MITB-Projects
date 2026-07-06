@@ -26,6 +26,9 @@ website:
           - text: "Applied Data Science in Social Networks"
             icon: "diagram-3"
             href: "Courses/Social Network Analytics/Lecture_Notes_Applied_Data_Science_in_Social_Networks.md"
+          - text: "Visual Analytics and Applications"
+            icon: "bar-chart-line"
+            href: "https://isss608-ay2025-26apr.netlify.app/"
       - text: "Projects"
         menu:
           - text: "Applied Machine Learning"
