@@ -59,7 +59,7 @@ website:
         menu:
           - text: "LKY Global Business Plan Competition 2027"
             icon: "trophy"
-            href: "Internship/Startup Business Competition/SMU_Competition_2027_ExecutiveSummary.qmd"
+            href: "https://lkygbpc-project.vercel.app/"
     right:
       - href: index.qmd
         text: Home
