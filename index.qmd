@@ -365,6 +365,30 @@ toc: false
 
 <hr class="section-divider">
 
+<!-- ══════ INTERNSHIP ══════ -->
+<div class="section" id="internship">
+  <div class="section-title">Internship</div>
+  <div class="project-grid">
+    <div class="project-card">
+      <div class="card-header-band"></div>
+      <div class="card-body">
+        <div class="card-category">Lee Kuan Yew Global Business Plan Competition</div>
+        <div class="card-title">LKYGBPC 2027 Project</div>
+        <p class="card-desc">Internship project supporting the Lee Kuan Yew Global Business Plan Competition 2027.</p>
+      </div>
+      <div class="card-footer-row">
+        <span class="tag">Internship</span>
+        <span class="tag">Startup Competition</span>
+        <div class="card-links">
+          <a class="card-link" href="https://lkygbpc-project.vercel.app/" target="_blank" rel="noopener">Visit project →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
 <!-- ══════ SKILLS ══════ -->
 <div class="section">
   <div class="section-title">Technical Skills</div>
