@@ -141,6 +141,14 @@ toc: false
   }
   .card-link:hover { text-decoration: underline; }
 
+  /* ── Internship accent ── */
+  .internship-section .section-title { color: #b45309; border-left-color: #d97706; }
+  .internship-card { background: #fff9ed; border-color: #f6d59c; }
+  .internship-card .card-header-band { background: linear-gradient(90deg, #b45309, #f59e0b); }
+  .internship-card .card-category,
+  .internship-card .card-link { color: #b45309; }
+  .internship-card .tag { background: #fef0c7; color: #92400e; }
+
   /* ── Skills ── */
   .skills-grid {
     display: grid;
@@ -182,6 +190,8 @@ toc: false
     color: #ffffff;
   }
   body.quarto-dark .card-footer-row { border-top-color: #5b6675; }
+  body.quarto-dark .internship-card { background: #5c471f; border-color: #80652b; }
+  body.quarto-dark .internship-card .tag { background: #80652b; color: #ffffff; }
 
   /* ── Dark mode: page title text white ── */
   body.quarto-dark #title-block-header .title,
@@ -216,6 +226,30 @@ toc: false
   </div>
   <a class="hero-cta" href="#projects">View Projects ↓</a>
 </div>
+
+<!-- ══════ INTERNSHIP ══════ -->
+<div class="section internship-section" id="internship">
+  <div class="section-title">Internship</div>
+  <div class="project-grid">
+    <div class="project-card internship-card">
+      <div class="card-header-band"></div>
+      <div class="card-body">
+        <div class="card-category">Lee Kuan Yew Global Business Plan Competition</div>
+        <div class="card-title">LKYGBPC 2027 Project</div>
+        <p class="card-desc">Internship project supporting the Lee Kuan Yew Global Business Plan Competition 2027.</p>
+      </div>
+      <div class="card-footer-row">
+        <span class="tag">Internship</span>
+        <span class="tag">Startup Competition</span>
+        <div class="card-links">
+          <a class="card-link" href="https://lkygbpc-project.vercel.app/" target="_blank" rel="noopener">Visit project →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
 
 <!-- ══════ PROJECTS ══════ -->
 <div class="section" id="projects">
@@ -360,30 +394,6 @@ toc: false
       </div>
     </div>
 
-  </div>
-</div>
-
-<hr class="section-divider">
-
-<!-- ══════ INTERNSHIP ══════ -->
-<div class="section" id="internship">
-  <div class="section-title">Internship</div>
-  <div class="project-grid">
-    <div class="project-card">
-      <div class="card-header-band"></div>
-      <div class="card-body">
-        <div class="card-category">Lee Kuan Yew Global Business Plan Competition</div>
-        <div class="card-title">LKYGBPC 2027 Project</div>
-        <p class="card-desc">Internship project supporting the Lee Kuan Yew Global Business Plan Competition 2027.</p>
-      </div>
-      <div class="card-footer-row">
-        <span class="tag">Internship</span>
-        <span class="tag">Startup Competition</span>
-        <div class="card-links">
-          <a class="card-link" href="https://lkygbpc-project.vercel.app/" target="_blank" rel="noopener">Visit project →</a>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
