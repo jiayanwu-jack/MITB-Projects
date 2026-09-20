@@ -1,0 +1,87 @@
+---
+title: "Chapter 4: Efficient Fine-Tuning"
+subtitle: "Choose the right intervention, then customise models within practical hardware limits"
+toc: true
+format:
+  html: default
+---
+
+[← Training](chapter-3.qmd) · [Course home](index.qmd)
+
+## Start with diagnosis, not fine-tuning
+
+Fine-tuning is no longer the default first step. Work up a ladder:
+
+```text
+evaluate → improve prompting and context → fine-tune only for a remaining behaviour gap
+```
+
+A **knowledge gap** means the model lacks current, private, or volatile facts. Fine-tuning is usually the wrong remedy because those facts become stale; retrieval and supplied context are better options. A **behaviour gap** means the model needs a more reliable format, tone, policy, tool-call pattern, or task-specific response. That is where fine-tuning can help.
+
+Fine-tuning is especially useful for strict structured output, house style, verifiable skills, low-latency task distillation, data-residency constraints, and encoder tasks such as classification, retrieval, or ranking. A few hundred clean examples can sometimes teach a narrow style or format; classification needs data budgeted per class rather than by one global total.
+
+## 1. Supervised fine-tuning (SFT)
+
+SFT trains on prompt-answer pairs. The prompt is given to the model, but loss is calculated on the answer tokens only:
+
+```text
+prompt supplied → model predicts completion → cross-entropy scored on completion
+```
+
+This makes SFT an effective imitation method. Its limit is that every training answer is merely a target; it cannot inherently learn that one alternative is preferable for helpfulness or safety.
+
+## 2. Preference and reinforcement fine-tuning
+
+| Method | Learns from | Separate reward model? |
+|---|---|---|
+| SFT | Labelled prompt-answer pairs | No |
+| DPO | Chosen versus rejected answers | No; direct closed-form objective |
+| RLHF | Human preferences | Yes |
+| GRPO / reinforcement fine-tuning | Rewards for sampled answers | Often no, especially with verifiable rules |
+
+**DPO** optimises directly from preference pairs and is simpler than a full RLHF loop. **Reinforcement fine-tuning with verifiable rewards** is well suited to tasks where correctness can be checked, such as code, mathematics, structured extraction, or tool calls. GRPO samples a group of responses for a prompt and uses their relative reward to guide updates without a separate critic model.
+
+## 3. Why full fine-tuning is expensive
+
+Full fine-tuning updates every model parameter. Training must store weights, gradients, optimiser state, and activations; memory, more than raw compute, becomes the limiting resource. With AdamW and low-precision weights, model and optimiser state alone can be roughly $16N$ bytes for $N$ parameters before activations.
+
+Useful stability and scaling techniques include:
+
+- **Gradient accumulation:** form a larger effective batch by delaying the optimiser update across several small batches.
+- **Gradient clipping:** cap the gradient norm to prevent destabilising spikes.
+- **Mixed precision:** use low precision for suitable operations while retaining higher precision where numerical range matters. BF16 usually has safer dynamic range than FP16.
+- **Distributed training:** data parallelism splits batches; pipeline and tensor parallelism split model work; FSDP/ZeRO shard parameters, gradients, and optimiser state across devices.
+
+The Hugging Face ecosystem provides the practical stack: Transformers for models and training, Accelerate for distributed/mixed-precision setup, PEFT for parameter-efficient methods, and TRL for SFT, DPO, and GRPO workflows.
+
+## 4. LoRA: train a small update, freeze the base
+
+**Low-Rank Adaptation (LoRA)** keeps the original weight matrix $W_0$ frozen and learns a low-rank update:
+
+$$W_0x+\Delta Wx=(W_0+BA)x$$
+
+Instead of learning the full $\Delta W$, LoRA learns thin matrices $A$ and $B$, where the rank $r$ is much smaller than the full layer dimension. The result is a small adapter that can be stored separately, shared, and attached to the same base model for different tasks.
+
+The main levers are:
+
+| Setting | Meaning | Typical lab choice |
+|---|---|---|
+| `r` | Rank of the low-rank update | 16 |
+| `target_modules` | Layers receiving LoRA matrices | `all-linear` |
+| `lora_alpha` | Scale applied to the update | Often equal to `r` |
+
+## 5. Quantisation and QLoRA
+
+**Quantisation** stores values in fewer bits, reducing memory at the cost of rounding error. Common formats include FP16/BF16 for mixed-precision computing, int8, and 4-bit formats such as nf4.
+
+**QLoRA** combines the two ideas: it holds the frozen base model in 4-bit form, de-quantises weights as needed for computation, and trains only LoRA adapters. This makes multi-billion-parameter models viable on a single capable GPU, although training can be slower and quality may degrade somewhat relative to higher-precision approaches.
+
+## 6. Distillation and the practical decision
+
+Distillation is ordinary SFT whose training examples were generated by a stronger “teacher” model. A smaller open model learns a focused task, potentially providing lower-cost inference at near-teacher quality in a narrow setting.
+
+The practical conclusion is intentionally conservative: start with evaluations, a strong prompt, and good context. Fine-tune only when evidence shows a durable behaviour gap, then prefer LoRA or QLoRA for most modest-hardware work.
+
+## Practice focus
+
+The chapter lab fine-tunes Llama-3.2-1B-Instruct with a rank-16 LoRA adapter using Unsloth and TRL’s `SFTTrainer`, loads the base in 4-bit style, and saves the resulting adapter for later inference. The exercise is as much about deciding whether a fine-tune is worth doing as it is about running one.

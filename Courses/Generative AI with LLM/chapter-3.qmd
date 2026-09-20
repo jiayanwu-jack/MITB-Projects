@@ -1,0 +1,77 @@
+---
+title: "Chapter 3: Training & Customising LLMs"
+subtitle: "Pre-training, fine-tuning, optimisation, and alignment"
+toc: true
+format:
+  html: default
+---
+
+[← Transformers](chapter-2.qmd) · [Course home](index.qmd) · [Next: Efficient fine-tuning →](chapter-4.qmd)
+
+## 1. What pre-training learns
+
+Pre-training exposes a model to vast amounts of text and teaches language structure, contextual relationships, facts, and general skills without manually labelled data. The target is derived from the input itself, which makes the process **self-supervised**.
+
+Two core objectives distinguish common model families:
+
+| Objective | Model family | How it learns | Best suited to |
+|---|---|---|
+| Masked language modelling (MLM) | Encoder models such as BERT | Predict masked tokens using both sides of context | Understanding and classification |
+| Causal language modelling (CLM) | Decoder LLMs | Predict the next token left-to-right | Generation |
+
+Pre-training from scratch is usually impractical for a normal project. Customisation normally means continuing from a capable pre-trained model.
+
+## 2. The customisation spectrum
+
+**Extended pre-training** continues the original self-supervised objective on domain text. It is most appropriate when the aim is to add domain knowledge or language patterns and labels are unavailable.
+
+**Supervised fine-tuning (SFT)** uses labelled input-output examples. It teaches a model how to respond: an instruction format, a style, a conversational pattern, a test-answering task, or an encoder classification label. A modern post-training pipeline is often summarised as:
+
+```text
+pre-training → SFT → preference or reinforcement post-training
+```
+
+## 3. One training step
+
+Before training, text is tokenised into IDs, placed in tensors, shuffled, and grouped into batches. One complete trip through the training dataset is an **epoch**. Each batch runs the same loop:
+
+1. **Forward pass:** current parameters transform the input into a prediction $\hat{y}$.
+2. **Loss:** compare $\hat{y}$ with the known target $y$.
+3. **Backward pass:** back-propagation applies the chain rule to calculate each parameter’s gradient.
+4. **Update:** gradient descent moves weights in the direction that lowers loss: $w_{t+1}=w_t-\gamma\nabla L_t$.
+
+The learning rate $\gamma$ controls the size of the update. A rate that is too high can destabilise learning; too low can make training painfully slow.
+
+## 4. Cross-entropy loss
+
+LLMs normally train with cross-entropy, the negative log probability assigned to the correct token:
+
+$$L=-\sum_{k=1}^{K}y_k\log(p_k)$$
+
+The final layer first emits raw **logits**. Softmax converts them into a probability distribution over the vocabulary. If the true token receives probability $0.80$, its loss is $-\log(0.80)\approx0.22$; if it receives $0.15$, the loss is about $1.90$. This is why cross-entropy punishes confident mistakes sharply.
+
+## 5. Making training generalise
+
+The goal is not merely to reduce training loss. A model can memorise its training examples while becoming worse on new data. Monitor a held-out **validation loss** curve and select the checkpoint near its minimum; a validation curve that rises while training loss keeps falling signals overfitting.
+
+- **Dropout** randomly removes some activations during training, discouraging reliance on individual units.
+- **Weight decay** shrinks weights as part of optimisation.
+- **AdamW** combines momentum with adaptive per-parameter scaling and is the standard optimiser for many LLM runs.
+- **Gradient accumulation** processes small sub-batches, sums their gradients, and updates once, simulating a larger effective batch without requiring all of it in GPU memory.
+- **Warmup plus decay** starts with a small learning rate, ramps it up, then gradually reduces it.
+
+Key choices to compare are learning rate and schedule, batch size, accumulation steps, and epochs. Judge alternatives with validation performance, not training loss alone.
+
+## 6. Alignment after SFT
+
+SFT copies labelled demonstrations but does not directly represent which of two valid answers is better. Post-training methods address preference and correctness.
+
+| Method | Signal | Core idea |
+|---|---|---|
+| RLHF | Human response rankings | Train a reward model, then optimise the LLM to earn its reward. |
+| RLVR | Programmatically verifiable reward | Reinforce answers that a checker can verify, especially for code or mathematics. |
+| DPO / GRPO | Preference pairs or group-relative rewards | Lighter alternatives that avoid or reduce dependence on a separate reward model. |
+
+## Practice focus
+
+The lab fine-tunes a BERT sequence classifier on a small Yelp Reviews subset with Hugging Face Trainer. It deliberately compares multiple training configurations, logs training and validation curves, uses accumulation under memory limits, and selects the checkpoint that generalises best. This fine-tune-evaluate loop becomes the basis for formal model evaluation later in the course.

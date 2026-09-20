@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Startup Outreach</title>
+<style>
+  :root{
+    --bg:#f5f6f8; --panel:#ffffff; --ink:#1c2430; --muted:#6b7686;
+    --line:#e3e7ee; --brand:#12406b; --brand-ink:#ffffff; --accent:#0b7285;
+    --chip:#eef2f7; --ok:#177245; --warn:#9a6b00; --danger:#b3261e; --shadow:0 1px 3px rgba(20,30,45,.08);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:14px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+  a{color:var(--brand)}
+  header{background:var(--brand);color:var(--brand-ink);padding:14px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  header h1{font-size:17px;margin:0;font-weight:600}
+  header .sub{opacity:.8;font-size:12px}
+  .wrap{max-width:1200px;margin:0 auto;padding:18px 20px 60px}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+  .drop{padding:26px;text-align:center;border:2px dashed var(--line);border-radius:10px;background:var(--panel);transition:.15s;cursor:pointer}
+  .drop.hover{border-color:var(--brand);background:#f0f6fc}
+  .drop strong{color:var(--brand)}
+  .toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:16px 0}
+  .toolbar .grow{flex:1}
+  label.fld{display:flex;flex-direction:column;gap:3px;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+  select,input[type=text],input[type=search],textarea{font:inherit;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+  select,input{height:36px}
+  input[type=search]{min-width:220px}
+  button{font:inherit;cursor:pointer;border:1px solid var(--line);background:#fff;border-radius:8px;padding:8px 12px;color:var(--ink)}
+  button:hover{border-color:#c6ccd6}
+  button.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+  button.primary:hover{background:#0f3557}
+  button.accent{background:var(--accent);color:#fff;border-color:var(--accent)}
+  button:disabled{opacity:.45;cursor:not-allowed}
+  .hdr-upload{background:rgba(255,255,255,.16);color:#fff;border-color:rgba(255,255,255,.42)}
+  .hdr-upload:hover{background:rgba(255,255,255,.28);border-color:rgba(255,255,255,.6)}
+  .count{color:var(--muted);font-size:13px}
+  table{width:100%;border-collapse:collapse;background:#fff}
+  /* Only the entry rows scroll — the header row (and everything above) stays put.
+     A fixed px max-height (not vh) keeps the frame height stable inside a
+     Streamlit component, avoiding a resize feedback loop / scrollbar flicker. */
+  .tablewrap{overflow:auto;max-height:520px;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+  th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  thead th{background:#eef2f7;position:sticky;top:0;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;white-space:nowrap;z-index:2;box-shadow:inset 0 -1px 0 var(--line)}
+  tbody tr:hover{background:#f7fafd}
+  td.name a{font-weight:600;text-decoration:none}
+  td.name a:hover{text-decoration:underline}
+  .chip{display:inline-block;background:var(--chip);border-radius:999px;padding:1px 9px;font-size:12px;color:#3a4658}
+  .contact-email{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px}
+  .muted{color:var(--muted)}
+  .li{color:#0a66c2;text-decoration:none;font-weight:600}
+  .li:hover{text-decoration:underline}
+  .rowbtn{padding:5px 10px;font-size:13px}
+  .empty{padding:40px;text-align:center;color:var(--muted)}
+  /* modal */
+  .backdrop{position:fixed;inset:0;background:rgba(15,22,33,.45);display:none;align-items:flex-start;justify-content:center;padding:40px 16px;z-index:50;overflow:auto}
+  .backdrop.show{display:flex}
+  .modal{background:#fff;border-radius:12px;max-width:680px;width:100%;box-shadow:0 12px 40px rgba(0,0,0,.25)}
+  .modal h2{margin:0;padding:16px 20px;border-bottom:1px solid var(--line);font-size:16px}
+  .modal .body{padding:18px 20px}
+  .modal .foot{padding:14px 20px;border-top:1px solid var(--line);display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+  .field{margin-bottom:14px}
+  .field label{display:block;font-weight:600;margin-bottom:5px}
+  .field input,.field textarea{width:100%}
+  textarea{min-height:200px;resize:vertical;line-height:1.5}
+  .hint{font-size:12.5px;color:var(--muted);margin-top:6px}
+  .token{font-family:ui-monospace,Consolas,monospace;background:var(--chip);border-radius:4px;padding:1px 5px}
+  .queue{max-height:230px;overflow:auto;border:1px solid var(--line);border-radius:8px;margin:10px 0}
+  .queue div{padding:7px 12px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px}
+  .queue div:last-child{border-bottom:0}
+  .queue .done{color:var(--ok)}
+  .stepper{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:8px}
+  .bignum{font-size:15px;font-weight:600}
+  .notice{background:#fff8e6;border:1px solid #f0e0b0;color:#6b5200;border-radius:8px;padding:10px 12px;font-size:13px;margin-top:10px}
+  #fileInput{display:none}
+</style>
+</head>
+<body>
+<header>
+  <h1>Startup Outreach</h1>
+  <span class="sub">Load a candidates CSV, review founders, and send template emails</span>
+  <span class="grow" style="flex:1"></span>
+  <button id="btnUpload" class="hdr-upload">⬆ Upload CSV</button>
+  <input type="file" id="fileInput" accept=".csv,text/csv">
+</header>
+
+<div class="wrap">
+
+  <!-- hidden: status hook + drag-and-drop target (upload control lives in the header) -->
+  <div id="drop" style="display:none"><p><strong></strong></p></div>
+
+  <!-- shown whenever no data is loaded (auto-hidden once the controls appear) -->
+  <div id="noData" class="empty" style="padding:56px 24px;line-height:1.7">
+    <div style="font-size:15px;color:var(--ink);font-weight:600;margin-bottom:6px">No candidates loaded yet</div>
+    Run the pipeline (tab <strong>2. Run</strong>), or click <strong>⬆ Upload CSV</strong> above to load a
+    candidates_ranked.csv / candidates_enriched.csv and start drafting outreach.
+  </div>
+
+  <!-- Controls (hidden until data loads) -->
+  <div id="controls" style="display:none">
+    <div class="toolbar">
+      <label class="fld">Country
+        <select id="fCountry"><option value="">All countries</option></select>
+      </label>
+      <label class="fld">Industry
+        <select id="fIndustry"><option value="">All industries</option></select>
+      </label>
+      <label class="fld">Recipient
+        <select id="fRecipient">
+          <option value="founder">Founder email</option>
+          <option value="company">Company email</option>
+        </select>
+      </label>
+      <label class="fld">Send via
+        <select id="fSendMethod">
+          <option value="mailto">Email client</option>
+          <option value="smtp">SMTP (auto)</option>
+        </select>
+      </label>
+      <label class="fld">Search
+        <input type="search" id="fSearch" placeholder="startup or founder name…">
+      </label>
+      <label class="fld">&nbsp;
+        <span style="display:flex;align-items:center;gap:6px;height:36px">
+          <input type="checkbox" id="fEmailOnly"><span style="text-transform:none;letter-spacing:0;color:var(--ink);font-size:13px">Has email only</span>
+        </span>
+      </label>
+      <span class="grow"></span>
+      <button id="btnTemplate">✎ Edit email template</button>
+      <button id="btnBulk" class="primary" disabled>✉ Send bulk email (<span id="selCount">0</span>)</button>
+    </div>
+
+    <div class="count" id="summary"></div>
+
+    <div class="tablewrap" style="margin-top:8px">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:34px"><input type="checkbox" id="selAll" title="Select all (filtered)"></th>
+            <th>Startup</th>
+            <th>Industry</th>
+            <th>Country</th>
+            <th>Founder</th>
+            <th>Contact</th>
+            <th style="width:90px">Email</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <div id="emptyState" class="empty" style="display:none">No entries match the current filters.</div>
+  </div>
+</div>
+
+<!-- Template editor modal -->
+<div class="backdrop" id="tplModal">
+  <div class="modal">
+    <h2>Email template</h2>
+    <div class="body">
+      <div class="field">
+        <label for="tplSubject">Subject</label>
+        <input type="text" id="tplSubject">
+      </div>
+      <div class="field">
+        <label for="tplBody">Body</label>
+        <textarea id="tplBody"></textarea>
+      </div>
+      <div class="hint">
+        Placeholders (filled per founder when you send):
+        <span class="token">{founder_name}</span> <span class="token">{founder_first}</span>
+        <span class="token">{founder_role}</span> <span class="token">{startup_name}</span>
+        <span class="token">{industry}</span> <span class="token">{country}</span>
+      </div>
+    </div>
+    <div class="foot">
+      <button id="tplReset">Reset to default</button>
+      <span class="grow" style="flex:1"></span>
+      <button id="tplCancel">Cancel</button>
+      <button id="tplSave" class="primary">Save template</button>
+    </div>
+  </div>
+</div>
+
+<!-- Bulk send modal -->
+<div class="backdrop" id="bulkModal">
+  <div class="modal">
+    <h2>Send bulk email</h2>
+    <div class="body">
+      <p style="margin-top:0">Each draft is <strong>personalised</strong> with that founder's details and opens in your
+        email client. Click the button to open them one at a time (browsers block opening many at once).</p>
+      <div class="queue" id="bulkQueue"></div>
+      <div class="stepper">
+        <button id="bulkOpen" class="accent">Open draft <span id="bulkPos">1</span> of <span id="bulkTotal">0</span></button>
+        <span class="bignum" id="bulkRemaining"></span>
+      </div>
+      <div class="notice">
+        Prefer one message to everyone instead? <a href="#" id="bulkBcc">Open a single email with all recipients in BCC</a>
+        (uses the template as-is; per-founder placeholders are replaced with neutral wording).
+      </div>
+    </div>
+    <div class="foot">
+      <button id="bulkCopy">Copy all addresses</button>
+      <span class="grow" style="flex:1"></span>
+      <button id="bulkClose" class="primary">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- SMTP send modal (automatic sending via the Shiny server) -->
+<div class="backdrop" id="smtpModal">
+  <div class="modal">
+    <h2>Send automatically via SMTP</h2>
+    <div class="body">
+      <p style="margin-top:0" id="smtpIntro"></p>
+      <div class="queue" id="smtpQueue"></div>
+      <div class="notice" id="smtpNote" style="display:none"></div>
+    </div>
+    <div class="foot">
+      <span class="grow" style="flex:1"></span>
+      <button id="smtpClose" class="primary">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+
+// ---------- Column mapping (normalized from candidates_ranked.csv/startups.csv) ----
+const COL = {
+  name: "startup_name", url: "url", industry: "industry", country: "country",
+  founder: "founder_name", role: "founder_role", email: "founder_email",
+  linkedin: "founder_linkedin",
+};
+
+const DEFAULT_TEMPLATE = {
+  subject: "Invitation to the 13th Lee Kuan Yew Global Business Plan Competition — {startup_name}",
+  body:
+`Dear {founder_first},
+
+I'm writing from the Institute of Innovation & Entrepreneurship at Singapore Management University. We've been following {startup_name}'s work in {industry}, and it stood out as exactly the kind of venture we hope to see on our stage.
+
+I'd like to invite {startup_name} to take part in the 13th Lee Kuan Yew Global Business Plan Competition, taking place in 2027 — one of Asia's most globally representative deep-tech startup competitions. The most recent edition drew over 1,500 applications from 91 countries, and participating founders gain:
+
+• A share of a prize pool of more than S$2.5 million
+• 1:1 mentorship from C-suite leaders and the chance to pitch to 200+ VC funds and family offices in Singapore
+• A global peer network of founders from the world's top 100 universities
+
+You can find the full details here: https://lkygbpc.smu.edu.sg/
+
+Would you be open to a short conversation about applying? I'd be glad to answer any questions and point you to the next steps.
+
+Warm regards,
+[Your name]
+Institute of Innovation & Entrepreneurship
+Singapore Management University`
+};
+
+// ---------- State -----------------------------------------------------------
+let ROWS = [];               // array of objects keyed by header
+let HEADERS = [];
+const selected = new Set();   // selected row indices (into ROWS)
+let template = loadTemplate();
+
+// Recipient (founder vs company email) and send method (mail client vs SMTP).
+let recipientMode = "founder";   // 'founder' | 'company'
+let sendMethod = "mailto";        // 'mailto' | 'smtp'
+const HAS_SERVER = !!(window.parent && window.parent !== window && window.parent.Shiny);  // Shiny host
+let IS_STREAMLIT = false;         // set true by the Streamlit component bridge on first render
+function canServerSend(){ return HAS_SERVER || IS_STREAMLIT; }
+const SMTP = (window.SMTP_INFO || { allow_live_send: false, user: "", host: "" });
+
+// ---------- CSV parsing (RFC-4180-ish, handles quotes, commas, BOM) ---------
+function parseCSV(text){
+  if(text.charCodeAt(0) === 0xFEFF) text = text.slice(1);   // strip UTF-8 BOM
+  const rows = []; let cur = [], field = "", inQ = false;
+  for(let i=0;i<text.length;i++){
+    const c = text[i];
+    if(inQ){
+      if(c === '"'){ if(text[i+1] === '"'){ field += '"'; i++; } else inQ = false; }
+      else field += c;
+    } else {
+      if(c === '"') inQ = true;
+      else if(c === ',') { cur.push(field); field = ""; }
+      else if(c === '\r') { /* skip */ }
+      else if(c === '\n') { cur.push(field); rows.push(cur); cur = []; field = ""; }
+      else field += c;
+    }
+  }
+  if(field.length || cur.length){ cur.push(field); rows.push(cur); }
+  return rows;
+}
+
+function toObjects(matrix){
+  if(!matrix.length) return {headers:[], rows:[]};
+  const headers = matrix[0].map(h => h.trim());
+  const rows = [];
+  for(let r=1;r<matrix.length;r++){
+    const arr = matrix[r];
+    if(arr.length === 1 && arr[0].trim() === "") continue;   // skip blank line
+    const o = {};
+    headers.forEach((h,i)=> o[h] = (arr[i] ?? "").trim());
+    rows.push(o);
+  }
+  return {headers, rows};
+}
+
+function parseJsonCell(value, fallback){
+  const text = (value ?? "").trim();
+  if(!text) return fallback;
+  if(!/^[\[{]/.test(text)) return fallback;
+  try{ return JSON.parse(text); }
+  catch(e){ return fallback; }
+}
+
+function asArray(value){
+  if(Array.isArray(value)) return value;
+  if(value && typeof value === "object") return [value];
+  return [];
+}
+
+function cleanValue(value){
+  const text = String(value ?? "").trim();
+  return /^(none|null|nan|n\/a|na|undefined|-|—)$/i.test(text) ? "" : text;
+}
+
+function isEmail(value){
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleanValue(value));
+}
+
+function scoreEvidence(row){
+  const status = String(row.verification_status || "").toLowerCase();
+  const verified = status === "valid" ? 3 : status === "accept_all" ? 2 : status === "unknown" ? 1 : 0;
+  return [
+    verified,
+    Number(row.confidence || 0),
+    Number(row.verification_score || 0),
+  ];
+}
+
+function compareEvidence(a, b){
+  const aa = scoreEvidence(a), bb = scoreEvidence(b);
+  for(let i=0;i<aa.length;i++){
+    if(aa[i] !== bb[i]) return bb[i] - aa[i];
+  }
+  return String(a.email || "").localeCompare(String(b.email || ""));
+}
+
+function bestFounderEmail(candidate, founderName, founderIndex){
+  const key = (founderName || "").trim().toLowerCase();
+  const evidence = asArray(parseJsonCell(candidate.contact_evidence, []))
+    .filter(r => r && typeof r === "object" && isEmail(r.email));
+  const matched = evidence
+    .filter(r => String(r.founder_match || "").trim().toLowerCase() === key)
+    .sort(compareEvidence);
+  if(matched.length) return cleanValue(matched[0].email);
+  if(founderIndex === 0){
+    const founderEmail = cleanValue(candidate.founder_email);
+    const contactEmail = cleanValue(candidate.contact_email);
+    return isEmail(founderEmail) ? founderEmail : (isEmail(contactEmail) ? contactEmail : "");
+  }
+  return "";
+}
+
+function founderLinkedIn(candidate, founder){
+  return cleanValue(
+    founder.linkedin_url ||
+    candidate.founder_linkedin_url ||
+    ""
+  );
+}
+
+function normalizeRows(headers, rows){
+  const hasRankedShape = headers.includes("founders") || headers.includes("website") || headers.includes("contact_evidence");
+  if(!hasRankedShape){
+    return rows.map(r => ({
+      ...r,
+      url: cleanValue(r.url || r.website),
+      founder_email: isEmail(r.founder_email) ? cleanValue(r.founder_email) : "",
+      company_email: isEmail(r.company_email || r.contact_email)
+        ? cleanValue(r.company_email || r.contact_email) : "",
+      founder_linkedin: cleanValue(r.founder_linkedin || r.founder_linkedin_url),
+    }));
+  }
+
+  const out = [];
+  rows.forEach((candidate, candidateIndex) => {
+    const founders = asArray(parseJsonCell(candidate.founders, []));
+    const founderList = founders.length ? founders : [{}];
+    founderList.forEach((founder, founderIndex) => {
+      if(!founder || typeof founder !== "object") founder = {};
+      const founderName = String(founder.name || "").trim();
+      const email = bestFounderEmail(candidate, founderName, founderIndex);
+      out.push({
+        startup_name: cleanValue(candidate.startup_name),
+        url: cleanValue(candidate.website || candidate.url),
+        industry: cleanValue(candidate.industry),
+        country: cleanValue(candidate.country),
+        founder_name: founderName,
+        founder_role: cleanValue(founder.status || candidate.founder_role || "Founder"),
+        founder_email: email,
+        company_email: isEmail(candidate.contact_email) ? cleanValue(candidate.contact_email) : "",
+        founder_linkedin: founderLinkedIn(candidate, founder),
+        source_row: String(candidateIndex + 1),
+      });
+    });
+  });
+  return out;
+}
+
+// The contact address depends on the Recipient toggle: a founder's own email,
+// or the company/general email scraped for the startup.
+function recipientEmail(row){
+  const e = recipientMode === "company"
+    ? cleanValue(row.company_email)
+    : cleanValue(row.founder_email);
+  return isEmail(e) ? e : "";
+}
+const get = (row, key) => key === "email" ? recipientEmail(row) : cleanValue(row[COL[key]]);
+
+// ---------- Load a file -----------------------------------------------------
+function handleFile(file){
+  const reader = new FileReader();
+  reader.onload = e => {
+    try{
+      const parsed = toObjects(parseCSV(e.target.result));
+      HEADERS = parsed.headers;
+      ROWS = normalizeRows(parsed.headers, parsed.rows);
+      selected.clear();
+      if(!HEADERS.includes(COL.name) || !ROWS.length){
+        alert("This CSV doesn't look like candidates_ranked.csv or the older startups.csv outreach format.");
+        return;
+      }
+      initFilters();
+      document.getElementById("controls").style.display = "block";
+      var _btn = document.getElementById("btnUpload");
+      if(_btn) _btn.textContent = "⬆ " + file.name;
+      render();
+    }catch(err){ alert("Could not read the CSV: " + err.message); }
+  };
+  reader.readAsText(file, "utf-8");
+}
+
+// ---------- Filters ---------------------------------------------------------
+function uniqueSorted(key){
+  const s = new Set();
+  ROWS.forEach(r => { const v = get(r, key); if(v) s.add(v); });
+  return [...s].sort((a,b)=> a.localeCompare(b));
+}
+function fillSelect(el, values, allLabel){
+  el.innerHTML = "<option value=''>"+allLabel+"</option>" +
+    values.map(v => `<option value="${escAttr(v)}">${escHtml(v)}</option>`).join("");
+}
+function initFilters(){
+  fillSelect(document.getElementById("fCountry"), uniqueSorted("country"), "All countries");
+  fillSelect(document.getElementById("fIndustry"), uniqueSorted("industry"), "All industries");
+  document.getElementById("fSearch").value = "";
+  document.getElementById("fEmailOnly").checked = false;
+}
+function filteredIndices(){
+  const c = document.getElementById("fCountry").value;
+  const ind = document.getElementById("fIndustry").value;
+  const q = document.getElementById("fSearch").value.trim().toLowerCase();
+  const emailOnly = document.getElementById("fEmailOnly").checked;
+  const out = [];
+  ROWS.forEach((r,i)=>{
+    if(c && get(r,"country") !== c) return;
+    if(ind && get(r,"industry") !== ind) return;
+    if(emailOnly && !get(r,"email")) return;
+    if(q){
+      const hay = (get(r,"name")+" "+get(r,"founder")).toLowerCase();
+      if(!hay.includes(q)) return;
+    }
+    out.push(i);
+  });
+  return out;
+}
+
+// ---------- Rendering -------------------------------------------------------
+function contactCell(r){
+  const email = get(r,"email"), li = get(r,"linkedin");
+  if(isEmail(email)) return `<a class="contact-email" href="mailto:${escAttr(email)}">${escHtml(email)}</a>`;
+  if(li)    return `<a class="li" href="${escAttr(li)}" target="_blank" rel="noopener">LinkedIn ↗</a>`;
+  return `<span class="muted">—</span>`;
+}
+function startupCell(r){
+  const name = get(r,"name") || "(unnamed)";
+  let url = get(r,"url");
+  if(url && !/^https?:\/\//i.test(url)) url = "https://" + url;
+  return url ? `<a href="${escAttr(url)}" target="_blank" rel="noopener">${escHtml(name)}</a>`
+             : escHtml(name);
+}
+function render(){
+  const idx = filteredIndices();
+  const tbody = document.getElementById("rows");
+  tbody.innerHTML = idx.map(i=>{
+    const r = ROWS[i];
+    const email = get(r,"email");
+    const checked = selected.has(i) ? "checked" : "";
+    const emailBtn = isEmail(email)
+      ? `<button class="rowbtn accent" data-mail="${i}">✉ Email</button>`
+      : `<span class="muted">—</span>`;
+    return `<tr>
+      <td><input type="checkbox" data-sel="${i}" ${checked}></td>
+      <td class="name">${startupCell(r)}</td>
+      <td>${get(r,"industry") ? `<span class="chip">${escHtml(get(r,"industry"))}</span>` : `<span class="muted">—</span>`}</td>
+      <td>${escHtml(get(r,"country")) || `<span class="muted">—</span>`}</td>
+      <td>${escHtml(get(r,"founder")) || `<span class="muted">—</span>`}</td>
+      <td>${contactCell(r)}</td>
+      <td>${emailBtn}</td>
+    </tr>`;
+  }).join("");
+
+  document.getElementById("emptyState").style.display = idx.length ? "none" : "block";
+
+  // summary + select-all state
+  const withEmail = ROWS.filter(r=>isEmail(get(r,"email"))).length;
+  const withLi = ROWS.filter(r=>!isEmail(get(r,"email")) && get(r,"linkedin")).length;
+  document.getElementById("summary").textContent =
+    `${idx.length} shown of ${ROWS.length} entries · ${withEmail} with email · ${withLi} with LinkedIn only`;
+  const selAll = document.getElementById("selAll");
+  const allSel = idx.length && idx.every(i=>selected.has(i));
+  selAll.checked = !!allSel;
+  selAll.indeterminate = !allSel && idx.some(i=>selected.has(i));
+  updateSelCount();
+}
+function updateSelCount(){
+  const emailsSel = [...selected].filter(i=>isEmail(get(ROWS[i],"email"))).length;
+  document.getElementById("selCount").textContent = emailsSel;
+  document.getElementById("btnBulk").disabled = emailsSel === 0;
+}
+
+// ---------- Template + mail-merge ------------------------------------------
+function firstName(full){ return (full||"").trim().split(/\s+/)[0] || "there"; }
+function fillTemplate(str, r, {neutral=false} = {}){
+  const map = {
+    founder_name: get(r,"founder") || "there",
+    founder_first: neutral ? "there" : firstName(get(r,"founder")),
+    founder_role: get(r,"role") || "Founder",
+    startup_name: get(r,"name") || "your company",
+    industry: get(r,"industry") || "your field",
+    country: get(r,"country") || "",
+  };
+  if(neutral){ map.founder_name = "there"; }
+  return str.replace(/\{(\w+)\}/g, (m,k)=> (k in map ? map[k] : m));
+}
+function mailtoFor(r){
+  const email = get(r,"email");
+  if(!isEmail(email)) return null;
+  const subj = fillTemplate(template.subject, r);
+  const body = fillTemplate(template.body, r);
+  return `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
+}
+function loadTemplate(){
+  try{
+    const s = JSON.parse(localStorage.getItem("outreachTemplate"));
+    if(s && s.subject!=null && s.body!=null) return s;
+  }catch(e){}
+  return {...DEFAULT_TEMPLATE};
+}
+function saveTemplate(t){ localStorage.setItem("outreachTemplate", JSON.stringify(t)); }
+
+// ---------- Escaping --------------------------------------------------------
+function escHtml(s){ return String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function escAttr(s){ return escHtml(s).replace(/'/g,"&#39;"); }
+
+// Open a mailto: draft. Uses an anchor+target=_blank so it also works inside a
+// sandboxed iframe (e.g. the Streamlit component), where top-level navigation
+// via window.location is blocked.
+function openMailto(url){
+  if(!url) return;
+  const a = document.createElement("a");
+  a.href = url; a.target = "_blank"; a.rel = "noopener";
+  document.body.appendChild(a); a.click(); a.remove();
+}
+
+// ---------- Wire up events --------------------------------------------------
+const drop = document.getElementById("drop");
+const fileInput = document.getElementById("fileInput");
+document.getElementById("btnUpload").addEventListener("click", ()=> fileInput.click());
+fileInput.addEventListener("change", e=>{ if(e.target.files[0]) handleFile(e.target.files[0]); });
+["dragenter","dragover"].forEach(ev=> document.body.addEventListener(ev, e=>{ e.preventDefault(); }));
+document.body.addEventListener("drop", e=>{ e.preventDefault(); const f = e.dataTransfer.files[0]; if(f) handleFile(f); });
+
+["fCountry","fIndustry","fEmailOnly"].forEach(id=>
+  document.getElementById(id).addEventListener("change", render));
+document.getElementById("fSearch").addEventListener("input", render);
+
+// row-level clicks (checkbox + email button), delegated
+document.getElementById("rows").addEventListener("click", e=>{
+  const mail = e.target.closest("[data-mail]");
+  if(mail){
+    const i = +mail.dataset.mail, r = ROWS[i];
+    if(sendMethod === "smtp" && canServerSend()){ if(get(r,"email")) smtpSend([i]); return; }
+    const url = mailtoFor(r); if(url) openMailto(url); return;
+  }
+});
+document.getElementById("rows").addEventListener("change", e=>{
+  const cb = e.target.closest("[data-sel]");
+  if(cb){ const i = +cb.dataset.sel; if(cb.checked) selected.add(i); else selected.delete(i);
+    document.getElementById("selAll").indeterminate = false; render(); }
+});
+document.getElementById("selAll").addEventListener("change", e=>{
+  const idx = filteredIndices();
+  if(e.target.checked) idx.forEach(i=>selected.add(i));
+  else idx.forEach(i=>selected.delete(i));
+  render();
+});
+
+// Template modal
+const tplModal = document.getElementById("tplModal");
+document.getElementById("btnTemplate").addEventListener("click", ()=>{
+  document.getElementById("tplSubject").value = template.subject;
+  document.getElementById("tplBody").value = template.body;
+  tplModal.classList.add("show");
+});
+document.getElementById("tplCancel").addEventListener("click", ()=> tplModal.classList.remove("show"));
+document.getElementById("tplReset").addEventListener("click", ()=>{
+  document.getElementById("tplSubject").value = DEFAULT_TEMPLATE.subject;
+  document.getElementById("tplBody").value = DEFAULT_TEMPLATE.body;
+});
+document.getElementById("tplSave").addEventListener("click", ()=>{
+  template = { subject: document.getElementById("tplSubject").value,
+               body: document.getElementById("tplBody").value };
+  saveTemplate(template);
+  tplModal.classList.remove("show");
+});
+
+// Bulk modal
+const bulkModal = document.getElementById("bulkModal");
+let bulkList = [], bulkPos = 0;
+document.getElementById("btnBulk").addEventListener("click", ()=>{
+  if(sendMethod === "smtp" && canServerSend()){
+    const list = [...selected].filter(i=>get(ROWS[i],"email")).sort((a,b)=>a-b);
+    if(list.length) smtpSend(list);
+    return;
+  }
+  bulkList = [...selected].filter(i=>get(ROWS[i],"email"))
+                          .sort((a,b)=>a-b);
+  bulkPos = 0;
+  if(!bulkList.length) return;
+  document.getElementById("bulkTotal").textContent = bulkList.length;
+  document.getElementById("bulkQueue").innerHTML = bulkList.map((i,n)=>{
+    const r = ROWS[i];
+    return `<div id="bq${n}"><span>${escHtml(get(r,"founder")||get(r,"name"))} · ${escHtml(get(r,"email"))}</span><span class="q-state muted">queued</span></div>`;
+  }).join("");
+  updateBulkStepper();
+  bulkModal.classList.add("show");
+});
+function updateBulkStepper(){
+  const remaining = bulkList.length - bulkPos;
+  document.getElementById("bulkPos").textContent = Math.min(bulkPos+1, bulkList.length);
+  document.getElementById("bulkRemaining").textContent =
+    remaining>0 ? `${remaining} remaining` : "All drafts opened ✓";
+  document.getElementById("bulkOpen").disabled = remaining<=0;
+}
+document.getElementById("bulkOpen").addEventListener("click", ()=>{
+  if(bulkPos >= bulkList.length) return;
+  const i = bulkList[bulkPos];
+  const url = mailtoFor(ROWS[i]);
+  const badge = document.querySelector(`#bq${bulkPos} .q-state`);
+  if(badge){ badge.textContent = "opened ✓"; badge.className = "q-state done"; }
+  bulkPos++;
+  updateBulkStepper();
+  if(url) openMailto(url);
+});
+document.getElementById("bulkBcc").addEventListener("click", e=>{
+  e.preventDefault();
+  const emails = bulkList.map(i=>get(ROWS[i],"email"));
+  // Use the first row only to fill the template, with neutral personal placeholders.
+  const r0 = ROWS[bulkList[0]];
+  const subj = fillTemplate(template.subject, r0, {neutral:true});
+  const body = fillTemplate(template.body, r0, {neutral:true});
+  const url = `mailto:?bcc=${encodeURIComponent(emails.join(","))}`+
+              `&subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
+  openMailto(url);
+});
+document.getElementById("bulkCopy").addEventListener("click", async ()=>{
+  const emails = bulkList.map(i=>get(ROWS[i],"email")).join(", ");
+  try{ await navigator.clipboard.writeText(emails); document.getElementById("bulkCopy").textContent="Copied ✓";
+       setTimeout(()=>document.getElementById("bulkCopy").textContent="Copy all addresses",1500); }
+  catch(e){ prompt("Copy these addresses:", emails); }
+});
+document.getElementById("bulkClose").addEventListener("click", ()=> bulkModal.classList.remove("show"));
+
+// ---------- Recipient toggle + send method ---------------------------------
+document.getElementById("fRecipient").addEventListener("change", e=>{
+  recipientMode = e.target.value; render();
+});
+document.getElementById("fSendMethod").addEventListener("change", e=>{
+  sendMethod = e.target.value;
+});
+// SMTP auto-send works when embedded in a host that can send (Shiny or Streamlit).
+// The Streamlit bridge (below) re-enables this option once its first render arrives.
+(function initSendMethod(){
+  const opt = document.querySelector('#fSendMethod option[value="smtp"]');
+  if(!canServerSend()){
+    opt.disabled = true;
+    opt.textContent = "SMTP (needs server)";
+  } else if(!SMTP.allow_live_send){
+    opt.textContent = "SMTP (set ALLOW_LIVE_SEND)";
+  }
+})();
+
+// ---------- SMTP send (round-trips through the Shiny server) ----------------
+const smtpModal = document.getElementById("smtpModal");
+function smtpSend(list){
+  const msgs = list.map(i=>{
+    const r = ROWS[i];
+    return { to: get(r,"email"),
+             subject: fillTemplate(template.subject, r),
+             body: fillTemplate(template.body, r),
+             label: get(r,"founder") || get(r,"name") || "" };
+  }).filter(m=>isEmail(m.to));
+  if(!msgs.length) return;
+  document.getElementById("smtpIntro").textContent =
+    "Sending " + msgs.length + " personalised " + recipientMode + " email(s)" +
+    (SMTP.user ? " from " + SMTP.user : "") + " …";
+  document.getElementById("smtpQueue").innerHTML = msgs.map((m,n)=>
+    `<div id="sq${n}"><span>${escHtml(m.label)} · ${escHtml(m.to)}</span>`+
+    `<span class="q-state muted">sending…</span></div>`).join("");
+  document.getElementById("smtpNote").style.display = "none";
+  smtpModal.classList.add("show");
+  try{
+    if(IS_STREAMLIT && window.__ST_SEND){
+      window.__ST_SEND(msgs);                                   // Streamlit component bridge
+    } else {
+      window.parent.Shiny.setInputValue("outreach_smtp_send",   // Shiny bridge
+        { payload: JSON.stringify({ messages: msgs }), nonce: Date.now() },
+        { priority: "event" });
+    }
+  }catch(err){
+    applySmtpResult({ error: "Could not reach the server: " + err.message });
+  }
+}
+function applySmtpResult(res){
+  const q = document.getElementById("smtpQueue");
+  const note = document.getElementById("smtpNote");
+  const results = (res && res.results) || [];
+  Array.from(q.children).forEach((div,n)=>{
+    const badge = div.querySelector(".q-state"); if(!badge) return;
+    if(res && res.error){ badge.textContent = "failed"; badge.className = "q-state"; badge.style.color = "var(--danger)"; return; }
+    const rec = results[n];
+    if(rec && rec.status === "sent"){ badge.textContent = "sent ✓"; badge.className = "q-state done"; }
+    else { badge.textContent = "error"; badge.className = "q-state"; badge.style.color = "var(--danger)";
+           if(rec && rec.error) div.title = rec.error; }
+  });
+  note.style.display = "block";
+  if(res && res.error){
+    note.textContent = res.error;
+    note.style.background = "#fdecec"; note.style.borderColor = "#f3bcbc"; note.style.color = "#7a1c17";
+  } else {
+    const sent = results.filter(r=>r.status === "sent").length;
+    note.textContent = sent + " of " + results.length + " sent successfully.";
+    note.style.background = "#eef8f0"; note.style.borderColor = "#bfe3c7"; note.style.color = "#155a2b";
+  }
+}
+// Result pushed back from the Shiny server (parent → iframe).
+window.addEventListener("message", e=>{
+  const d = e.data;
+  if(d && d.__smtp_result) applySmtpResult(d.__smtp_result);
+});
+document.getElementById("smtpClose").addEventListener("click", ()=> smtpModal.classList.remove("show"));
+
+// Empty-state prompt: visible whenever the data controls are hidden (no data),
+// auto-hidden the moment any load path shows the controls.
+(function(){
+  const nd = document.getElementById("noData"), ct = document.getElementById("controls");
+  if(!nd || !ct) return;
+  const sync = ()=>{ nd.style.display = (!ct.style.display || ct.style.display === "none") ? "" : "none"; };
+  sync();
+  new MutationObserver(sync).observe(ct, {attributes:true, attributeFilter:["style"]});
+})();
+
+// close modals on backdrop click / Esc
+[tplModal,bulkModal,smtpModal].forEach(m=> m.addEventListener("click", e=>{ if(e.target===m) m.classList.remove("show"); }));
+document.addEventListener("keydown", e=>{ if(e.key==="Escape"){ tplModal.classList.remove("show"); bulkModal.classList.remove("show"); smtpModal.classList.remove("show"); }});
+
+// ---------- Streamlit custom-component bridge ------------------------------
+// Active only when this page is served as a Streamlit component (declare_component).
+// It receives the CSV + SMTP result via render args and sends the SMTP request
+// back to Python via setComponentValue. Inert under Shiny / standalone.
+(function(){
+  let loaded = false, lastResultNonce = null, _lastH = 0;
+  function st(type, data){ try{ window.parent.postMessage(Object.assign({isStreamlitMessage:true, type:type}, data||{}), "*"); }catch(e){} }
+  function setHeight(){
+    const h = Math.max(document.documentElement.scrollHeight, 720);
+    if(Math.abs(h - _lastH) < 8) return;   // ignore sub-pixel jitter -> no scrollbar flicker
+    _lastH = h;
+    st("streamlit:setFrameHeight", {height: h});
+  }
+  window.__ST_SEND = function(msgs){
+    st("streamlit:setComponentValue", {value: JSON.stringify({action:"smtp_send", messages: msgs, nonce: Date.now()}), dataType:"json"});
+  };
+  window.addEventListener("message", function(e){
+    const d = e.data; if(!d || d.type !== "streamlit:render") return;
+    IS_STREAMLIT = true;
+    const a = (d.args) || {};
+    const opt = document.querySelector('#fSendMethod option[value="smtp"]');
+    if(opt){ opt.disabled = false; opt.textContent = "SMTP (auto)"; }
+    if(a.csv && !loaded){
+      loaded = true;
+      try{ const p = toObjects(parseCSV(a.csv)); HEADERS = p.headers; ROWS = normalizeRows(p.headers, p.rows); selected.clear();
+        if(HEADERS.includes(COL.name) && ROWS.length){ initFilters(); document.getElementById("controls").style.display = "block";
+          const s = document.getElementById("btnUpload"); if(s) s.textContent = "⬆ current run — Upload CSV to replace"; render(); } }
+      catch(err){ console.error(err); }
+    }
+    if(a.smtp_result && a.smtp_nonce && a.smtp_nonce !== lastResultNonce){
+      lastResultNonce = a.smtp_nonce;
+      try{ applySmtpResult(a.smtp_result); }catch(err){}
+    }
+    setHeight();
+  });
+  function announce(){ st("streamlit:componentReady", {apiVersion: 1}); setHeight(); }
+  if(document.readyState === "complete") announce(); else window.addEventListener("load", announce);
+  try{ new ResizeObserver(setHeight).observe(document.body); }catch(e){}
+})();
+</script>
+</body>
+</html>

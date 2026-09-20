@@ -1,0 +1,19 @@
+{
+  "mode": "live",
+  "crawler_backend": "crawl4ai",
+  "search_backend": "brave",
+  "email_provider": "none",
+  "people_provider": "none",
+  "candidates_uploaded": 6,
+  "contacts_enriched": 3,
+  "candidates_with_any_contact": 3,
+  "founder_emails_found": 0,
+  "company_emails_found": 3,
+  "verified_valid_candidates": 0,
+  "startup_websites_available": 6,
+  "founder_records": 0,
+  "founder_records_with_email": 0,
+  "contact_evidence_rows": 9,
+  "search_api_calls": 24,
+  "errors": 0
+}

@@ -1,0 +1,22 @@
+{
+  "mode": "live",
+  "crawler_backend": "crawl4ai",
+  "search_backend": "brave",
+  "email_provider": "hunter",
+  "people_provider": "none",
+  "candidates_uploaded": 117,
+  "contacts_enriched": 0,
+  "candidates_with_any_contact": 1,
+  "founder_emails_found": 1,
+  "company_emails_found": 0,
+  "verified_valid_candidates": 0,
+  "startup_websites_available": 0,
+  "founder_records": 20,
+  "founder_records_with_email": 2,
+  "contact_evidence_rows": 3,
+  "search_api_calls": 652,
+  "hunter_domain_search_calls": 0,
+  "hunter_email_finder_calls": 18,
+  "hunter_email_verifier_calls": 1,
+  "errors": 0
+}

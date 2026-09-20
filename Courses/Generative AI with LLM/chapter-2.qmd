@@ -1,0 +1,77 @@
+---
+title: "Chapter 2: Transformers & LLMs"
+subtitle: "Attention, transformer blocks, encoder models, and multimodal inputs"
+toc: true
+format:
+  html: default
+---
+
+[← Text processing](chapter-1.qmd) · [Course home](index.qmd) · [Next: Training →](chapter-3.qmd)
+
+## Why transformers replaced recurrent models
+
+RNNs and LSTMs process one token after another. That makes training hard to parallelise and makes early context difficult to retain in long sequences. Transformers instead process a sequence in parallel and let every token selectively draw information from the tokens relevant to it. The trade-off is that full attention compares token pairs, so its cost grows roughly quadratically with sequence length.
+
+## 1. Self-attention: query, key, and value
+
+Each token embedding $x$ is projected into three learned vectors:
+
+- **Query** $q=xW_Q$: what the current token is looking for.
+- **Key** $k=xW_K$: what another token offers for matching.
+- **Value** $v=xW_V$: the content that can be gathered.
+
+For each query, the model scores visible keys, normalises the scores with softmax, and uses the resulting weights to form a weighted sum of values:
+
+$$\operatorname{Attention}(Q,K,V)=\operatorname{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
+
+Dividing by $\sqrt{d_k}$ prevents large dot products from making softmax too extreme. In a decoder, a causal mask hides future tokens, so generation stays left-to-right. The resulting representation of a token is contextual: the word *it* can attend most strongly to the noun it refers to.
+
+**Multi-head attention** repeats this process with several independent Q/K/V projections. Each head can focus on a different relationship, then the outputs are concatenated and projected back together.
+
+## 2. The transformer block
+
+An LLM begins with token IDs, looks up embeddings, and adds positional information. It then stacks many blocks:
+
+```text
+token + position → multi-head attention → residual + normalisation
+                 → feed-forward network → residual + normalisation
+```
+
+The **feed-forward network (FFN)** is a two-layer MLP applied independently to every token after attention has mixed contextual information. It provides nonlinearity and typically holds many of the model parameters.
+
+**Residual connections** add a sublayer’s input to its output. They preserve useful signal and give gradients a shorter route through a deep network. **LayerNorm** stabilises each token’s activations across features; modern models often use the cheaper RMSNorm variant.
+
+Attention itself has no sense of word order. Positional encodings solve that: the original transformer used sinusoidal vectors, BERT used learned positions, and many modern decoder models use **RoPE**, which rotates queries and keys according to position and handles relative distance well.
+
+## 3. Encoder versus decoder
+
+The original transformer had both components, but they are trained for different tasks.
+
+| Model type | Visibility | Objective | Typical use |
+|---|---|---|---|
+| Encoder (BERT) | Both left and right context | Predict masked tokens | Classification and embeddings |
+| Decoder (GPT/Llama-style) | Earlier tokens only | Predict the next token | Autoregressive generation |
+
+A decoder’s final linear layer produces one **logit** for every vocabulary token. Softmax turns logits into next-token probabilities; choosing a token and appending it repeats the generation loop. Decoding controls such as temperature, top-k, and top-p affect this selection at inference time.
+
+## 4. Scaling attention efficiently
+
+Full attention becomes expensive on long inputs. Important architectural responses include:
+
+- **Sliding-window attention:** each token attends to a local window, reducing the main cost toward linear growth; occasional global layers can retain wider links.
+- **RoPE scaling:** extends a model’s usable context beyond the length seen in training, with potential quality loss at extremes.
+- **Mixture-of-Experts (MoE):** routes each token to only a few specialised FFNs, raising total capacity while keeping computation per token relatively restrained.
+
+## 5. BERT and contextual embeddings
+
+BERT is a bidirectional encoder trained with masked-language modelling. It sees both sides of a missing word, which makes it suited to understanding an input rather than producing long text. Its input combines token, position, and segment embeddings, with special `[CLS]` and `[SEP]` tokens.
+
+For classification, the `[CLS]` representation is commonly passed to a task head. For semantic representation, token vectors can also be mean-pooled. Reading the raw embedding layer gives a static vector; running the sequence through BERT’s transformer layers yields contextual vectors whose meaning changes with surrounding text.
+
+## 6. Multimodal models
+
+Modern systems can accept text and images together. An image encoder turns visual input into embeddings; a decoder then consumes the combined image-and-text representation to generate a response. This reuses the encoder and decoder ideas in a single multimodal flow.
+
+## Practice focus
+
+The chapter lab uses BERT to inspect tokenisation, compare static and contextual embeddings with cosine similarity, and contrast `[CLS]` pooling with mean pooling. Be able to explain both the attention equation and the data flow through a full transformer block.

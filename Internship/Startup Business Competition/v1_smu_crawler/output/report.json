@@ -1,0 +1,12 @@
+{
+  "targets": 30,
+  "contacts_found": 10,
+  "ready_to_send": 6,
+  "needs_review": 4,
+  "role_inboxes": 4,
+  "by_status": {
+    "fetch_failed": 9,
+    "no_contact": 11,
+    "ok": 10
+  }
+}

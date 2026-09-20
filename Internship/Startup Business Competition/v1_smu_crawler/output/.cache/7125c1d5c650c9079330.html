@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	  	<title>site move</title>
+	  	
+	  	<link rel="canonical" href="https://www.yonsei.ac.kr">
+	  	<link rel="icon" href="https://www.yonsei.ac.kr/favicon.ico" type="image/x-icon">
+	  	
+		<meta property="og:url" content="https://www.yonsei.ac.kr">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Yonsei University">
+		<meta property="og:image" content="https://www.yonsei.ac.kr/Web-home/_UI/images/img_symbol.png">
+		<meta property="og:image:width" content="600" />
+		<meta property="og:image:height" content="315" />
+		<meta property="og:description" content="연세대학교 Yonsei University">
+		
+		<script src="/Web-home/js/jquery-1.11.3.min.js"></script>
+		<script src="/Web-home/geoip2/js/geoip2.js"></script>
+		<script>
+			$(function() {
+				var countryInfo = getCountryInfo();
+				var geoInfo = countryInfo && countryInfo.geoInfo ? countryInfo.geoInfo : null;
+				var isoCode = geoInfo && geoInfo.isoCode ? geoInfo.isoCode : null;
+
+				var hostname = window.location.hostname; 
+				var isMirae = hostname.startsWith("mirae");
+				
+				var landingSiteId = "";
+				
+				if (isMirae) {
+					//미래캠퍼스 도메인일 경우
+					//사설 IP, 개발환경 IP의 경우
+					landingSiteId = (typeof isoCode === "undefined" || isoCode == null || isoCode === "KR") ? "wj" : "en_wj";
+				} else {
+					//일반 도메인일 경우
+					//사설 IP, 개발환경 IP의 경우
+					landingSiteId = (typeof isoCode === "undefined" || isoCode == null || isoCode === "KR") ? "sc" : "en_sc";
+				}
+				
+				location.href = '/' + landingSiteId + '/index.do';
+			});
+		</script>
+
+	</head>
+	<body></body>
+</html>
+

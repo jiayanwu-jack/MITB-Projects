@@ -1,0 +1,37 @@
+{
+  "set": "merged_all_new_seeds",
+  "merged_on": "2026-07-11",
+  "merged_from": [
+    "new_seeds_crawl4ai_qwen3_20260709 (main, 12 seeds)",
+    "rice_brave_hunter_apollo_20260709 (S163 domain recovery)",
+    "zerodomain_refix_20260709 (zero-domain rosters)"
+  ],
+  "excluded": [
+    "smallbatch_test_20260709/s1,s3 (QA subsets)",
+    "tie_google_20260710 (0 candidates)",
+    "domainrecovery_4rosters_20260709 (empty)"
+  ],
+  "dedup_key": "(startup_name, source_id); most-enriched row wins",
+  "unique_candidates": 204,
+  "qualified": 165,
+  "startup_websites_available": 96,
+  "founder_records": 126,
+  "founder_records_with_email": 75,
+  "contact_evidence_rows": 488,
+  "candidate_provenance": {
+    "main": 163,
+    "rice": 40,
+    "zero": 1
+  },
+  "sources": [
+    "S163",
+    "S164",
+    "S165",
+    "S166",
+    "S167",
+    "S168",
+    "S169",
+    "S171",
+    "S172"
+  ]
+}

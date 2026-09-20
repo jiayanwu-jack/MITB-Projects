@@ -1,0 +1,67 @@
+---
+title: "Generative AI with LLM"
+subtitle: "MITB CS614 · August Term 2026"
+toc: true
+format:
+  html: default
+---
+
+This course traces the path from turning text into vectors to adapting large language models efficiently. Classes run on Tuesdays, 7:00pm-10:15pm, from 25 August to 3 November 2026.
+
+## Course at a glance
+
+| Assessment | Weight | What it covers |
+|---|---:|---|
+| Seven in-class quizzes | 49% | Seven quizzes, each worth 7%; they test preceding course content. |
+| Course feedback | 1% | End-of-course feedback submission. |
+| Group project | 40% | A 2-5 person LLM system or applied study, with report, presentation, and code. Due Tuesday, 3 November 2026. |
+| Participation | 10% | Attendance, engagement, and weekly reflections. |
+
+## Study chapters
+
+| Chapter | Topic | Focus |
+|---|---|---|
+| [Chapter 1: Text processing & embeddings](chapter-1.qmd) | Text Processing Fundamentals | Tokens, n-grams, BOW, TF-IDF, cosine similarity, and Word2Vec. |
+| [Chapter 2: Transformers & LLMs](chapter-2.qmd) | Transformers | Attention, transformer blocks, BERT, and multimodal models. |
+| [Chapter 3: Training & customising LLMs](chapter-3.qmd) | Training | Pre-training, supervised fine-tuning, cross-entropy, training curves, and alignment. |
+| [Chapter 4: Efficient fine-tuning](chapter-4.qmd) | Customising LLMs | The customisation ladder, LoRA/QLoRA, precision, and efficient training. |
+
+## Weekly timetable
+
+| Session | Date | Topic | Assessment |
+|---:|---|---|---|
+| 1 | 25 Aug | Introduction; text processing | — |
+| 2 | 1 Sep | Deep neural networks and transformers | Quiz 1 |
+| 3 | 8 Sep | LLM training and customising pre-trained LLMs | Quiz 2 |
+| 4 | 15 Sep | Efficient LLM training | Quiz 3 |
+| 5 | 22 Sep | Inference, evaluation and deployment | Quiz 4 |
+| 6 | 29 Sep | Retrieval-augmented generation (RAG) | Quiz 5 |
+| 7 | 13 Oct | LLM agents and Model Context Protocol | Quiz 6 (RAG) |
+| 8 | 20 Oct | Advanced LLM architectures | Quiz 7 (Agents) |
+| 9 | 27 Oct | Ethics, bias and hallucination | — |
+| 10 | 3 Nov | Group project presentations | Project due |
+
+The recess week is 5-11 October 2026.
+
+## AI-use rules
+
+AI tools are part of the subject, but their use depends on the setting.
+
+| Setting | AI use |
+|---|---|
+| Class discussion and quizzes | Not allowed. These activities show your own reasoning and understanding. |
+| Group-project code, system, and study work | Allowed. |
+| Written report | Allowed as assistance only. The responsible student must edit and verify every claim, citation, number, and code snippet. |
+| Final presentation | Not allowed. Each student explains their contribution without an LLM-generated script, phone, notes, or slides as a script. |
+
+## Final group project
+
+Choose a real or domain-specific problem and build a working GenAI system or a rigorous applied study. Arrange a scope-and-task-distribution meeting for approval once the team has an idea.
+
+A strong project is technically correct, reproducible, evaluated both quantitatively and qualitatively, and compares at least two meaningful alternatives. The report should explain the motivation, architecture, data and model choices, experimental method, results, trade-offs, risks, and future work. Include reproducible artefacts such as a repository, README, configuration, and fixed seeds where appropriate.
+
+Possible directions include a domain RAG assistant with an advanced retrieval method, a fine-tuned tutor evaluated against its base model, a multi-agent analysis workflow, or a study comparing RAG, fine-tuning, robustness, or agent-memory strategies.
+
+## How the four chapters connect
+
+Chapter 1 makes text measurable. Chapter 2 explains the architecture that makes those representations context-aware. Chapter 3 shows how the architecture learns, and Chapter 4 focuses on deciding whether fine-tuning is warranted and how to do it within practical hardware limits. Later course sessions extend this foundation to inference, evaluation, RAG, agents, advanced architectures, and responsible use.

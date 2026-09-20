@@ -1,0 +1,80 @@
+---
+title: "Chapter 1: Text Processing & Embeddings"
+subtitle: "From tokens and counts to learned word vectors"
+toc: true
+format:
+  html: default
+---
+
+[← Course home](index.qmd) · [Next: Transformers →](chapter-2.qmd)
+
+## The central problem
+
+Machine-learning models work with numbers, not raw prose. Text processing transforms a sentence into a sequence of numeric token IDs and then vectors. This enables classification, search, generation, translation, and dialogue, but it must cope with ambiguity, changing meaning, and long-distance dependencies.
+
+## 1. Normalisation and tokenisation
+
+**Normalisation** makes surface forms more consistent: lowercasing, whitespace cleanup, standardising dates/numbers, or lemmatising words such as *was* to *be*. These operations reduce vocabulary size, but can remove useful signals: `Apple` and `apple` are not always the same concept, and punctuation can carry sentiment or mark boundaries.
+
+**Tokenisation** splits text into units the model can index. Word tokens are easy to explain but create huge vocabularies and cannot handle unseen words well. Modern LLMs normally use subwords (for example BPE, WordPiece, or SentencePiece), so an unfamiliar word can be assembled from familiar pieces. The practical pipeline is:
+
+```text
+raw text → normalise → tokens/subwords → integer IDs → embedding vectors
+```
+
+## 2. N-gram language models
+
+An n-gram model predicts a word from a short preceding history. A bigram estimates:
+
+$$P(w_n \mid w_{n-1}) = \frac{C(w_{n-1}, w_n)}{C(w_{n-1})}$$
+
+To score a sentence, multiply the conditional probabilities for its successive word pairs. This was an early approach to generation: repeatedly choose a likely next word until an end marker is reached.
+
+The limitation is structural. The context is fixed and short, unseen word pairs receive probability zero, and the model only reproduces count patterns in its corpus. N-grams motivate the next idea: learn relationships between words rather than storing only their counts.
+
+## 3. Count-based representations
+
+### Bag-of-words and one-hot vectors
+
+A **bag-of-words (BOW)** represents a document by one count per vocabulary term. It is simple and interpretable, but it throws away word order. Therefore, “I do not like them” and the same words in a scrambled order have identical BOW vectors. A one-hot vector is an even simpler special case: one `1` identifies a word and all other vocabulary positions are `0`.
+
+Both representations are high-dimensional and sparse, and neither knows that related words such as *cat* and *dog* are semantically close.
+
+### TF-IDF
+
+Raw counts overvalue common terms. **Term frequency-inverse document frequency (TF-IDF)** retains the vector shape but weights distinctive terms more highly:
+
+$$\operatorname{TF\text{-}IDF}(i,d) = \operatorname{TF}(i,d)\times \log\left(\frac{|D|}{|\{d:i\in d\}|}\right)$$
+
+A term receives a high score when it is frequent in one document but rare across the corpus. That makes TF-IDF useful for search, text mining, classification, and extraction.
+
+### Cosine similarity
+
+Search often ranks a document against a query. The dot product alone rewards longer vectors, so cosine similarity removes length:
+
+$$\cos(\theta) = \frac{a\cdot b}{\|a\|\|b\|}$$
+
+For non-negative count or TF-IDF vectors, a score near 1 means the vectors point in nearly the same direction; 0 means they share no meaningful terms. This same measure remains central in modern semantic retrieval.
+
+## 4. Neural-network recap
+
+A neuron forms a weighted sum, adds a bias, and applies a nonlinearity: $z=w\cdot x+b$, then $y=\sigma(z)$. A feed-forward network stacks such transformations and ends with softmax when it must output a probability distribution. Word2Vec uses this machinery in a deliberately shallow form.
+
+## 5. Word2Vec
+
+Word2Vec learns a compact, dense vector for each word by training a prediction task. With a one-hot input $x$ and embedding matrix $W$, the product $xW$ simply selects a row of $W$: that row is the word’s learned embedding.
+
+- **CBOW** predicts the centre word from surrounding context. It is fast and works well for frequent words.
+- **Skip-gram** predicts surrounding words from the centre word. It tends to help rarer words and larger corpora.
+
+Words appearing in similar contexts end up near one another. Relations can appear as directions in the vector space, producing the classic intuition: `king - man + woman ≈ queen`.
+
+Word2Vec improves on BOW because its vectors are low-dimensional, dense, and semantic. It still gives each word only one fixed vector: *bank* has the same representation in a river sentence and a finance sentence. It also does not naturally share subwords or handle unknown words.
+
+## 6. From static words to modern retrieval
+
+Modern embedding models generate **contextual** word vectors and often embed whole sentences or passages. A query and candidate documents are encoded, compared with cosine similarity, and ranked by relevance. This is the dense-retrieval backbone used later in RAG systems.
+
+## Practice focus
+
+The chapter labs build BOW, TF-IDF, and cosine ranking with scikit-learn, then train Word2Vec on 20 Newsgroups data and inspect nearest neighbours and vector analogies. The key question is not only how to calculate a representation, but what information it preserves and what it discards.

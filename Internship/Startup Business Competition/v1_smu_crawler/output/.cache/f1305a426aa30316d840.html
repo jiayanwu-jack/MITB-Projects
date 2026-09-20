@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+
+<html lang="de">
+    <head>
+    <meta charset="utf-8" >
+    <meta name="content-page-ref" content="DYECE0f2qESSW5-qj2uwrLDiuR3JvwDpjRBTUat7fqhsmvY7usIpQtKzocXalE4M5BmNaOy6N0eJLM78EBgIUl_kjY0i5Rsf4oDGB1o9CDG1o82M3j5UX45GHURp7FdTRLyRIh3SJihPOLke7tf4bjnINyjzuIovWKfZlqAp2ZU"/>
+<link rel="canonical" href="https://ethz.ch/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026/06/embo-membership.html">
+<link rel="alternate" href="https://ethz.ch/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026/06/embo-membership.html" hreflang="de">
+<link rel="alternate" href="https://ethz.ch/staffnet/en/news-and-events/internal-news/archive/2026/06/embo-membership.html" hreflang="en">
+<script>
+
+    // promise polyfill
+    !function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t():"function"==typeof define&&define.amd?define(t):t()}(0,function(){"use strict";function e(e){var t=this.constructor;return this.then(function(n){return t.resolve(e()).then(function(){return n})},function(n){return t.resolve(e()).then(function(){return t.reject(n)})})}function t(e){return new this(function(t,n){function o(e,n){if(n&&("object"==typeof n||"function"==typeof n)){var f=n.then;if("function"==typeof f)return void f.call(n,function(t){o(e,t)},function(n){r[e]={status:"rejected",reason:n},0==--i&&t(r)})}r[e]={status:"fulfilled",value:n},0==--i&&t(r)}if(!e||"undefined"==typeof e.length)return n(new TypeError(typeof e+" "+e+" is not iterable(cannot read property Symbol(Symbol.iterator))"));var r=Array.prototype.slice.call(e);if(0===r.length)return t([]);for(var i=r.length,f=0;r.length>f;f++)o(f,r[f])})}function n(e){return!(!e||"undefined"==typeof e.length)}function o(){}function r(e){if(!(this instanceof r))throw new TypeError("Promises must be constructed via new");if("function"!=typeof e)throw new TypeError("not a function");this._state=0,this._handled=!1,this._value=undefined,this._deferreds=[],l(e,this)}function i(e,t){for(;3===e._state;)e=e._value;0!==e._state?(e._handled=!0,r._immediateFn(function(){var n=1===e._state?t.onFulfilled:t.onRejected;if(null!==n){var o;try{o=n(e._value)}catch(r){return void u(t.promise,r)}f(t.promise,o)}else(1===e._state?f:u)(t.promise,e._value)})):e._deferreds.push(t)}function f(e,t){try{if(t===e)throw new TypeError("A promise cannot be resolved with itself.");if(t&&("object"==typeof t||"function"==typeof t)){var n=t.then;if(t instanceof r)return e._state=3,e._value=t,void c(e);if("function"==typeof n)return void l(function(e,t){return function(){e.apply(t,arguments)}}(n,t),e)}e._state=1,e._value=t,c(e)}catch(o){u(e,o)}}function u(e,t){e._state=2,e._value=t,c(e)}function c(e){2===e._state&&0===e._deferreds.length&&r._immediateFn(function(){e._handled||r._unhandledRejectionFn(e._value)});for(var t=0,n=e._deferreds.length;n>t;t++)i(e,e._deferreds[t]);e._deferreds=null}function l(e,t){var n=!1;try{e(function(e){n||(n=!0,f(t,e))},function(e){n||(n=!0,u(t,e))})}catch(o){if(n)return;n=!0,u(t,o)}}var a=setTimeout;r.prototype["catch"]=function(e){return this.then(null,e)},r.prototype.then=function(e,t){var n=new this.constructor(o);return i(this,new function(e,t,n){this.onFulfilled="function"==typeof e?e:null,this.onRejected="function"==typeof t?t:null,this.promise=n}(e,t,n)),n},r.prototype["finally"]=e,r.all=function(e){return new r(function(t,o){function r(e,n){try{if(n&&("object"==typeof n||"function"==typeof n)){var u=n.then;if("function"==typeof u)return void u.call(n,function(t){r(e,t)},o)}i[e]=n,0==--f&&t(i)}catch(c){o(c)}}if(!n(e))return o(new TypeError("Promise.all accepts an array"));var i=Array.prototype.slice.call(e);if(0===i.length)return t([]);for(var f=i.length,u=0;i.length>u;u++)r(u,i[u])})},r.allSettled=t,r.resolve=function(e){return e&&"object"==typeof e&&e.constructor===r?e:new r(function(t){t(e)})},r.reject=function(e){return new r(function(t,n){n(e)})},r.race=function(e){return new r(function(t,o){if(!n(e))return o(new TypeError("Promise.race accepts an array"));for(var i=0,f=e.length;f>i;i++)r.resolve(e[i]).then(t,o)})},r._immediateFn="function"==typeof setImmediate&&function(e){setImmediate(e)}||function(e){a(e,0)},r._unhandledRejectionFn=function(e){void 0!==console&&console&&console.warn("Possible Unhandled Promise Rejection:",e)};var s=function(){if("undefined"!=typeof self)return self;if("undefined"!=typeof window)return window;if("undefined"!=typeof global)return global;throw Error("unable to locate global object")}();"function"!=typeof s.Promise?s.Promise=r:s.Promise.prototype["finally"]?s.Promise.allSettled||(s.Promise.allSettled=t):s.Promise.prototype["finally"]=e});
+
+    const storageKeySuffix = '';
+    window.ethSitemap = {
+      storageKey: '/content/associates/services/de' + storageKeySuffix
+    };
+
+    window.ethSitemap.loaded = new Promise(function (resolve, reject) {
+      const xmlhttp = new XMLHttpRequest();
+
+      xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+          if (xmlhttp.status == 200) {
+            if (xmlhttp.responseText) {
+              window.ethSitemap.data = JSON.parse(xmlhttp.responseText);
+              resolve(window.ethSitemap.data);
+              window.sessionStorage.setItem(window.ethSitemap.storageKey, xmlhttp.responseText)
+            }
+          } else {
+            reject();
+          }
+        }
+      };
+
+      xmlhttp.open("GET", "/staffnet/de/.navigation" + storageKeySuffix + ".json", true);
+      xmlhttp.send();
+    });
+
+  </script>
+<script>    
+    
+    const accountType = window.localStorage.getItem('ch.ethz.user.type');
+
+    var isInternal = window.sessionStorage.getItem('ch.ethz.user.isInternal');
+    if (!isInternal) {
+    	fetch("/bin/ethz/base/stats").then((response) => response.json()).then((data) => {
+    		isInternal = data.is_internal;
+    	    window.sessionStorage.setItem('ch.ethz.user.isInternal', isInternal);
+    	});
+    }
+    
+    const isAuthor = this.getCookieValue('is_author');
+	
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'wait_for_update': 500
+    });
+
+    dataLayer.push({
+        'event': 'pageData',
+        'ch1': 'news-und-veranstaltungen', 
+        'ch2': 'intern-aktuell', 
+        'ch3': 'archiv', 
+        'page_title': 'Internationale Anerkennung: Drei Wissenschaftler:innen erhalten die prestigeträchtige EMBO-Mitgliedschaft',
+        'internal_page_path': '/news-und-veranstaltungen/intern-aktuell/archiv/2026/06/embo-mitgliedschaft',
+        'logged_in': 'false',
+        'account_type': accountType ? accountType : '', 
+        'is_author': isAuthor != '' ? 'true' : 'false',
+        'section': 'Staffnet',
+        'institut': '',
+        'group': '',
+        'is_internal': isInternal == 'true' ? 'true' : 'false',
+    });
+    
+    function getCookieValue(cname) {
+        var name = cname + '=';
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return '';
+      };
+    </script>
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5KC3PX6');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="D-HEST, D-BIOL">
+    <meta name="description" content="Emma Slack und Nina Cabezas-Wallscheid vom Departement Gesundheitswissenschaften und Technologie D-HEST sowie Jörn Piel vom Departement Biologie D-BIOL wurden zu EMBO-Mitgliedern gewählt." >
+    <meta name="format-detection" content="telephone=no">
+    
+<meta property="og:url" content="https://ethz.ch/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026/06/embo-membership.html" >
+    <meta property="og:title" content="Internationale Anerkennung: Drei Wissenschaftler:innen erhalten die prestigetr&auml;chtige EMBO-Mitgliedschaft" >
+    <meta property="og:site_name" content="Staffnet" >
+    <meta property="og:description" content="Emma Slack und Nina Cabezas-Wallscheid vom Departement Gesundheitswissenschaften und Technologie D-HEST sowie Jörn Piel vom Departement Biologie D-BIOL wurden zu EMBO-Mitgliedern gewählt." >
+    <meta property="og:image" content="https://ethz.ch/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026/06/embo-membership/_jcr_content/pageimages/imageCarousel.imageformat.lightbox.1250718402.jpg" >
+    <meta property="og:image:alt" content="EMBO membership" ><meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="" />
+            <meta name="twitter:creator" content="">
+            <meta name="twitter:title" content="Internationale Anerkennung: Drei Wissenschaftler:innen erhalten die prestigetr&auml;chtige EMBO-Mitgliedschaft" />
+            <meta name="twitter:description" content="Emma Slack und Nina Cabezas-Wallscheid vom Departement Gesundheitswissenschaften und Technologie D-HEST sowie Jörn Piel vom Departement Biologie D-BIOL wurden zu EMBO-Mitgliedern gewählt." />
+            <meta name="twitter:image" content="https://ethz.ch/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026/06/embo-membership/_jcr_content/pageimages/imageCarousel.imageformat.lightbox.1250718402.jpg" />
+            <meta name="twitter:image:alt" content="EMBO membership" />
+        <meta name="Systemueberwachung" content="ETHZ" >
+    <meta name="ethz_lmd" content="2026-07-01T13:06:09.254Z" >
+    
+    
+    <meta name="pagetype" content="news"/>
+    <meta name="news_lead" content="Emma Slack und Nina Cabezas-Wallscheid vom Departement Gesundheitswissenschaften und Technologie D-HEST sowie Jörn Piel vom Departement Biologie D-BIOL wurden zu EMBO-Mitgliedern gewählt."/>
+    <meta name="news_pubdate" content="2026-06-30T00:00:00Z"/>
+    <meta name="news_imgurl" content="https://ethz.ch/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026/06/embo-membership/_jcr_content/pageimages/imageSmall.imageformat.contentteaser.1192981186.jpg"/>
+    <meta name="news_channel" content="/content/associates/services/de/news-und-veranstaltungen/intern-aktuell/archiv"/>
+    <meta name="news_tags" content="news:rubriken/intern-aktuell/ehrungen-und-preise,organisation:dept/hest,organisation:dept/biol"/>
+
+
+    
+
+
+
+
+
+    
+<link rel="stylesheet" href="/etc/designs/ethz/css.css" type="text/css">
+
+
+
+
+    
+<script src="/etc/designs/ethz/js/default.js"></script>
+
+
+
+
+<meta name="msapplication-TileColor" content="#215CAF">
+    <meta name="theme-color" content="#215CAF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#215CAF-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="icon" sizes="192x192" href="/etc/designs/ethz/img/icons/ETH-APP-Icons-Theme-white/192-xxxhpdi.png">
+    <meta name="msapplication-TileImage" content="/etc/designs/ethz/img/icons/ETH-APP-Icons-Theme-white/144-xxhdpi.png">
+
+    <meta name="content-language" content="de">
+    
+    
+
+<title>Internationale Anerkennung: Drei Wissenschaftler:innen erhalten die prestigeträchtige EMBO-Mitgliedschaft – Staffnet | ETH Zürich</title>
+<meta name="apple-mobile-web-app-title" content="Internationale Anerkennung: Drei Wissenschaftler:innen erhalten die prestigeträchtige EMBO-Mitgliedschaft – Staffnet | ETH Zürich"/>
+
+<!-- ReadSpeaker -->
+<script>
+(function($) {
+
+    // Skip all images
+    $(document).ready(function() {
+        $('img').addClass('rs_skip');
+    });
+
+    let rsProgess = 0;
+    let rsProgess50Sent = false;
+
+    const rsDataLayerPush = function(addData) {
+        dataLayer.push({
+            "atricle_name": $("h1").text(),
+            "reading_language": $("html").attr("lang"),
+            ...addData
+        });
+    };
+
+    window.rsConf = {
+        general: {
+            usePost: true,
+            skipHiddenContent: true
+        },
+        ui: {
+            tools: {
+                settings: false,
+                voicesettings: false,
+                clicklisten: false,
+                enlarge: false,
+                formreading: false,
+                textmode: false,
+                pagemask: false,
+                download : true,
+                help: false,
+                dictionary: false,
+                translation: false,
+                controlpanel: false,
+                settings: false,
+                skipbuttons: false,
+                speedbutton: true,
+                volumebutton: false
+            },
+        },
+        cb: {
+            audio: {
+                download: function() {
+                    rsDataLayerPush({
+                        "event": "readspeaker_download",
+                    });
+                },
+                ended: function() {
+                    rsDataLayerPush({
+                        "event": "readspeaker_progress",
+                        "reading_progress": 100
+                    });
+                },
+            },
+            ui: {
+                open: function() {
+                    rsDataLayerPush({
+                        "event": "readspeaker_start",
+                    });
+                },
+                close: function() {
+                    rsDataLayerPush({
+                        "event": "readspeaker_stop",
+                        "reading_progress": rsProgess,
+                    });
+                },
+                play: function() {
+                    if (rsProgess != 0) {
+                        rsDataLayerPush({
+                            "event": "readspeaker_play",
+                            "reading_progress": rsProgess,
+                        });
+                    }
+                },
+                pause: function() {
+                    rsDataLayerPush({
+                        "event": "readspeaker_pause",
+                        "reading_progress": rsProgess,
+                    });
+
+                },
+                stop: function() {
+                    rsDataLayerPush({
+                        "event": "readspeaker_stop",
+                        "reading_progress": rsProgess,
+                    });
+                },
+                progresschanged: function(value) {
+                    rsProgess = value;
+                    if (value === 50 && !rsProgess50Sent) {
+                        rsProgess50Sent = true;
+                        rsDataLayerPush({
+                            "event": "readspeaker_progress",
+                            "reading_progress": 50
+                        });
+                    }
+                }
+            }
+        }
+    };
+})(jQuery);
+
+</script>
+<script src="https://cdn-eu.readspeaker.com/script/14392/webReader/webReader.js?pids=wr&skin=wr30skin&notools=1&mobile=0" id="rs_req_Init"></script>
+</head>
+    <body class="article eth-blue">
+        
+        <!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KC3PX6"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+    
+        <!-- skipLinks -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="skipLinksDiv">
+        <ul id="skipLinks">
+                    
+            <li data-order="0"><a accesskey="0" href="/staffnet/de/" class="accesskey" title="Direkt auf die Startseite springen">Startseite</a></li>
+            <li data-order="1"><a accesskey="1" href="#navList" class="accesskey" title="Direkt zur Navigation springen">Navigation</a></li>
+            <li data-order="2"><a accesskey="2" href="https://ethz.ch/staffnet/de/utils/search.html" class="accesskey" title="Direkt zur Suche springen">Suche</a></li>
+            <li data-order="3"><a accesskey="3" href="#content" class="accesskey" title="Direkt zum Inhalt springen">Inhalt</a></li>
+            <li data-order="4"><a accesskey="4" href="#footer" class="accesskey" title="Direkt zum Footer springen">Footer</a></li>
+
+            
+            
+              
+              
+                  
+              
+            
+            
+                <li data-order="5">
+                    <a accesskey="5" href="/staffnet/de/utils/contact.html" class="accesskey" title="Direkt zu Kontakt springen">
+                      Kontakt
+                    </a>
+                </li>
+            
+
+            
+            
+                                    
+	                    <li data-order="6"><a accesskey="6" href="/staffnet/de/footer/inhaltsverzeichnis.html" class="accesskey" title="Inhaltsverzeichnis">Inhaltsverzeichnis</a></li>
+                
+            
+            
+        </ul>
+</div>
+
+
+
+        <div class="site-wrapper">
+            <!-- header -->
+            <header class="site-header header--with-department-breadcrumb">
+    
+<div id="userStatusBar" style="display: none;"></div>
+	<script>
+	    jQuery(document).ready(function loadStatusbar() {
+	      var statusbar = $('#userStatusBar');
+	      if (!ETHZ_Design.Impersonation.isImpersonationOverlayOpen(statusbar)) {
+	          var sbLoaded = $.ajax({
+	              type:     'GET',
+	              dataType: 'HTML',
+	              cache:    false,
+	              url:      '/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026/06/embo-membership/_jcr_content.statusbar.html',
+	              success:  function (response) {          
+	                  if (response) {
+	                    if (response.lastIndexOf("</" + "html" + ">") != -1) {
+	                        // We got a complete HTML document -> replace whole document
+	                        document.open("text/html","replace");
+	                        document.write(response);
+	                        document.close();
+	                      } else {
+	                          statusbar.html(response);
+	                          ETHZ_Design.DropDown.register(statusbar);
+	                          ETHZ_Design.Impersonation.register(statusbar);
+	  
+	                          $('body').addClass('loggedin');
+	                          statusbar.show();
+	                          
+	                          // Remove the login link when logged in
+	                          $('a.login').remove();
+	
+	                          eth.mobileNavPosition();
+	                      }
+	                  }            
+	                },
+	                    
+	                
+	
+	          });
+	            
+	      }
+	      
+	    });
+	</script>
+<div class="header__logos header__container">
+        <a href="https://ethz.ch/de.html" title="Zur Startseite der ETH Zürich">
+            <svg viewBox="0 0 120 20" xmlns="http://www.w3.org/2000/svg" class="main-eth-logo" aria-label="ETH homepage">
+    <path d="M43.6892 7.59685H39.3218L40.8555 0H3.90295L0 19.6252H14.7315L15.7334 14.5606H7.02833L7.52612 12.0283H16.2369L17.1209 7.59685H8.43034L8.92687 5.06457H22.7592L19.8638 19.6252H25.8707L28.7649 5.06457H33.8077L30.9135 19.6252H36.9665L38.4642 12.0283H42.8303L41.3338 19.6252H47.3577L51.2632 0H45.2229L43.6892 7.59685ZM69.4622 2.53228H71.4717L71.9695 0H69.9695L69.4622 2.53228ZM74.616 2.53228H76.6267L77.1232 0H75.1232L74.616 2.53228ZM93.4111 2.53228H95.4205L95.9196 0H93.9183L93.4111 2.53228ZM103.47 6.27247C99.9631 6.27247 97.5024 8.76677 96.7148 13.1172C96.5907 13.7981 96.5275 14.4888 96.5258 15.181C96.5258 18.1527 98.3109 20 101.189 20C102.013 20.0022 102.829 19.8372 103.588 19.515C104.347 19.1928 105.033 18.7199 105.606 18.1248L105.623 18.1058L104.509 16.7333L104.489 16.7093L104.467 16.7321C104.087 17.2105 103.604 17.597 103.055 17.8628C102.506 18.1287 101.905 18.2671 101.295 18.2679C99.9234 18.2679 98.4571 17.4411 98.4571 15.1266C98.4621 14.4552 98.5331 13.786 98.6688 13.1286C98.8751 11.7182 99.4666 10.3928 100.378 9.29981C100.745 8.89298 101.193 8.56784 101.694 8.34522C102.194 8.1226 102.734 8.00742 103.281 8.00708C103.806 7.9833 104.326 8.10937 104.782 8.37067C105.238 8.63197 105.611 9.0178 105.858 9.4834L105.874 9.50999L107.293 8.29956L107.313 8.28183L107.298 8.26031C106.89 7.62018 106.321 7.09939 105.649 6.75041C104.977 6.40142 104.225 6.23657 103.47 6.27247ZM116.295 5.98822C115.59 5.9532 114.886 6.07022 114.23 6.33141C113.573 6.59261 112.98 6.99193 112.49 7.50252L113.998 0H112.054L108.15 19.6252H110.093L111.714 11.3807C112.408 7.90642 115.092 7.73043 115.621 7.73043C115.937 7.69809 116.256 7.73604 116.555 7.84158C116.855 7.94713 117.128 8.11768 117.354 8.3411C117.581 8.56453 117.755 8.83536 117.866 9.13432C117.977 9.43329 118.02 9.75306 117.994 10.0709C117.984 10.4893 117.939 10.9062 117.858 11.3168L116.209 19.6252H118.15L119.855 11.1364C119.943 10.6954 119.989 10.2471 119.991 9.79741C120.026 9.29629 119.955 8.79341 119.783 8.32176C119.611 7.85011 119.342 7.42034 118.993 7.06064C118.644 6.70095 118.223 6.41946 117.758 6.23464C117.293 6.04981 116.795 5.96584 116.295 5.98822ZM90.0967 19.5929L90.0904 19.6258H92.0066L94.6215 6.33134H92.7375L90.0967 19.5929ZM54.9538 8.19447L54.9481 8.23056H61.4522L52.8769 18.021L52.8731 18.0261L52.5511 19.6258H61.7868L62.1503 17.7266H55.2462L63.8466 7.93618L63.8504 7.92985L64.1736 6.33134H55.3129L54.9538 8.19447ZM86.9064 6.16928C86.2145 6.15103 85.5279 6.29363 84.8999 6.58596C84.272 6.87828 83.7198 7.31243 83.2864 7.85451L83.5838 6.3611L83.5888 6.33134H81.6985L79.0854 19.5929L79.0803 19.6258H80.999L82.597 11.4909C83.006 9.4049 84.5932 7.88996 86.3739 7.88996C86.7328 7.88131 87.0882 7.96143 87.4089 8.12327C87.7297 8.28511 88.0059 8.52371 88.2133 8.81805L88.2322 8.8421L89.7879 7.43415L89.7728 7.41516C89.4206 7.00234 88.9794 6.67558 88.4828 6.4597C87.9861 6.24383 87.447 6.1445 86.9064 6.16928ZM75.3318 6.33134H77.275L77.27 6.363L74.6588 19.6258H72.7678L72.7741 19.5929L73.0243 18.2128C72.5408 18.7377 71.9491 19.1504 71.2906 19.422C70.6321 19.6935 69.9226 19.8176 69.2114 19.7854C68.7188 19.8075 68.227 19.7247 67.7685 19.5423C67.31 19.3599 66.8951 19.0821 66.5511 18.727C66.2071 18.372 65.9418 17.9479 65.7726 17.4825C65.6033 17.0171 65.5341 16.521 65.5694 16.0268C65.5748 15.6225 65.6206 15.2198 65.7061 14.8246L65.7282 14.7043L67.3803 6.33134H69.2978L67.6677 14.5283C67.5904 14.9334 67.5468 15.3442 67.5372 15.7565C67.5127 16.0718 67.5576 16.3887 67.6687 16.6847C67.7798 16.9806 67.9545 17.2483 68.1802 17.4688C68.406 17.6892 68.6773 17.857 68.9749 17.9602C69.2724 18.0635 69.589 18.0995 69.902 18.0659C70.4219 18.0659 73.0457 17.8912 73.7306 14.4619L75.3318 6.33134Z"/>
+</svg> </a>
+        <div class="header__headlines">            
+            <h2 class="header__headline--big" aria-label="Header Staffnet
+">
+                <a href="/staffnet/de.html" title="Startseite">
+                    Staffnet
+</a>
+            </h2>
+        </div>
+    </div>
+
+    <div id="navTopRoot" class="header__nav-primary eth-blue">
+    <div class="header__navbar header__container">
+        <div id="mainNav" data-init="mainNav" data-current="navitem3038166760" data-children="[{&quot;id&quot;:&quot;navitem3288090965&quot;,&quot;title&quot;:&quot;Aktuell&quot;},{&quot;id&quot;:&quot;navitem1876962700&quot;,&quot;title&quot;:&quot;Organisation&quot;},{&quot;id&quot;:&quot;navitem3197067173&quot;,&quot;title&quot;:&quot;Anstellung &amp; Arbeit&quot;},{&quot;id&quot;:&quot;navitem3289071632&quot;,&quot;title&quot;:&quot;Lehre&quot;},{&quot;id&quot;:&quot;navitem3059673857&quot;,&quot;title&quot;:&quot;Finanzen &amp; Controlling&quot;},{&quot;id&quot;:&quot;navitem3287456718&quot;,&quot;title&quot;:&quot;IT-Services&quot;},{&quot;id&quot;:&quot;navitem1628828355&quot;,&quot;title&quot;:&quot;Weitere Services&quot;}]">
+            <div class="nav-primary__html">
+                <div class="header__mobile-only">
+                        <hr>
+                        <h3 class="header__nav-primary-title">Services</h3>
+                        <ul>
+        <li>
+        <a href="/studierende/de.html" title="">Studierendenportal</a>
+    </li>
+<li>
+        <a href="https://www.alumni.ethz.ch/" title="">Alumni-Vereinigung</a>
+    </li>
+<li>
+            <a href="/de.html" title="">
+                ETH-Hauptseite</a>
+        </li>
+        <li>
+                <a class="contact" href="/staffnet/de/utils/contact.html" title="Öffnet eine Kontaktseite">
+                    Kontakt</a>
+            </li>
+        <li>
+                <a class="login footer__login-link icon-before icon-before--lock" href="/login/de.html?resource=%2Fcontent%2Fassociates%2Fservices%2Fde%2Fnews-und-veranstaltungen%2Fintern-aktuell%2Farchiv%2F2026%2F06%2Fembo-mitgliedschaft.html" title="Login mit ETH Userkonto">
+        <span class="footer__login-text">Login</span>
+    </a>
+</li>
+        </ul>
+</div>
+                </div>
+        </div>
+        <div class="header__search-trigger no_translate">
+    <h3 class="screenreader">Suche</h3>
+    <div
+      id="search-app"
+      data-init="searchApp"
+      data-is-overlay="true"
+      data-search-page-link="/staffnet/de/utils/search.html"
+      data-location-page-link="/staffnet/de/utils/location.html"
+      data-api-url="/bin/ethz/search"
+      data-current-site-supported-langs='["en","de"]'
+      data-is-main-site="true"
+      data-all-sites-supported-langs='["de","en","fr","it"]'
+      data-most-searched-quick-links='["ETHIS", "Jobs", "Scholarship", "PhD", "Admission", "Application"]'
+      data-locale="htmlElement">
+    </div>
+</div>
+
+<div class="header__search-link-container no_translate">
+  <a class="header__search-link icon-before icon-before--search" href="/staffnet/de/utils/search.html"></a>
+</div><div class="header__language header__mobile-only">
+            <label for="lang-selector" class="hidden">
+            de</label>
+        <select id="lang-selector" class="custom-select custom-select--link custom-select--dark">
+            <option value="de" selected="selected">
+                DE</option>
+            <option value="https://ethz.ch/staffnet/en/news-and-events/internal-news/archive/2026/06/embo-membership.html">
+                    EN</option>
+            </select>
+    </div>
+    </div>
+</div>
+
+<!-- navigation -->
+    <div class="header__nav-meta header__desktop-only">
+        <div class="header__container">
+            <nav aria-labelledby="header__departments-title" class="header__departments">
+                <h3 id="header__departments-title" class="hidden">
+                    Departemente</h3>
+                <ul>
+                    <li class="item--organization">
+                        <a href="https://ethz.ch/de.html" title="Zur Startseite der ETH Zürich" class="icon-after icon-after--chevron_right">
+                            ETH Zürich</a>
+                    </li>
+                    <!-- breadcrumb -->
+                            <li>
+        <a title="Startseite Staffnet" href="/staffnet/de.html" class="">
+            Staffnet</a>
+    </li>
+</ul>
+            </nav>
+            <nav aria-labelledby="header__services-title" class="header__services">
+                <h3 id="header__services-title" class="hidden">Sprachauswahl</h3>
+                <ul>
+                    <li>
+                        <label for="lang-selector-long" class="hidden">
+            de</label>
+        <select id="lang-selector-long" class="custom-select custom-select--link custom-select--dark">
+            <option value="de" selected="selected">
+                Deutsch</option>
+            <option value="https://ethz.ch/staffnet/en/news-and-events/internal-news/archive/2026/06/embo-membership.html">
+                    English</option>
+            </select>
+    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    
+</header>
+            
+            <!-- container -->
+            <!-- content -->
+
+    <section id="content" class="site-content">
+
+        <!-- set modifiers -->
+        
+
+        
+          
+          
+        
+
+        
+
+        
+
+        
+          
+        
+
+        <!-- breadcrumb-->
+        
+	
+	    
+	        <nav class="rs_skip breadcrumb breadcrumb--text-width" role="navigation" aria-label="Breadcrumb">
+	            <div class="breadcrumb-inner">
+	                <h3 id="breadcrumb-heading" class="visually-hidden">
+	                    Sie sind hier
+	                </h3>
+	                <ul>
+	                    <li>
+	                        <a href="/staffnet/de.html">
+	                            Startseite
+	                        </a>
+	                        <span aria-hidden="true" class="material-icons">chevron_right</span>
+	                    </li>
+	                    
+	                        <li role="presentation">
+	                          
+	                              <a href="/staffnet/de/news-und-veranstaltungen.html">
+	                                  Aktuell
+	                              </a>
+	                              <span aria-hidden="true" class="material-icons">chevron_right</span>
+	                          
+	                          
+	                        </li>
+	                    
+	                        <li role="presentation">
+	                          
+	                              <a href="/staffnet/de/news-und-veranstaltungen/intern-aktuell.html">
+	                                  Intern aktuell
+	                              </a>
+	                              <span aria-hidden="true" class="material-icons">chevron_right</span>
+	                          
+	                          
+	                        </li>
+	                    
+	                        <li role="presentation">
+	                          
+	                              <a href="/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv.html">
+	                                  Archiv Intern aktuell
+	                              </a>
+	                              <span aria-hidden="true" class="material-icons">chevron_right</span>
+	                          
+	                          
+	                        </li>
+	                    
+	                        <li role="presentation">
+	                          
+	                              <a href="/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026.html">
+	                                  2026
+	                              </a>
+	                              <span aria-hidden="true" class="material-icons">chevron_right</span>
+	                          
+	                          
+	                        </li>
+	                    
+	                        <li role="presentation">
+	                          
+	                              <a href="/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026/06.html">
+	                                  06
+	                              </a>
+	                              <span aria-hidden="true" class="material-icons">chevron_right</span>
+	                          
+	                          
+	                        </li>
+	                    
+	                        <li role="presentation">
+	                          
+	                          
+	                              <a href="#" aria-current="page">Internationale Anerkennung: Drei Wissenschaftler:innen erhalten die prestigetr&auml;chtige EMBO-Mitgliedschaft</a>
+	                          
+	                        </li>
+	                    
+	                </ul>
+	            </div>
+	        </nav>
+	    
+	
+
+
+        <!-- content -->
+        <div id="contentContainer" class="site-content__wrapper site-content--wide site-content--new-article">
+            <div id="eth-readspeaker" class="rs_splitbutton rs_playing rs_skip rs_exp"></div>
+            <section class="content-main" id="contentMain">
+                
+                    
+    
+    <!-- Panorama header -->
+    
+
+    <!-- Blog header -->
+    
+    <!-- Tags when not blog -->
+    
+        <div class="newsArticle__header">
+            <h1>Internationale Anerkennung: Drei Wissenschaftler:innen erhalten die prestigetr&auml;chtige EMBO-Mitgliedschaft</h1>
+            
+                <div class="TagCloud TagCloud--raw TagCloud--article">
+                    <ul class="TagCloud__list"><li class="TagCloud__item"><a class="eth-link" href="/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv.html?TAG&#61;bmV3czpydWJyaWtlbi9pbnRlcm4tYWt0dWVsbC9laHJ1bmdlbi11bmQtcHJlaXNl&amp;path&#61;L2NvbnRlbnQvYXNzb2NpYXRlcy9zZXJ2aWNlcy9kZS9uZXdzLXVuZC12ZXJhbnN0YWx0dW5nZW4vaW50ZXJuLWFrdHVlbGwvYXJjaGl2L2pjcjpjb250ZW50">Ehrungen und Preise</a></li><li class="TagCloud__item"><a class="eth-link" href="/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv.html?TAG&#61;b3JnYW5pc2F0aW9uOmRlcHQvaGVzdA&amp;path&#61;L2NvbnRlbnQvYXNzb2NpYXRlcy9zZXJ2aWNlcy9kZS9uZXdzLXVuZC12ZXJhbnN0YWx0dW5nZW4vaW50ZXJuLWFrdHVlbGwvYXJjaGl2L2pjcjpjb250ZW50">D-HEST</a></li></ul>
+                </div>
+            
+        </div>
+    
+
+    <!-- Articleheader -->
+    <div>
+    <div class="lead basecomponent has-no-spacing-bottom">
+        <p class="lead">
+            Emma Slack und Nina Cabezas-Wallscheid vom Departement Gesundheitswissenschaften und Technologie D-HEST sowie Jörn Piel vom Departement Biologie D-BIOL wurden zu EMBO-Mitgliedern gewählt.
+        </p>
+    </div>
+    
+
+</div>
+
+    <!-- Nav & News images -->
+    
+
+    <!-- Details -->
+    <div class="newsArticle__details">
+        <span class="newsArticle__author">
+            <time datetime="2026-06-30T00:00:00Z">30.06.2026</time>
+            
+                von
+                
+                    <a href="/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv.html?AUTHOR=RC1IRVNULCBELUJJT0wg&path=L2NvbnRlbnQvYXNzb2NpYXRlcy9zZXJ2aWNlcy9kZS9uZXdzLXVuZC12ZXJhbnN0YWx0dW5nZW4vaW50ZXJuLWFrdHVlbGwvYXJjaGl2L2pjcjpjb250ZW50" class="eth-link" title="D-HEST, D-BIOL">
+                
+                D-HEST, D-BIOL
+                
+                    </a>
+                
+            
+            
+            
+        </span>
+        <ul class="newsArticle__actions">
+            <!-- ReadSpeaker -->
+            <li id="news_rs_play" class="newsArticle__action-item">
+                <a class="eth-link eth-link--no-underline has-icon-before rs_skip rs_preserve" href="https://app-eu.readspeaker.com/cgi-bin/rsent?customerid=14392&lang=de&amp;readid=contentMain" onclick="readpage(this.href, 'eth-readspeaker'); return false;" data-target="eth-readspeaker">
+                    <span aria-hidden="true" class="material-icons">volume_up</span>Vorlesen
+                </a>
+            </li>
+            <li class="newsArticle__action-item ">
+                <a id="newsCommentsLink" href="#comment-system" class="eth-link--no-underline eth-link has-icon-before rs_skip">
+                    <span aria-hidden="true" class="material-icons">mode_comment</span>
+                    <span class="visually-hidden">Anzahl der Kommentare</span>
+                </a>
+            </li>
+            <!-- Socialsharing (configurable) -->
+            
+    
+        
+            
+                <li class="newsArticle__action-item">
+            
+            <div id="cmp_par_socialsharing_890683112-dropdown" data-init="socialSharing" data-page-title="Internationale Anerkennung: Drei Wissenschaftler:innen erhalten die prestigeträchtige EMBO-Mitgliedschaft" data-twitter-user="eth" data-is-dropdown="true">
+            </div>
+            
+                </li>
+            
+        
+        
+    
+
+        </ul>
+    </div>
+
+    <!-- ArticleLeadImage -->
+    
+        <div class="newsArticle__image">
+            <div>
+    
+        <div class="image-component image-component--large">
+          <div class="image-component__wrapper">
+            <figure>
+            <img alt="EMBO membership" src="/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026/06/embo-membership/_jcr_content/articleLeadImage/image.imageformat.carousel.1837001022.jpg" srcset="/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026/06/embo-membership/_jcr_content/articleLeadImage/image.imageformat.carousel.dpr1.1837001022.jpg 1x, /staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026/06/embo-membership/_jcr_content/articleLeadImage/image.imageformat.carousel.dpr2.1837001022.jpg 2x, /staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026/06/embo-membership/_jcr_content/articleLeadImage/image.imageformat.carousel.dpr3.1837001022.jpg 3x"/>
+			<figcaption>
+			    <div class="image-component__caption">
+			      Von links nach rechts: Prof. Emma Slack, Prof. Nina Cabezas-Wallscheid, Prof. Jörn Piel</div>
+			  </figcaption>
+			</figure>
+    
+          </div>
+        </div>
+    
+    
+
+</div>
+        </div>
+    
+
+    <!-- Parsys 1 -->
+    <div class="basecomponent parsys">
+        <div class="wide_content parsys basecomponent contains-greybox contains-linklist contains-textimage">
+
+<div class="textimage basecomponent">
+
+
+    
+        <div class="textimage__wrapper  is-first ">
+            <div class="text-image  cq-dd-image">
+                
+                
+                <p><b>EMBO (European Molecular Biology Organization)</b> ist ein Netzwerk von mehr als 2'100 führenden Forschern, das sich der Förderung von Exzellenz in den Lebenswissenschaften in ganz Europa und darüber hinaus verschrieben hat. Die Organisation konzentriert sich darauf, Wissenschaftler in jeder Phase ihrer Karriere zu unterstützen, den Wissensaustausch zu fördern und ein Umfeld zu schaffen, in dem bahnbrechende Forschung gedeihen kann. Herzlichen Glückwunsch an die drei Professor:innen der ETH Zürich zu dieser Leistung.</p> 
+<p><b>Erforschung der Zusammenhänge zwischen Mikrobiota und Immunität | Prof. Emma Slack<br> </b><br> Emma Slacks Forschung wird von komplexen wissenschaftlichen Fragestellungen angetrieben, beispielsweise wie das Darmimmunsystem die Zusammensetzung und Funktion des Mikrobioms beeinflusst. Ihr Labor untersucht die Wechselwirkungen zwischen Mikroben und ihrem Wirt an Schleimhautoberflächen mit dem Ziel, diese Erkenntnisse in neue Ansätze zur Vorbeugung und Behandlung von Krankheiten bei Menschen und Tieren umzusetzen. Ihr Team legt einen Schwerpunkt darauf, zu verstehen, wie Ernährung, Mikrobiom, Stoffwechsel und Immunsystem zusammenwirken und so Gesundheit und Krankheit beeinflussen. Sie ist fest davon überzeugt, dass die Bewältigung dieser Herausforderungen eine enge Zusammenarbeit zwischen kreativen, interdisziplinären Teams erfordert.</p> 
+<p><b>Regulierung hämatopoetischer Stammzellen bei Gesundheit, Alterung und Krankheit | Prof. Nina Cabezas-Wallscheid<br> </b><br> Das Cabezas-Wallscheid-Labor untersucht die Regulierung der Ruhephase hämatopoetischer Stammzellen unter normalen Bedingungen, während des Alterungsprozesses sowie bei Erkrankungen wie Leukämie und Herz-Kreislauf-Erkrankungen. Das Labor deckt den gesamten Bereich von der Entdeckung mechanistischer Zusammenhänge bis hin zur klinischen Umsetzung ab und kombiniert modernste Technologien – darunter Einzelzell-Multi-Omics, Low-Input-Metabolomik und Lipidomik sowie epigenetische Profilierung – mit experimentellen Modellen und Patientenproben, um diese komplexen Fragen zu untersuchen.<br> Langfristige Ziele des Labors sind die Entwicklung von Ernährungsstrategien, die ein gesundes Blutsystem im Alter unterstützen, sowie die Entwicklung neuer Therapien für hämatologische Erkrankungen.</p> 
+<p><i>„Ich fühle mich zutiefst geehrt, zum Mitglied der EMBO gewählt worden zu sein. Diese Anerkennung spiegelt das Engagement, die Kreativität und die harte Arbeit der Studierenden, Postdocs, Techniker, Kooperationspartner und Kollegen wider, die über die Jahre zu unserer Forschung beigetragen haben. Ich bin sehr dankbar, Teil einer so inspirierenden wissenschaftlichen Gemeinschaft zu sein“, betont Nina Cabezas-Wallscheid.</i></p> 
+<p><b>Forschungsschwerpunkt: Das Potenzial von Naturstoffen erschließen | Prof. Jörn Piel&nbsp;</b></p> 
+<p>Jörn Piel untersucht, wie Bakterien strukturell komplexe Naturstoffe produzieren, und versucht, neue Stoffwechselkapazitäten in bisher unerforschten Mikroben aufzudecken.<br> Durch die Nutzung dieses Wissens strebt seine Forschungsgruppe an, eine neuartige strukturelle Vielfalt zu schaffen, die über das in der Natur Vorhandene hinausgeht, und nachhaltige Wege zur Herstellung seltener bioaktiver Moleküle zu etablieren. Um diese Ziele zu erreichen, ist ein stark kooperativer Ansatz erforderlich, der Fachwissen aus verschiedenen Disziplinen zusammenführt, darunter Molekularbiologie, Mikrobiologie, Bioinformatik, analytische Chemie und organische Chemie.</p> 
+<p><b>EMBO: Förderung von Spitzenleistungen in den Lebenswissenschaften<br> Mit seinem breiten wissenschaftlichen Spektrum und seinem umfangreichen internationalen Netzwerk aus Mitgliedern und assoziierten Mitgliedern – zu denen die weltweit renommiertesten Lebenswissenschaftler zählen – ist EMBO in einer einzigartigen Position, um die globale Gemeinschaft der Lebenswissenschaften zu stärken und zu unterstützen.</b></p>
+            </div>
+        </div>
+    
+    
+
+</div>
+<div class="linklist basecomponent">
+
+
+  
+    
+    <div class="linklist__wrapper ">
+      
+        
+          
+            <h2>Weitere Informationen</h2>
+          
+          
+          
+        
+      
+      
+        <ul class="linklist  ">
+      
+     
+       
+         <li>
+       
+       
+         <a class="eth-link" href="https://slacklab.ethz.ch/">
+            <span aria-hidden="true" class="icon-before icon-before--chevron_right "></span>
+            Laboratory for Mucosal Immunology - Prof. Dr. Emma Slack</a>
+    
+       
+         </li>
+       
+      
+       
+         <li>
+       
+       
+         <a class="eth-link" href="https://stemcellageing.ethz.ch/">
+            <span aria-hidden="true" class="icon-before icon-before--chevron_right "></span>
+            Laboratory of Stem Cell Biology and Ageing - Prof. Dr. Nina Cabezas-Wallscheid</a>
+    
+       
+         </li>
+       
+      
+       
+         <li>
+       
+       
+         <a class="eth-link" href="https://micro.biol.ethz.ch/research/piel.html">
+            <span aria-hidden="true" class="icon-before icon-before--chevron_right "></span>
+            The Piel Lab - Bacterial Natural Products - Prof. Dr. Jörn Piel</a>
+    
+       
+         </li>
+       
+      
+       
+         <li>
+       
+       
+         <a class="eth-link" href="https://www.embo.org/">
+            <span aria-hidden="true" class="icon-before icon-before--call_made "></span>
+            <span class="eth-link__label">externe Seite</span>
+            EMBO</a>
+    
+       
+         </li>
+       
+      
+       
+         <li>
+       
+       
+         <a class="eth-link" href="https://www.embo.org/press-releases/seventy-one-leading-scientists-elected-to-the-embo-membership/">
+            <span aria-hidden="true" class="icon-before icon-before--call_made "></span>
+            <span class="eth-link__label">externe Seite</span>
+            Press release - EMBO </a>
+    
+       
+         </li>
+       
+      
+      
+        </ul>
+      
+    </div>
+  
+  
+
+</div>
+<div class="greybox parsys basecomponent"><div class="greybox__wrapper  is-last">
+    <div class="text-box">
+        <div class="parsys basecomponent"><div class="parsys basecomponent contains-textimage">
+
+<div class="textimage basecomponent">
+
+
+    
+        <div class="textimage__wrapper  is-first is-last ">
+            <div class="text-image  cq-dd-image">
+                
+                	<h2>Immer aktuell informiert</h2>
+                
+                
+                <p>Möchten Sie stets die wichtigsten internen Informationen und News der ETH Zürich erhalten? Dann <a href="https://ethz.ch/staffnet/de/news-und-veranstaltungen/intern-aktuell/newsletter.html" class="eth-link">abonnieren Sie den Newsletter «Intern aktuell»</a> und besuchen Sie regelmässig <a href="https://ethz.ch/staffnet/de.html" class="eth-link">Staffnet</a>, das Info-​​Portal für ETH-​​Mitarbeitende.</p>
+            </div>
+        </div>
+    
+    
+
+</div>
+</div></div>
+</div>
+</div>
+
+<div class="greyboxend basecomponent"></div>
+</div>
+</div>
+    </div>
+    <!-- Socialsharing (display only) -->
+    
+    
+        
+            
+            <div id="cmp_par_socialsharing_890683112-expanded" data-init="socialSharing" data-page-title="Internationale Anerkennung: Drei Wissenschaftler:innen erhalten die prestigeträchtige EMBO-Mitgliedschaft" data-twitter-user="eth" data-is-dropdown="false">
+            </div>
+            
+        
+        
+    
+
+
+    <!-- Parsys 2 -->
+    <div class="basecomponent parsys">
+        <div class="wide_content2 parsys basecomponent ">
+
+</div>
+    </div>
+
+    <!-- Rightside Parsys -->
+    
+
+    <!-- Taglist -->
+    
+        
+            <div class="TagCloud">
+                <h2 class="TagCloud__title">Ähnliche Themen</h2>
+                <p class="TagCloud__item"><a class="eth-link" href="/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv.html?TAG&#61;bmV3czpydWJyaWtlbi9pbnRlcm4tYWt0dWVsbC9laHJ1bmdlbi11bmQtcHJlaXNl&amp;path&#61;L2NvbnRlbnQvYXNzb2NpYXRlcy9zZXJ2aWNlcy9kZS9uZXdzLXVuZC12ZXJhbnN0YWx0dW5nZW4vaW50ZXJuLWFrdHVlbGwvYXJjaGl2L2pjcjpjb250ZW50">Ehrungen und Preise</a></p>
+            </div>
+        
+    
+
+    <!-- Comments -->
+    
+    	
+	    <div class="newsArticle__comments no_translate rs_skip">
+		    
+		        <div id="commentSystem" data-init="commentSystem" data-url="/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2026/06/embo-membership.newscomments.json" data-info-link="/de/news-und-veranstaltungen/eth-news/redaktion/kommentarregeln.html" data-commenting-open="true" data-use-internal-mod="true"></div>
+		    
+	    </div>
+    
+
+                
+                
+            </section>
+            
+            <!-- contentSidebar -->
+            
+
+        </div> 
+
+    </section>
+
+
+
+
+
+            <!-- footer -->
+            <footer id="footer" class="site-footer">
+    <div class="footer__container">
+        <h2 class="visually-hidden">
+            Footer</h2>
+        <nav aria-labelledby="footer-highlighted-heading" class="footer__highlighted">
+        <h3 id="footer-highlighted-heading" class="visually-hidden">
+            Empfohlene Links</h3>
+        <ul>
+            <li class="">
+                    <a href="/staffnet/de/news-und-veranstaltungen/akademischer-kalender.html" title="">Akademischer Kalender</a>
+                </li>
+            <li class="">
+                    <a href="/de/campus/erleben/lernen-und-arbeiten/alarmzentrale.html" title="">Informationen für Notfälle</a>
+                </li>
+            </ul>
+    </nav>
+<div class="footer__row-main">
+            <div class="footer__row-main__inner footer__row">
+                <div class="footer__search-and-social">
+                    <div class="footer__search no_translate" aria-labelledby="footer-search-heading" role="search">
+                        <h3 id="footer-search-heading" class="footer__section-title">
+                            Suche</h3>
+                            <div class="site-search">
+                                <form action="/staffnet/de/utils/search.html" method="GET" accept-charset="UTF-8">
+                                    <label for="searchinput" class="hidden">Suchbegriff oder Person</label>
+                                    <input id="searchinput" class="searchinput" type="text" placeholder="Suchbegriff oder Person" data-placeholder="Suchbegriff oder Person" name="q" aria-required="false" />
+                                    <button type="submit" class="searchsubmit icon-before icon-before--search" aria-label="Suche"></button>
+                                    <input type="hidden" name="language" value="de" />
+                                </form>
+                            </div>
+                        </div>
+                    <nav aria-labelledby="footer-social-heading" class="footer__social">
+                            <h3 id="footer-social-heading" class="footer__section-title">
+                                Folgen Sie uns</h3>
+                            <ul class="social-icons">
+			                    <li>
+		                                <a href="https://ethz.ch/de/utils/rss.html" class="social-icon" title="Abonnieren Sie den Newsfeed des Homepage"><img src="/etc/designs/ethz/img/icons/svg/rss-white.svg" alt="Abonnieren Sie den Newsfeed des Homepage"></a>
+		                                    </li>
+			                    <li>
+		                                <a href="https://www.linkedin.com/school/eth-zurich/" class="social-icon" title="Homepage auf LinkedIn"><img src="/etc/designs/ethz/img/icons/svg/linkedin-white.svg" alt="Homepage auf LinkedIn"></a>
+		                                    </li>
+			                    <li>
+		                                <a href="https://www.instagram.com/ethzurich/" class="social-icon" title="Homepage auf Instagram"><img src="/etc/designs/ethz/img/icons/svg/instagram-white.svg" alt="Homepage auf Instagram"></a>
+		                                    </li>
+			                    <li>
+		                                <a href="https://www.facebook.com/eth/" class="social-icon" title="Homepage auf Facebook"><img src="/etc/designs/ethz/img/icons/svg/facebook-white.svg" alt="Homepage auf Facebook"></a>
+		                                    </li>
+			                    <li>
+		                                <a href="https://www.youtube.com/user/ethzurich" class="social-icon" title="Homepage auf YouTube"><img src="/etc/designs/ethz/img/icons/svg/youtube-white.svg" alt="Homepage auf YouTube"></a>
+		                                    </li>
+			                    <li>
+		                                <a href="https://www.tiktok.com/@ethzurich" class="social-icon" title="Homepage auf TikTok"><img src="/etc/designs/ethz/img/icons/svg/tiktok-white.svg" alt="Homepage auf TikTok"></a>
+		                                    </li>
+			                    </ul>
+                        </nav>
+                    </div>
+
+                <nav aria-labelledby="footer-services-heading" class="footer__services">
+	                  <h3 id="footer-services-heading" class="footer__section-title">
+	                      Services</h3>
+	                  <ul>
+        <li>
+        <a href="/studierende/de.html" title="">Studierendenportal</a>
+    </li>
+<li>
+        <a href="https://www.alumni.ethz.ch/" title="">Alumni-Vereinigung</a>
+    </li>
+<li>
+            <a href="/de.html" title="">
+                ETH-Hauptseite</a>
+        </li>
+        <li>
+                <a class="contact" href="/staffnet/de/utils/contact.html" title="Öffnet eine Kontaktseite">
+                    Kontakt</a>
+            </li>
+        <li>
+                <a class="login footer__login-link icon-before icon-before--lock" href="/login/de.html?resource=%2Fcontent%2Fassociates%2Fservices%2Fde%2Fnews-und-veranstaltungen%2Fintern-aktuell%2Farchiv%2F2026%2F06%2Fembo-mitgliedschaft.html" title="Login mit ETH Userkonto">
+        <span class="footer__login-text">Login</span>
+    </a>
+</li>
+        </ul>
+</nav>
+                </div>
+        </div>
+        
+
+
+    
+
+    <nav aria-labelledby="footer-departments-heading" class="footer__departments footer-accordion-mobile js-footer-accordion-mobile">
+        <div class="footer__section-title footer-accordion-mobile__trigger js-footer-accordion-mobile__trigger">
+            <h3 id="footer-departments-heading">
+                Departemente
+            </h3>
+        </div>
+        <div class="footer__row footer-accordion-mobile__content">
+            <ul class="items">
+                
+                    
+                        
+                        
+                        <li class="item">
+                            <a href="https://arch.ethz.ch/">
+                                <span class="item__title"> D-ARCH</span>
+                                <span class="item__subtitle">Architektur </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://baug.ethz.ch/">
+                                <span class="item__title"> D-BAUG</span>
+                                <span class="item__subtitle">Bau, Umwelt und Geomatik </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://biol.ethz.ch/">
+                                <span class="item__title"> D-BIOL</span>
+                                <span class="item__subtitle">Biologie </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://bsse.ethz.ch/">
+                                <span class="item__title"> D-BSSE</span>
+                                <span class="item__subtitle">Biosysteme </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://chab.ethz.ch/">
+                                <span class="item__title"> D-CHAB</span>
+                                <span class="item__subtitle">Chemie und Angewandte Biowissenschaften </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://eaps.ethz.ch/">
+                                <span class="item__title"> D-EAPS</span>
+                                <span class="item__subtitle">Erd-​ und Planetenwissenschaften </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://gess.ethz.ch/">
+                                <span class="item__title"> D-GESS</span>
+                                <span class="item__subtitle">Geistes-, Sozial- und Staatswissenschaften </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://hest.ethz.ch/">
+                                <span class="item__title"> D-HEST</span>
+                                <span class="item__subtitle">Gesundheitswissenschaften und Technologie </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://inf.ethz.ch/de/">
+                                <span class="item__title"> D-INFK</span>
+                                <span class="item__subtitle">Informatik </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://ee.ethz.ch/de/">
+                                <span class="item__title"> D-ITET</span>
+                                <span class="item__subtitle">Informationstechnologie und Elektrotechnik </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://math.ethz.ch/">
+                                <span class="item__title"> D-MATH</span>
+                                <span class="item__subtitle">Mathematik </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://mat.ethz.ch/">
+                                <span class="item__title"> D-MATL</span>
+                                <span class="item__subtitle">Materialwissenschaft </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://mavt.ethz.ch/de/">
+                                <span class="item__title"> D-MAVT</span>
+                                <span class="item__subtitle">Maschinenbau und Verfahrenstechnik </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://mtec.ethz.ch/">
+                                <span class="item__title"> D-MTEC</span>
+                                <span class="item__subtitle">Management, Technologie und Ökonomie </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://www.phys.ethz.ch/de/">
+                                <span class="item__title"> D-PHYS</span>
+                                <span class="item__subtitle">Physik </span>
+                            </a>
+                        </li>
+                   
+                        
+                        
+                        <li class="item">
+                            <a href="https://usys.ethz.ch/">
+                                <span class="item__title"> D-USYS</span>
+                                <span class="item__subtitle">Umweltsystemwissenschaften </span>
+                            </a>
+                        </li>
+                   
+                
+            </ul>
+        </div>
+    </nav>
+    <script>
+        jQuery(document).ready(function() {
+            var toggleAccordion = function(e) {
+                e.preventDefault();
+                $(e.target)
+                    .closest('.js-footer-accordion-mobile')
+                    .toggleClass('is-open-mobile');
+            };
+            $('.js-footer-accordion-mobile__trigger').on('click', toggleAccordion);
+        });
+    </script>
+<nav aria-labelledby="footer-resources-heading" class="footer__row footer__resources">
+                <h3 id="footer-resources-heading" class="visually-hidden">
+                  Inhaltsverzeichnis und Rechtliches</h3>
+                <ul>
+                    <li><a href="/staffnet/de/footer/inhaltsverzeichnis.html" title="Inhaltsverzeichnis"> Inhaltsverzeichnis</a></li>
+                    <li><a href="/staffnet/de/footer/impressum.html" title="Impressum"> Impressum</a></li>
+                    <li><a href="/staffnet/de/footer/barrierefreiheitserkl%C3%A4rung.html" title="Erkl&auml;rung zur Barrierefreiheit"> Erkl&auml;rung zur Barrierefreiheit</a></li>
+                    <li><a href="/staffnet/de/footer/disclaimer-copyright.html" title="Disclaimer &amp; Copyright"> Disclaimer &amp; Copyright</a></li>
+                    <li><a href="/staffnet/de/footer/datenschutz.html" title="Datenschutz"> Datenschutz</a></li>
+                    </ul>
+            </nav>
+        <div class="footer__copyright">
+            &copy; 2026 &nbsp;<a href="https://ethz.ch/">Eidgen&ouml;ssische
+                    Technische Hochschule Z&uuml;rich</a>
+        </div>
+    </div>
+</footer>
+
+        </div>
+        
+        <!-- lightbox by photoswipe -->
+        
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        <!-- access statistics -->
+        <!-- Access statistics -->
+        
+
+        
+        
+
+
+<div id="info-banner">JavaScript wurde auf Ihrem Browser deaktiviert</div>
+        
+        
+
+        
+    </body>
+
+</html>

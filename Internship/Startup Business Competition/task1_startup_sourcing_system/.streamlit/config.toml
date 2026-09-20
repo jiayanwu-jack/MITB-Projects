@@ -1,0 +1,20 @@
+# SMU navy brand theme, in both variants. Defining ONLY [theme] pins the app
+# to one fixed theme and Streamlit removes the System/Light/Dark picker from
+# the top-right menu — which is exactly what had happened here. Defining
+# [theme.light] AND [theme.dark] keeps the picker: the user chooses, and each
+# mode gets brand-appropriate colours. The app's custom CSS adapts alongside
+# via the data-smu-theme bridge in app.py.
+
+[theme]
+primaryColor = "#12406b"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f6f9fc"
+textColor = "#14293a"
+font = "sans serif"
+
+[theme.dark]
+primaryColor = "#3b7cc0"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#131a26"
+textColor = "#e7edf5"
+font = "sans serif"

@@ -2,6 +2,7 @@ project:
   type: website
   render:
     - "*.qmd"
+    - "Courses/**/*.qmd"
     - "Courses/**/*.md"
     - "Internship/**/*.qmd"
     - "Projects/**/*.qmd"
@@ -26,6 +27,9 @@ website:
           - text: "Applied Data Science in Social Networks"
             icon: "diagram-3"
             href: "Courses/Social Network Analytics/Lecture_Notes_Applied_Data_Science_in_Social_Networks.md"
+          - text: "Generative AI with LLM"
+            icon: "robot"
+            href: "Courses/Generative AI with LLM/index.qmd"
           - text: "Visual Analytics and Applications"
             icon: "bar-chart-line"
             href: https://isss608-ay2025-26apr.netlify.app/

@@ -23,4 +23,7 @@ data/
 .RDataTmp*
 .Rhistory
 .Rapp.history.RDataTmp*
+
+# Local OAuth credentials - keep these outside version control
+Internship/Startup Business Competition/task1_startup_sourcing_system/Google_OAuth_credentials.json
 .RDataTmp*
