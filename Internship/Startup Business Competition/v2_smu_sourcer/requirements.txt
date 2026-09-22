@@ -1,6 +1,0 @@
-beautifulsoup4>=4.12
-lxml>=5.0
-# Optional: founder email MX verification
-# dnspython>=2.4
-# Optional: Claude on AWS Bedrock for founder/industry extraction (--llm)
-# anthropic[bedrock]>=0.40

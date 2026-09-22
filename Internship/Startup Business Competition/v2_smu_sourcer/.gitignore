@@ -1,9 +1,0 @@
-# Secrets
-.env
-
-# Run outputs and caches
-output/
-**/.cache/
-**/__pycache__/
-*.pyc
-.pytest_cache/

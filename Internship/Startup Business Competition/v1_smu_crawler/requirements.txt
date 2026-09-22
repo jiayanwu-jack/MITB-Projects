@@ -1,4 +1,0 @@
-beautifulsoup4>=4.12
-lxml>=5.0
-# Optional: only needed for --llm refinement
-# anthropic>=0.40
